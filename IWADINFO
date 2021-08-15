@@ -1,0 +1,11 @@
+IWad
+{
+    Name = "Orcs & Elves II Remake Project"
+    AutoName = "Doom.oe2rp"
+    Game = "Hexen"
+    Config = "Doom"
+    IWADName = "oe2rp"
+    // MapInfo = ""
+    // BannerColors = "", ""
+    StartupType = "Hexen"
+}
