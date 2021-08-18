@@ -1,0 +1,392 @@
+/**
+ * Copyright (c) 2021 OE2RP-Team
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+// Wall textures
+
+Texture "WALL00", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL00", 0, 0
+}
+
+
+Texture "WALL01", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL01", 0, 0
+}
+
+
+Texture "WALL02", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL02", 0, 0
+}
+
+
+Texture "WALL03", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL03", 0, 0
+}
+
+
+Texture "WALL04", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL04", 0, 0
+}
+
+
+Texture "WALL05", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL05", 0, 0
+}
+
+
+Texture "WALL06", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL06", 0, 0
+}
+
+
+Texture "WALL07", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL07", 0, 0
+}
+
+
+Texture "WALL08", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL08", 0, 0
+}
+
+
+Texture "WALL09", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL09", 0, 0
+}
+
+
+Texture "WALL10", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL10", 0, 0
+}
+
+
+Texture "WALL11", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL11", 0, 0
+}
+
+
+Texture "WALL12", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL12", 0, 0
+}
+
+
+Texture "WALL13", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL13", 0, 0
+}
+
+
+Texture "WALL14", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL14", 0, 0
+}
+
+
+Texture "WALL15", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL15", 0, 0
+}
+
+
+Texture "WALL16", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL16", 0, 0
+}
+
+
+Texture "WALL17", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL17", 0, 0
+}
+
+
+Texture "WALL18", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL18", 0, 0
+}
+
+
+Texture "WALL19", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL19", 0, 0
+}
+
+
+Texture "WALL20", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL20", 0, 0
+}
+
+
+Texture "WALL21", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL21", 0, 0
+}
+
+
+Texture "WALL22", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL22", 0, 0
+}
+
+
+Texture "WALL23", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL23", 0, 0
+}
+
+
+Texture "WALL24", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL24", 0, 0
+}
+
+
+Texture "WALL25", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL25", 0, 0
+}
+
+
+Texture "WALL26", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL26", 0, 0
+}
+
+
+Texture "WALL27", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL27", 0, 0
+}
+
+
+Texture "WALL28", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL28", 0, 0
+}
+
+
+Texture "WALL29", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL29", 0, 0
+}
+
+
+Texture "WALL30", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL30", 0, 0
+}
+
+
+Texture "WALL31", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL31", 0, 0
+}
+
+
+Texture "WALL32", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL32", 0, 0
+}
+
+
+Texture "WALL33", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL33", 0, 0
+}
+
+
+Texture "WALL34", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL34", 0, 0
+}
+
+
+Texture "WALL35", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL35", 0, 0
+}
+
+
+Texture "WALL36", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL36", 0, 0
+}
+
+
+Texture "WALL37", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL37", 0, 0
+}
+
+
+Texture "WALL38", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL38", 0, 0
+}
+
+
+Texture "WALL39", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL39", 0, 0
+}
+
+
+Texture "WALL40", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL40", 0, 0
+}
+
+
+Texture "WALL41", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL41", 0, 0
+}
+
+
+Texture "WALL42", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL42", 0, 0
+}
+
+
+Texture "WALL43", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL43", 0, 0
+}
+
+
+Texture "WALL44", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL44", 0, 0
+}
+
+
+Texture "WALL45", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL45", 0, 0
+}
+
+
+Texture "WALL46", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL46", 0, 0
+}
+
+
+Texture "WALL47", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL47", 0, 0
+}
+
+
+Texture "WALL48", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL48", 0, 0
+}
+
+
+Texture "WALL49", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL49", 0, 0
+}
+
+
+Texture "WALL50", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL50", 0, 0
+}
+
+
+Texture "WALL51", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL51", 0, 0
+}
+
+
+Texture "WALL52", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL52", 0, 0
+}
+
+
+Texture "WALL53", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL53", 0, 0
+}
+
+
+Texture "WALL54", 117, 117 {
+    XScale 1.828125
+    YScale 1.828125
+    Patch "_WALL54", 0, 0
+}
