@@ -39,7 +39,7 @@ with open(DIR + NEW) as _in:
     rows.__next__()
     
     for row in rows:
-        _rus, sid, comment, _, _enu = row
+        _enu, sid, comment, _, _rus = row
 
         enu.write('    %s = "%s";' % (sid, escapeQuotes(_enu)))
         if comment:
