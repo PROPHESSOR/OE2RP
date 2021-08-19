@@ -7,70 +7,70 @@
 
 // Wall textures
 
-Texture "WALL00", 117, 117 {
+Texture "WALL0", 117, 117 {
     XScale 1.828125
     YScale 1.828125
     Patch "_WALL00", 0, 0
 }
 
 
-Texture "WALL01", 117, 117 {
+Texture "WALL1", 117, 117 {
     XScale 1.828125
     YScale 1.828125
     Patch "_WALL01", 0, 0
 }
 
 
-Texture "WALL02", 117, 117 {
+Texture "WALL2", 117, 117 {
     XScale 1.828125
     YScale 1.828125
     Patch "_WALL02", 0, 0
 }
 
 
-Texture "WALL03", 117, 117 {
+Texture "WALL3", 117, 117 {
     XScale 1.828125
     YScale 1.828125
     Patch "_WALL03", 0, 0
 }
 
 
-Texture "WALL04", 117, 117 {
+Texture "WALL4", 117, 117 {
     XScale 1.828125
     YScale 1.828125
     Patch "_WALL04", 0, 0
 }
 
 
-Texture "WALL05", 117, 117 {
+Texture "WALL5", 117, 117 {
     XScale 1.828125
     YScale 1.828125
     Patch "_WALL05", 0, 0
 }
 
 
-Texture "WALL06", 117, 117 {
+Texture "WALL6", 117, 117 {
     XScale 1.828125
     YScale 1.828125
     Patch "_WALL06", 0, 0
 }
 
 
-Texture "WALL07", 117, 117 {
+Texture "WALL7", 117, 117 {
     XScale 1.828125
     YScale 1.828125
     Patch "_WALL07", 0, 0
 }
 
 
-Texture "WALL08", 117, 117 {
+Texture "WALL8", 117, 117 {
     XScale 1.828125
     YScale 1.828125
     Patch "_WALL08", 0, 0
 }
 
 
-Texture "WALL09", 117, 117 {
+Texture "WALL9", 117, 117 {
     XScale 1.828125
     YScale 1.828125
     Patch "_WALL09", 0, 0
