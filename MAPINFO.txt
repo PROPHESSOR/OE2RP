@@ -1,0 +1,72 @@
+/**
+ * Copyright (c) 2021 OE2RP-Team
+ *
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+ClearEpisodes
+
+Cluster 1 {
+    Hub
+}
+
+Episode Caverns {
+    NoSkillMenu
+    Name     = "ORCS & ELVES II REMAKE PROJECT"
+}
+
+Map Caverns "$OE2RP_CAVERNS_0" {
+    Music    = ""
+    SkyBox   = ""
+    LevelNum = 1
+    Cluster  = 1
+    Next     = "Dwarkar"
+}
+
+Map Dwarkar "$OE2RP_DWARKAR_0" {
+    Music    = ""
+    SkyBox   = ""
+    LevelNum = 2
+    Cluster  = 1
+    Next     = "Tunnels"
+}
+
+Map Tunnels "$OE2RP_TUNNELS_0" {
+    Music    = ""
+    SkyBox   = ""
+    LevelNum = 3
+    Cluster  = 1
+    Next     = "ElLandra"
+}
+
+Map ElLandra "$OE2RP_ELLANDRA_0" {
+    Music    = ""
+    SkyBox   = ""
+    LevelNum = 4
+    Cluster  = 1
+    Next     = "DarkForest"
+}
+
+Map DarkForest "$OE2RP_DARKFOREST_0" {
+    Music    = ""
+    SkyBox   = ""
+    LevelNum = 5
+    Cluster  = 1
+    Next     = "Sol"
+}
+
+Map Sol "$OE2RP_SOL_0" {
+    Music    = ""
+    SkyBox   = ""
+    LevelNum = 6
+    Cluster  = 1
+    Next     = "Darkfel"
+}
+
+Map Darkfel "$OE2RP_DARKFEL_0" {
+    Music    = ""
+    SkyBox   = ""
+    LevelNum = 7
+    Cluster  = 1
+}
