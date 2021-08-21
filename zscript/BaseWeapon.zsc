@@ -1,0 +1,11 @@
+class OE2BaseWeapon: DoomWeapon {
+	Default {
+		Inventory.PickupMessage "Picked up a O&E II base weapon.";
+	}
+
+	States {
+	Spawn:
+		TNT1 A -1;
+		stop;
+	}
+} // of class OE2BaseWeapon: DoomWeapon {

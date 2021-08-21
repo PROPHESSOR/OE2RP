@@ -1,0 +1,13 @@
+#include "decorate/Weapons/Bob.dec"
+#include "decorate/Weapons/Crossbows.dec"
+#include "decorate/Weapons/Dagger.dec"
+#include "decorate/Weapons/Orbs.dec"
+#include "decorate/Weapons/Staff.dec"
+#include "decorate/Weapons/Sword.dec"
+#include "decorate/Weapons/Wand.dec"
+
+#include "decorate/Items/Rings.dec"
+#include "decorate/Items/Other.dec"
+#include "decorate/Items/Potions/Health.dec"
+#include "decorate/Items/Potions/Stats.dec"
+#include "decorate/Items/Potions/Other.dec"

@@ -1,0 +1,14 @@
+Actor OE2StrengthPotion: OE2BasePotion 15102 {
+}
+
+Actor OE2AccuracyPotion: OE2BasePotion 15103 {
+}
+
+Actor OE2DefencePotion: OE2BasePotion 15104 {
+}
+
+Actor OE2SpeedPotion: OE2BasePotion 15105 {
+}
+
+Actor OE2DodgePotion: OE2BasePotion 15106 {
+}

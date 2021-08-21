@@ -1,0 +1,11 @@
+Actor OE2Orb: OE2BaseWeapon {
+}
+
+Actor OE2ShrinkOrb: OE2Orb 15006 {
+}
+
+Actor OE2MoldOrb: OE2Orb 15007 {
+}
+
+Actor OE2FreezeOrb: OE2Orb 15008 {
+}

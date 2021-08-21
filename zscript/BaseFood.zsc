@@ -1,0 +1,11 @@
+class OE2BaseFood: OE2BaseItem {
+	Default {
+		Inventory.PickupMessage "Picked up a O&E II base food.";
+	}
+
+	States {
+	Spawn:
+		TNT1 A -1;
+		stop;
+	}
+} // of class OE2BaseFood: OE2BaseItem {

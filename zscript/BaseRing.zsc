@@ -1,0 +1,5 @@
+class OE2BaseRing: OE2BaseItem {
+	Default {
+		Inventory.PickupMessage "Picked up a O&E II base ring.";
+	}
+} // of class OE2BaseRing: OE2BaseItem {

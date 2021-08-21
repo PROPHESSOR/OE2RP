@@ -1,0 +1,11 @@
+class OE2BaseItem: CustomInventory {
+	Default {
+		Inventory.PickupMessage "Picked up a O&E II base item.";
+	}
+
+	States {
+	Spawn:
+		TNT1 A -1;
+		stop;
+	}
+} // of class OE2BaseItem: CustomInventory {
