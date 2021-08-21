@@ -1,9 +1,9 @@
-Actor OE2Picklock: OE2BaseItem 15200 {
+Actor OE2Picklock: OE2BaseItem {
 	Args 0 // Picklock level (0..3, last is inacessible in the game).
 }
 
-Actor OE2Tools: OE2BaseItem 15201 {
+Actor OE2Tools: OE2BaseItem {
 }
 
-Actor OE2CorruptingStone: OE2BaseItem 15202 {
+Actor OE2CorruptingStone: OE2BaseItem {
 }

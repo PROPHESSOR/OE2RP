@@ -1,5 +1,5 @@
-Actor OE2HealthPotion: OE2BasePotion 15100 {
+Actor OE2HealthPotion: OE2BasePotion {
 }
 
-Actor OE2LargeHealthPotion: OE2HealthPotion 15101 {
+Actor OE2LargeHealthPotion: OE2HealthPotion {
 }

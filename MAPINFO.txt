@@ -5,6 +5,10 @@
  * https://opensource.org/licenses/MIT
  */
 
+// DoomEdNums:
+include "DoomEdNums.txt"
+
+
 ClearEpisodes
 
 Cluster 1 {

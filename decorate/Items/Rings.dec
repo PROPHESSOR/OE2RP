@@ -1,25 +1,25 @@
 // Don't sure in rings logical structure.
 
-Actor OE2StrengthRing: OE2BaseRing 15120 {
+Actor OE2StrengthRing: OE2BaseRing {
 }
 
-Actor OE2AccuracyRing: OE2BaseRing 15121 {
+Actor OE2AccuracyRing: OE2BaseRing {
 }
 
-Actor OE2DefenceRing: OE2BaseRing 15122 {
+Actor OE2DefenceRing: OE2BaseRing {
 }
 
-Actor OE2RegenerationRing: OE2BaseRing 15123 {
+Actor OE2RegenerationRing: OE2BaseRing {
 }
 
-Actor OE2PowerRing: OE2BaseRing 15124 {
+Actor OE2PowerRing: OE2BaseRing {
 }
 
-Actor OE2PerseveranceRing: OE2BaseRing 15125 {
+Actor OE2PerseveranceRing: OE2BaseRing {
 }
 
-Actor OE2TerrorRing: OE2BaseRing 15126 {
+Actor OE2TerrorRing: OE2BaseRing {
 }
 
-Actor OE2SarbokRing: OE2BaseRing 15127 {
+Actor OE2SarbokRing: OE2BaseRing {
 }

@@ -1,8 +1,8 @@
-Actor OE2Dagger: OE2BaseWeapon 15002 {
+Actor OE2Dagger: OE2BaseWeapon {
 	// Called "Magic dagger" in doomwiki.org.
 	// Has a replacer weapon "OE2PoisonDagger".
 }
 
-Actor OE2PoisonDagger: OE2Dagger 15003 {
+Actor OE2PoisonDagger: OE2Dagger {
 	// Seems like sister weapon to the OE2Dagger.
 }

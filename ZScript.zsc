@@ -2,7 +2,8 @@ version "2.4.0"
 
 #include "zscript/Player.zsc"
 
+#include "zscript/BaseWeapon.zsc"
 #include "zscript/BaseItem.zsc"
 #include "zscript/BaseRing.zsc"
 #include "zscript/BasePotion.zsc"
-#include "zscript/BaseWeapon.zsc"
+#include "zscript/BaseFood.zsc"

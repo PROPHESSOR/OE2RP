@@ -1,8 +1,8 @@
-Actor OE2Armor: ArmorBonus 15210 {
+Actor OE2Armor: ArmorBonus {
 }
 
-Actor OE2LeatherArmor: OE2Armor 15211 {
+Actor OE2LeatherArmor: OE2Armor {
 }
 
-//Actor OE2...Armor: OE2Armor 15212 {
+//Actor OE2...Armor: OE2Armor {
 //}

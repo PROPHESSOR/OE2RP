@@ -1,0 +1,82 @@
+/**
+ * Copyright (c) 2021 OE2RP-Team
+ *
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+**
+
+ -- DoomEdNums legend --
+
+Items (15000-15299):
+	15000-15024 (25) : weapons;
+	15025-15049 (25) : armor;
+	15050-15074 (25) : food;
+	15075-15199 (25) : potions;
+	15100-15124 (25) : rings;
+	15125-15199 (75) : (not linked to any category yet);
+	15200-15299 (100): other items;
+
+Decorations (15300-15499):
+	15300-15399 (100): in-game decor;
+	15400-15449 (50) : (not linked to any category yet);
+	15450-15499 (50) : characters;
+
+Monsters (15500-15999):
+	15500-15999 (500):
+		15xxy, where:
+			"xx" is a monster's ID, and
+			"y" is a monster subtype.
+*/
+
+DoomEdNums {
+// Items (15000-15299):
+	15000 = OE2Bob
+	15001 = OE2Staff
+	15002 = OE2Dagger
+	15003 = OE2PoisonDagger
+	15004 = OE2Wand
+	15005 = OE2Sword
+	15006 = OE2ShrinkOrb
+	15007 = OE2MoldOrb
+	15008 = OE2FreezeOrb
+	15009 = OE2Crossbow
+	15010 = OE2KineticCrossbow
+
+	15025 = OE2Armor // ?
+	15026 = OE2LeatherArmor
+
+	15050 = OE2GnomeAle
+	15051 = OE2ElfWine
+	15052 = OE2Forage
+
+	15075 = OE2HealthPotion
+	15076 = OE2LargeHealthPotion
+	15077 = OE2StrengthPotion
+	15078 = OE2AccuracyPotion
+	15079 = OE2DefencePotion
+	15080 = OE2SpeedPotion
+	15081 = OE2DodgePotion
+	15082 = OE2AntidotePotion
+	15083 = OE2TrollBloodPotion
+	15084 = OE2HeroPotion
+
+	15100 = OE2StrengthRing
+	15101 = OE2AccuracyRing
+	15102 = OE2DefenceRing
+	15103 = OE2RegenerationRing
+	15104 = OE2PowerRing
+	15105 = OE2PerseveranceRing
+	15106 = OE2TerrorRing
+	15107 = OE2SarbokRing
+
+	15200 = OE2Picklock
+	15201 = OE2Tools
+	15202 = OE2CorruptingStone
+
+// Decorations (15300-15499):
+	// <...>
+
+// Monsters (15500-15999):
+	// <...>
+
+}

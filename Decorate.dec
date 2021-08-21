@@ -7,6 +7,8 @@
 #include "decorate/Weapons/Wand.dec"
 
 #include "decorate/Items/Rings.dec"
+#include "decorate/Items/Armor.dec"
+#include "decorate/Items/Food.dec"
 #include "decorate/Items/Other.dec"
 #include "decorate/Items/Potions/Health.dec"
 #include "decorate/Items/Potions/Stats.dec"

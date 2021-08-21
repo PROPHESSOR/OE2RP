@@ -1,8 +1,8 @@
-Actor OE2AntidotePotion: OE2BasePotion 15107 {
+Actor OE2AntidotePotion: OE2BasePotion {
 }
 
-Actor OE2TrollBloodPotion: OE2HealthPotion 15108 {
+Actor OE2TrollBloodPotion: OE2HealthPotion {
 }
 
-Actor OE2HeroPotion: OE2BasePotion 15109 {
+Actor OE2HeroPotion: OE2BasePotion {
 }

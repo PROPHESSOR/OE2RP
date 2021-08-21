@@ -1,8 +1,8 @@
-Actor OE2Crossbow: OE2BaseWeapon 15009 {
+Actor OE2Crossbow: OE2BaseWeapon {
 	// Called "Fire crossbow" in doomwiki.org.
 	// Has a replacer weapon "OE2KineticCrossbow".
 }
 
-Actor OE2KineticCrossbow: OE2Crossbow 15010 {
+Actor OE2KineticCrossbow: OE2Crossbow {
 	// Seems like sister weapon to the OE2Crossbow.
 }

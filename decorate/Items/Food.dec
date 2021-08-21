@@ -1,9 +1,9 @@
-Actor OE2GnomeAle: OE2BaseFood 15220 {
+Actor OE2GnomeAle: OE2BaseFood {
 }
 
-Actor OE2ElfWine: OE2BaseFood 15221 {
+Actor OE2ElfWine: OE2BaseFood {
 }
 
-Actor OE2Forage: OE2BaseFood 15222 {
+Actor OE2Forage: OE2BaseFood {
 }
 
