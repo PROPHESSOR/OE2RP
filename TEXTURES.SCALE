@@ -390,3 +390,9 @@ Texture "WALL54", 117, 117 {
     YScale 1.828125
     Patch "_WALL54", 0, 0
 }
+
+Texture "STEX851", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    Patch "_STEX851", 0, 0
+}
