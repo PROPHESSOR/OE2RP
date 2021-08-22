@@ -1,0 +1,9 @@
+Actor Shadow: OE2BaseMonster {
+}
+
+Actor Phantom: Shadow {
+}
+
+Actor Plenumbra: Shadow {
+}
+

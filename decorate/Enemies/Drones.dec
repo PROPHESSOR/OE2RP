@@ -1,0 +1,23 @@
+Actor VaettirDrone: OE2BaseMonster {
+}
+
+Actor Conjurer: VaettirDrone {
+}
+
+Actor Necromancer: VaettirDrone {
+}
+
+Actor Vaettir: VaettirDrone {
+}
+
+Actor Kazad: VaettirDrone {
+}
+
+Actor ShadowDrone: VaettirDrone {
+}
+
+Actor ShadowConjurer: ShadowDrone {
+}
+
+Actor ShadowNecromancer: ShadowDrone {
+}

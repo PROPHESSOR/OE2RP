@@ -1,0 +1,5 @@
+Actor Vareth: OE2BaseMonster {
+}
+
+Actor Dareth: Vareth {
+}

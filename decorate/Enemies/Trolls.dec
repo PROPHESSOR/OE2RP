@@ -1,0 +1,17 @@
+Actor Troll: OE2BaseMonster {
+}
+
+Actor Crusher: Troll {
+}
+
+Actor Shaker: Troll {
+}
+
+Actor ShadowTroll: Troll {
+}
+
+Actor ShadowCrusher: ShadowTroll {
+}
+
+Actor ShadowShaker: ShadowTroll {
+}

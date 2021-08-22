@@ -1,0 +1,24 @@
+Actor Ratling: OE2BaseMonster {
+}
+
+Actor Rat: Ratling {
+}
+
+Actor Prowler: Ratling {
+}
+
+Actor Wererat: Ratling {
+}
+
+Actor Topo: Ratling {
+}
+
+Actor ShadowRatling: Ratling {
+}
+
+Actor ShadowRat: ShadowRatling {
+}
+
+Actor ShadowProwler: ShadowRatling {
+}
+

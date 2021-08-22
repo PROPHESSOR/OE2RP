@@ -1,0 +1,17 @@
+Actor LiveOak: OE2BaseMonster {
+}
+
+Actor BloodOak: LiveOak {
+}
+
+Actor SawtoothOak: LiveOak {
+}
+
+Actor Oak: LiveOak {
+}
+
+Actor TreeOfDoom: LiveOak {
+}
+
+Actor ShadowOak: LiveOak {
+}

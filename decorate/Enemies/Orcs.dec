@@ -1,0 +1,14 @@
+Actor OrcRecruit: OE2BaseMonster {
+}
+
+Actor OrcRaider: OrcRecruit {
+}
+
+Actor OrcBerserker: OrcRecruit {
+}
+
+Actor ShadowOrc: OrcRecruit {
+}
+
+
+

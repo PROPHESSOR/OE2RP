@@ -10,5 +10,5 @@ Actor OE2DefencePotion: OE2BasePotion {
 Actor OE2SpeedPotion: OE2BasePotion {
 }
 
-Actor OE2DodgePotion: OE2BasePotion {
+Actor OE2AvoidancePotion: OE2BasePotion {
 }

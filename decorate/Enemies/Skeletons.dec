@@ -1,0 +1,11 @@
+Actor BrittleSkeleton: OE2BaseMonster {
+}
+
+Actor Skeleton: BrittleSkeleton {
+}
+
+Actor RagingSkeleton: BrittleSkeleton {
+}
+
+Actor ShadowSkeleton: BrittleSkeleton {
+}

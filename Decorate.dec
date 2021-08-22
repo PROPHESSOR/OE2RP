@@ -1,3 +1,17 @@
+
+#include "decorate/Enemies/Behemoths.dec"
+#include "decorate/Enemies/Dogs.dec"
+#include "decorate/Enemies/Drones.dec"
+#include "decorate/Enemies/Mimics.dec"
+#include "decorate/Enemies/Orcs.dec"
+#include "decorate/Enemies/Ratlings.dec"
+#include "decorate/Enemies/Shadows.dec"
+#include "decorate/Enemies/Skeletons.dec"
+#include "decorate/Enemies/Trees.dec"
+#include "decorate/Enemies/Trolls.dec"
+#include "decorate/Enemies/Vareths.dec"
+#include "decorate/Enemies/Wraiths.dec"
+
 #include "decorate/Weapons/Bob.dec"
 #include "decorate/Weapons/Crossbows.dec"
 #include "decorate/Weapons/Dagger.dec"

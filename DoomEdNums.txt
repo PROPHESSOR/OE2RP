@@ -55,7 +55,7 @@ DoomEdNums {
 	15078 = OE2AccuracyPotion
 	15079 = OE2DefencePotion
 	15080 = OE2SpeedPotion
-	15081 = OE2DodgePotion
+	15081 = OE2AvoidancePotion
 	15082 = OE2AntidotePotion
 	15083 = OE2TrollBloodPotion
 	15084 = OE2HeroPotion
@@ -78,5 +78,72 @@ DoomEdNums {
 
 // Monsters (15500-15999):
 	// <...>
+	15500 = OrcRecruit
+	15501 = OrcRaider
+	15502 = OrcBerserker
+	15503 = ShadowOrc
 
+	15510 = Ratling
+	15511 = Rat
+	15512 = Prowler
+	15513 = Wererat
+	15514 = Topo
+	15515 = ShadowRatling
+	15516 = ShadowRat
+	15517 = ShadowProwler
+
+	15520 = Mimic
+	15521 = CopperMimic
+	15522 = CobaltMimic
+
+	15530 = Behemoth
+	15531 = RedBehemoth
+	15532 = ShadowBehemoth
+
+	15540 = LiveOak
+	15541 = BloodOak
+	15542 = SawtoothOak
+	15543 = Oak
+	15544 = TreeOfDoom
+	15545 = ShadowOak
+
+	15550 = Shadow
+	15551 = Phantom
+	15552 = Plenumbra
+
+	15560 = WorgPup
+	15561 = Warhound
+	15562 = Cerebrus
+	15563 = Worg
+	15564 = ShadowPup
+	15565 = ShadowWarHound
+	15566 = ShadowCerebrus
+
+	15570 = Troll
+	15571 = Crusher
+	15572 = Shaker
+	15573 = ShadowTroll
+	15574 = ShadowCrusher
+	15575 = ShadowShaker
+
+	15580 = VaettirDrone
+	15581 = Conjurer
+	15582 = Necromancer
+	15583 = Vaettir
+	15584 = Kazad
+	15585 = ShadowDrone
+	15586 = ShadowConjurer
+	15587 = ShadowNecromancer
+
+	15590 = BrittleSkeleton
+	15591 = Skeleton
+	15592 = RagingSkeleton
+	15593 = ShadowSkeleton
+
+	15600 = Wraith
+	15601 = VoidWraith
+	15602 = DreadWraith
+
+	15610 = Vareth
+	15611 = Dareth
 }

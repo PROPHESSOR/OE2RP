@@ -1,0 +1,8 @@
+Actor Wraith: OE2BaseMonster {
+}
+
+Actor VoidWraith: Wraith {
+}
+
+Actor DreadWraith: Wraith {
+}

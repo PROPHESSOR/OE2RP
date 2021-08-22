@@ -1,0 +1,5 @@
+// Is it needed?
+
+class OE2BaseMonster: Actor {
+
+} // of class OE2BaseMonster: Actor {

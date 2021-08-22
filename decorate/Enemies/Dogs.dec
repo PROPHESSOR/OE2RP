@@ -1,0 +1,20 @@
+Actor WorgPup: OE2BaseMonster {
+}
+
+Actor Warhound: WorgPup {
+}
+
+Actor Cerebrus: WorgPup { // "Cerebus" in the class hierarchy.
+}
+
+Actor Worg: WorgPup {
+}
+
+Actor ShadowPup: WorgPup {
+}
+
+Actor ShadowWarHound: ShadowPup {
+}
+
+Actor ShadowCerebrus: ShadowPup { // "ShadowCerebus" in the class hierarchy.
+}
