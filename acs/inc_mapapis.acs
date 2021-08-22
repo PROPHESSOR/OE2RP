@@ -14,10 +14,10 @@ Script 3000 (int doorf, int doorb, bool nosound) { // Door Unlocker
     // if(!nosound) SectorSound("opensound", 255);
 
     SetLineTexture(doorf, SIDE_FRONT, TEXTURE_TOP, "WALL9");
-    SetLineSpecial(doorf, Door_Raise, 0, 16, 105);
+    SetLineSpecial(doorf, ACS_ExecuteAlways, 3002, 0);
     if(doorb != 0) {
         SetLineTexture(doorb, SIDE_FRONT, TEXTURE_TOP, "WALL9");
-        SetLineSpecial(doorb, Door_Raise, 0, 16, 105);
+        SetLineSpecial(doorb, ACS_ExecuteAlways, 3002, 0);
     }
 }
 
@@ -30,7 +30,7 @@ Script 3001 (void) { // Door Closed
 
 Script 3002 (int sectorid) { // Generic Door
     if(GetCVar("oe2rp_debug_mode")) Print(s:"[DEBUG]: Using correct Script 3002");
-    Door_Raise(sectorid, 16, 105);
+    Plat_DownWaitUpStayLip(sectorid, 128, 105, 0, 0);
 }
 
 Script 3003 (int sectorid) { // Secret Door
