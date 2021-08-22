@@ -1,0 +1,15 @@
+/**
+ * Copyright (c) 2021 OE2RP-Team
+ *
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+#include "zcommon.acs"
+
+const int SECONDS = 35; // Ticks per second
+
+// Useful functions
+
+
+#include "inc_mapapis.acs"

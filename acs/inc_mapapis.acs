@@ -1,0 +1,106 @@
+/**
+ * Copyright (c) 2021 OE2RP-Team
+ *
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+// Compile oe2rp.acs!
+
+// Map APIs 3000 - 3999
+
+Script 3000 (int doorf, int doorb, bool nosound) { // Door Unlocker
+    if(GetCVar("oe2rp_debug_mode")) Print(s:"[DEBUG]: Using correct Script 3000");
+    // if(!nosound) SectorSound("opensound", 255);
+
+    SetLineTexture(doorf, SIDE_FRONT, TEXTURE_TOP, "WALL9");
+    SetLineSpecial(doorf, Door_Raise, 0, 16, 105);
+    if(doorb != 0) {
+        SetLineTexture(doorb, SIDE_FRONT, TEXTURE_TOP, "WALL9");
+        SetLineSpecial(doorb, Door_Raise, 0, 16, 105);
+    }
+}
+
+Script 3001 (void) { // Door Closed
+    if(GetCVar("oe2rp_debug_mode")) Print(s:"[DEBUG]: Using correct Script 3001");
+    // ActivatorSound("closed", 255);
+    Print(l:"DRRP_D_DOORCLOSED");
+    Delay(34);
+}
+
+Script 3002 (int sectorid) { // Generic Door
+    if(GetCVar("oe2rp_debug_mode")) Print(s:"[DEBUG]: Using correct Script 3002");
+    Door_Raise(sectorid, 16, 105);
+}
+
+Script 3003 (int sectorid) { // Secret Door
+    if(GetCVar("oe2rp_debug_mode")) Print(s:"[DEBUG]: Using correct Script 3003");
+    Door_Open(sectorid, 128);
+}
+
+Script 3004 (void) { // Give Automap
+    if(GetCVar("oe2rp_debug_mode")) Print(s:"[DEBUG]: Using correct Script 3004");
+    GiveInventory("MapRevealer", 1);
+}
+
+Script 3005 (void) { // WIP Level
+    SetFont("bigfont");
+    Print(l:"OE2RP_D_WIPLEVEL");
+}
+
+Script 3006 (bool noline) { // Crash by staff or sword
+    if(GetCVar("oe2rp_debug_mode")) Print(s:"[DEBUG]: Using correct Script 3006");
+    if((ClassifyActor(0) & ACTOR_PLAYER) && (GetWeapon() == "OE2Staff" || GetWeapon() == "OE2Sword") && LineSide() == LINE_FRONT) {
+		ClearLineSpecial();
+        Radius_Quake2(0, 1, 17, 0, 128, "");
+        Delay(17);
+        // TODO: if (!noline) Remove line texture & blocking
+    }
+}
+
+Script 3007 (int doorf, int doorb) { // Door Locker
+    if(GetCVar("oe2rp_debug_mode")) Print(s:"[DEBUG]: Using correct Script 3000");
+
+    SetLineTexture(doorf, SIDE_FRONT, TEXTURE_TOP, "WALL10");
+    SetLineSpecial(doorf, ACS_Execute, 3001);
+
+    if(doorb != 0) {
+        SetLineTexture(doorb, SIDE_FRONT, TEXTURE_TOP, "WALL10");
+        SetLineSpecial(doorb, ACS_Execute, 3001);
+    }
+}
+
+Script 3008 (int time, int intensivity) { // Quake
+    if(GetCVar("oe2rp_debug_mode")) Print(s:"[DEBUG]: Using correct Script 3008");
+    if(intensivity <= 0) intensivity = 1;
+	if(time < 29) time = 29;
+
+    Radius_Quake(4 * intensivity, time / 29, 0, 1024, 0);
+}
+
+Script 3009 (void) { // Unused
+    if(GetCVar("oe2rp_debug_mode")) Print(s:"[DEBUG]: Script 3009 is UNUSED");
+}
+
+Script 3010 (void) { // Unused
+    if(GetCVar("oe2rp_debug_mode")) Print(s:"[DEBUG]: Script 3010 is UNUSED");
+}
+
+Script 3011 (fixed x, fixed y, int direction, bool fog) { // Teleport
+    if (fog) SpawnForced("TeleportFog", x, y, 0);
+    SetActorPosition(0, x, y, 0, 0);
+}
+
+Script 3012 (int id, int time) { // Show tip
+    if (!time) time = SECONDS * 7;
+
+    SetHudSize(640, 480, true);
+    //SetHUDClipRect(0, 0, 0, 0, 0);
+    //SetFont("M_WINDOW");
+    //HudMessage(s: "A"; HUDMSG_PLAIN, -10000, 0, 640.0, 10.1, 1);
+    SetFont("smallfont");
+    HudMessage(l: StrParam(s:"OE2RP_D_TIP_", i:id); HUDMSG_PLAIN, -100001, CR_YELLOW,
+               600.0, 10.1, 15.0, 0.5);
+    Delay(time);
+    HudMessage(s: ""; HUDMSG_PLAIN, -100001, 0, 0.5, 0.8, 1);
+}
