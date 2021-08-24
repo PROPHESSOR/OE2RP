@@ -1,0 +1,1 @@
+convert Epilogue.png -transparent white -crop 176x176 Epilogue_%02d.png
