@@ -25,6 +25,13 @@ Episode Caverns {
     Name     = "ORCS & ELVES II REMAKE PROJECT"
 }
 
+Map Intermission "Intermission" {
+    Music    = ""
+    SkyBox   = ""
+    LevelNum = 99
+    Cluster  = 1
+}
+
 Map Caverns "$OE2RP_CAVERNS_0" {
     Music    = ""
     SkyBox   = ""
