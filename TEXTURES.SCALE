@@ -391,8 +391,172 @@ Texture "WALL54", 117, 117 {
     Patch "_WALL54", 0, 0
 }
 
+// Decals
+
 Texture "STEX851", 117, 117 {
     XScale 1.375
     YScale 1.375
     Patch "_STEX851", 0, 0
 }
+
+// Torch
+
+
+Texture "STEX670", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX670", 42, 29
+}
+
+Texture "STEX671", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX671", 42, 29
+}
+
+Texture "STEX672", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX672", 42, 29
+}
+
+Texture "STEX674", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX674", 42, 29
+}
+
+// Torch 2
+
+Texture "STEX796", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX796", 40, 19
+}
+
+Texture "STEX797", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX797", 40, 19
+}
+
+Texture "STEX798", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX798", 40, 19
+}
+
+Texture "STEX799", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX799", 40, 19
+}
+
+Texture "STEX800", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX800", 40, 19
+}
+
+Texture "STEX596", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX596", 17, 16
+}
+
+Texture "STEX600", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX600", 1, 5
+}
+
+Texture "STEX603", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX603", 0, 8
+}
+
+Texture "STEX629", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX629", 8, 5
+}
+
+Texture "STEX560", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX560", 3, 3
+}
+
+Texture "STEX570", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX570", 16, 0
+}
+
+Texture "STEX654", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX654", 1, 1
+}
+
+Texture "STEX870", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX870", 0, 36
+}
+
+Texture "STEX903", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX903", 0, 0
+}
+
+Texture "STEX876", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX876", 0, 9
+}
+
+Texture "STEX710", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX710", 4, 6
+}
+
+Texture "STEX683", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX683", 19, 23
+}
+
+Texture "STEX687", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX687", 19, 23
+}
+
+Texture "STEX690", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX690", 0, 52
+}
+
+Texture "STEX693", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX693", 22, 23
+}
+
+Texture "STEX698", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX698", 22, 23
+}
+
+Texture "STEX762", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX762", 24, 41
+}
+
