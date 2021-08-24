@@ -8,7 +8,6 @@
 // DoomEdNums:
 include "DoomEdNums.txt"
 
-
 ClearEpisodes
 
 Cluster 1 {
@@ -31,6 +30,8 @@ Map Caverns "$OE2RP_CAVERNS_0" {
     LevelNum = 1
     Cluster  = 1
     Next     = "Dwarkar"
+    ENTERPIC = "$TRAVEL"
+    EXITPIC  = "$TRAVEL"
 }
 
 Map Dwarkar "$OE2RP_DWARKAR_0" {
