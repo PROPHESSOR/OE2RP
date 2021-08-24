@@ -408,13 +408,13 @@ Texture "STEX670", 117, 117 {
     Patch "_STEX670", 42, 29
 }
 
-Texture "STEX671", 117, 117 {
+Texture "STEX670B", 117, 117 {
     XScale 1.33
     YScale 1.33
     Patch "_STEX671", 42, 29
 }
 
-Texture "STEX672", 117, 117 {
+Texture "STEX670C", 117, 117 {
     XScale 1.33
     YScale 1.33
     Patch "_STEX672", 42, 29
@@ -434,19 +434,19 @@ Texture "STEX796", 117, 117 {
     Patch "_STEX796", 40, 19
 }
 
-Texture "STEX797", 117, 117 {
+Texture "STEX796B", 117, 117 {
     XScale 1.33
     YScale 1.33
     Patch "_STEX797", 40, 19
 }
 
-Texture "STEX798", 117, 117 {
+Texture "STEX796C", 117, 117 {
     XScale 1.33
     YScale 1.33
     Patch "_STEX798", 40, 19
 }
 
-Texture "STEX799", 117, 117 {
+Texture "STEX796D", 117, 117 {
     XScale 1.33
     YScale 1.33
     Patch "_STEX799", 40, 19

@@ -1,0 +1,17 @@
+/**
+ * Copyright (c) 2017-2021 DRRP-Team
+ *
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+Texture STEX670
+    Pic STEX670 Tics 3
+    Pic STEX670B Tics 3
+    Pic STEX670C Tics 3
+
+Texture STEX796
+    Pic STEX796 Tics 3
+    Pic STEX796B Tics 3
+    Pic STEX796C Tics 3
+    Pic STEX796D Tics 3
