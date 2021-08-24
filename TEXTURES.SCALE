@@ -399,65 +399,6 @@ Texture "STEX851", 117, 117 {
     Patch "_STEX851", 0, 0
 }
 
-// Torch
-
-
-Texture "STEX670", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX670", 42, 29
-}
-
-Texture "STEX670B", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX671", 42, 29
-}
-
-Texture "STEX670C", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX672", 42, 29
-}
-
-Texture "STEX674", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX674", 42, 29
-}
-
-// Torch 2
-
-Texture "STEX796", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX796", 40, 19
-}
-
-Texture "STEX796B", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX797", 40, 19
-}
-
-Texture "STEX796C", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX798", 40, 19
-}
-
-Texture "STEX796D", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX799", 40, 19
-}
-
-Texture "STEX800", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX800", 40, 19
-}
-
 Texture "STEX596", 117, 117 {
     XScale 1.33
     YScale 1.33
@@ -792,5 +733,59 @@ Texture "STEX931", 117, 117 {
     XScale 1.33
     YScale 1.33
     Patch "_STEX931", 0, 0
+}
+
+Texture "STEX670", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX670", 42, 29
+}
+
+Texture "STEX670B", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX671", 42, 29
+}
+
+Texture "STEX670C", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX672", 42, 29
+}
+
+Texture "STEX674", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX674", 42, 28
+}
+
+Texture "STEX796", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX796", 40, 19
+}
+
+Texture "STEX796B", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX797", 40, 19
+}
+
+Texture "STEX796C", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX798", 40, 19
+}
+
+Texture "STEX796D", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX799", 40, 19
+}
+
+Texture "STEX800", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX800", 40, 19
 }
 
