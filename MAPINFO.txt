@@ -74,3 +74,8 @@ Map Darkfel "$OE2RP_DARKFEL_0" {
     LevelNum = 7
     Cluster  = 1
 }
+
+Map TestMonsters "Test Monsters" {
+    Music    = ""
+    SkyBox   = "FLAT023"
+}
