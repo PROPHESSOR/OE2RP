@@ -560,3 +560,237 @@ Texture "STEX762", 117, 117 {
     Patch "_STEX762", 24, 41
 }
 
+Texture "STEX566", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX566", 4, 4
+}
+
+Texture "STEX577", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX577", 0, 0
+}
+
+Texture "STEX581", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX581", 0, 0
+}
+
+Texture "STEX583", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX583", 0, 0
+}
+
+Texture "STEX587", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX587", 1, 0
+}
+
+Texture "STEX701", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX701", 0, 0
+}
+
+Texture "STEX715", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX715", 0, 0
+}
+
+Texture "STEX719", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX719", 4, 4
+}
+
+Texture "STEX721", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX721", 17, 0
+}
+
+Texture "STEX733", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX733", 0, 0
+}
+
+Texture "STEX739", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX739", 0, 7
+}
+
+Texture "STEX747", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX747", 0, 0
+}
+
+Texture "STEX750", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX750", 4, 1
+}
+
+Texture "STEX757", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX757", 0, 0
+}
+
+Texture "STEX766", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX766", 31, 31
+}
+
+Texture "STEX769", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX769", 31, 31
+}
+
+Texture "STEX773", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX773", 10, 24
+}
+
+Texture "STEX778", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX778", 0, 9
+}
+
+Texture "STEX782", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX782", 0, 0
+}
+
+Texture "STEX786", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX786", 0, 0
+}
+
+Texture "STEX790", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX790", 0, 0
+}
+
+Texture "STEX794", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX794", 30, 29
+}
+
+Texture "STEX803", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX803", 21, 1
+}
+
+Texture "STEX808", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX808", 0, 0
+}
+
+Texture "STEX814", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX814", 1, 0
+}
+
+Texture "STEX818", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX818", 0, 0
+}
+
+Texture "STEX824", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX824", 0, 0
+}
+
+Texture "STEX856", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX856", 0, 0
+}
+
+Texture "STEX857", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX857", 0, 0
+}
+
+Texture "STEX863", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX863", 39, 17
+}
+
+Texture "STEX879", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX879", 0, 19
+}
+
+Texture "STEX884", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX884", 0, 5
+}
+
+Texture "STEX888", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX888", 0, 0
+}
+
+Texture "STEX892", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX892", 0, 0
+}
+
+Texture "STEX894", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX894", 0, 0
+}
+
+Texture "STEX912", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX912", 0, 0
+}
+
+Texture "STEX915", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX915", 16, 13
+}
+
+Texture "STEX928", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX928", 0, 0
+}
+
+Texture "STEX931", 117, 117 {
+    XScale 1.33
+    YScale 1.33
+    Patch "_STEX931", 0, 0
+}
+
