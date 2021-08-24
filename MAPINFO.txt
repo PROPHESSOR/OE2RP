@@ -15,6 +15,11 @@ Cluster 1 {
     Hub
 }
 
+Map TITLEMAP "Introduction" {
+    Music    = ""
+    SkyBox   = "FLAT023"
+}
+
 Episode Caverns {
     NoSkillMenu
     Name     = "ORCS & ELVES II REMAKE PROJECT"
