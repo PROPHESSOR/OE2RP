@@ -7,15 +7,17 @@
  * node generateDecalDeclaration.js <sprite id> <width> <height> >> ../TEXTURES.SCALE
  */
 
-const BIG_TEX_SIZE = 117;
-const BTS2 = BIG_TEX_SIZE / 2;
-const SPRITE_SIZE = 88;
-const SCALE = Number((BIG_TEX_SIZE / SPRITE_SIZE).toFixed(2));
+const TEX_SIZE = 117; // Wall texture size
+const BTS2 = TEX_SIZE / 2; // divide by 2
+const SPRITE_SIZE = 88; // Sprite full size
+const SCALE = Number((TEX_SIZE / SPRITE_SIZE).toFixed(2)); // Scale sprite to texture size
 
-const gen = (spriteid, width, height) => `Texture "STEX${spriteid}", ${BIG_TEX_SIZE}, ${BIG_TEX_SIZE} {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX${spriteid}", ${(BTS2 - (width * 1.33) / 2).toFixed(0)}, ${(BTS2 - (height * SCALE) / 2).toFixed(0)}
+const { round } = Math;
+
+const gen = (id, width, height) => `Texture "STEX${id}", ${TEX_SIZE}, ${TEX_SIZE} {
+    XScale ${SCALE}
+    YScale ${SCALE}
+    Patch "_STEX${id}", ${round(BTS2 - width * SCALE / 2)}, ${round(BTS2 - height * SCALE / 2)}
 }
 `;
 
