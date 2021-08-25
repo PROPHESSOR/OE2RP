@@ -27,3 +27,7 @@
 #include "decorate/Items/Potions/Health.dec"
 #include "decorate/Items/Potions/Stats.dec"
 #include "decorate/Items/Potions/Other.dec"
+
+#include "decorate/Decorations/PureDecor.dec"
+#include "decorate/Decorations/DynamicDecor.dec"
+#include "decorate/Decorations/TradePointDecor.dec"

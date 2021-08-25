@@ -1,0 +1,29 @@
+Actor OE2TunicDecoration: BaseDecoration {
+}
+
+Actor OE2SouvenirTunicDecoration: BaseDecoration {
+}
+
+Actor OE2GlassDecoration: BaseDecoration {
+}
+
+Actor OE2WineGlassDecoration: BaseDecoration {
+}
+
+Actor OE2KeyRingDecoration: BaseDecoration {
+}
+
+Actor OE2MedallionDecoration: BaseDecoration {
+}
+
+Actor OE2CopperMedallionDecoration: BaseDecoration {
+}
+
+Actor OE2GamePiecesDecoration: BaseDecoration {
+}
+
+Actor OE2ShotGlassDecoration: BaseDecoration {
+}
+
+Actor OE2ToyArcherySetDecoration: BaseDecoration {
+}

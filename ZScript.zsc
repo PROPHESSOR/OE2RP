@@ -9,5 +9,6 @@ version "2.4.0"
 #include "zscript/Items/BaseFood.zsc"
 
 #include "zscript/Decorations/BaseCharacter.zsc"
+#include "zscript/Decorations/BaseDecor.zsc"
 
 #include "zscript/BaseMonster.zsc"
