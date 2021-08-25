@@ -27,6 +27,7 @@
 #include "decorate/Items/Potions/Stats.dec"
 #include "decorate/Items/Potions/Other.dec"
 
+#include "decorate/Characters/CommonCharacters.dec"
 #include "decorate/Entities/PureDecor.dec"
 #include "decorate/Entities/Entities.dec"
 #include "decorate/Entities/JunkTradePointDecor.dec"

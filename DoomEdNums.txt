@@ -106,10 +106,10 @@ DoomEdNums {
 	15338 = OE2ShotGlassDecoration
 	15339 = OE2ToyArcherySetDecoration
 
-	//15450 = OE2Dwarf
-	//15451 = OE2Sarbok
-	//15452 = OE2DwarvenGuard
-	//15453 = OE2Elf
+	15450 = OE2Dwarf
+	15451 = OE2Sarbok
+	15452 = OE2DwarvenGuard
+	15453 = OE2Elf
 
 // Monsters (15500-15999):
 	15500 = OrcRecruit

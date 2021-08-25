@@ -1,0 +1,9 @@
+class BaseCharacter: BaseDecoration abstract {
+	Default {
+		+SOLID;
+	}
+
+	action void A_OE2RP_DoDialogue( int characterNum, int replicaNum ) {
+		//CallACS( "CharacterDialogue", characterNum, replicaNum, AAPTR_GET_CONVERSATION );
+	}
+} // of class BaseCharacter: BaseDecoration abstract {

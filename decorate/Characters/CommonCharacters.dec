@@ -1,0 +1,12 @@
+Actor OE2Dwarf: BaseCharacter {
+}
+
+Actor OE2Sarbok: BaseCharacter {
+}
+
+Actor OE2DwarvenGuard: BaseCharacter {
+}
+
+Actor OE2Elf: BaseCharacter {
+}
+
