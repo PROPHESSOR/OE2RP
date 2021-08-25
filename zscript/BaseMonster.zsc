@@ -3,5 +3,7 @@
 class OE2BaseMonster: Actor {
 	Default {
 		Scale 0.547;
+		Height 64;
+		Radius 24;
 	}
 } // of class OE2BaseMonster: Actor {

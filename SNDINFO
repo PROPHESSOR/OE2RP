@@ -1,0 +1,140 @@
+// Weapons:
+weapons/crossbow/attack "sounds/Weapons/Weapon_Crossbow_Flyby.ogg"
+weapons/dagger/hit "sounds/Weapons/Weapon_Dagger_Flesh.ogg"
+weapons/dagger/swing "sounds/Weapons/Weapon_Dagger_Swing.ogg"
+weapons/familiar/go "sounds/Weapons/Weapon_Familiar.ogg"
+weapons/familiar/tired "sounds/Weapons/Weapon_Familiar_Tired.ogg"
+weapons/flamesword/hit "sounds/Weapons/Weapon_Flame_Flesh.ogg"
+weapons/flamesword/metalhit "sounds/Weapons/Weapon_Flame_Metal.ogg"
+weapons/flamesword/swing "sounds/Weapons/Weapon_Flame_Swing.ogg"
+weapons/flamesword/woodhit "sounds/Weapons/Weapon_Flame_Wood.ogg"
+weapons/orbs/freeze "sounds/Weapons/Weapon_Orb_Freeze.ogg"
+weapons/orbs/mold "sounds/Weapons/Weapon_Orb_Mold.ogg"
+weapons/orbs/shrink "sounds/Weapons/Weapon_Orb_Shrink.ogg"
+weapons/staff/hit "sounds/Weapons/Weapon_Staff_Flesh.ogg"
+weapons/staff/woodhit "sounds/Weapons/Weapon_Staff_Wood.ogg"
+weapons/sword/metalhit "sounds/Weapons/Weapon_Sword_Metal.ogg"
+weapons/sword/swing "sounds/Weapons/Weapon_Sword_Swing.ogg"
+weapons/sword/woodhit "sounds/Weapons/Weapon_Sword_Wood.ogg"
+weapons/wand/attack "sounds/Weapons/Weapon_Wand_Attack.ogg"
+
+/* // Unsorted yet:
+Dialog_Help.ogg
+Dialog_Popup.ogg
+Dialog_Wandpopup.ogg
+Door_Close.ogg
+Door_Locked.ogg
+Door_Open.ogg
+Door_Unlocked.ogg
+Gib_Bone.ogg
+Gib.ogg
+Gib_Stone.ogg
+Gib_Wood.ogg
+Misc_Buff_Expiring.ogg
+Misc_Chest.ogg
+Misc_Coins.ogg
+Misc_Force.ogg
+Misc_Lockpick_Neg.ogg
+Misc_Lockpick_Pos.ogg
+Misc_Negative.ogg
+Misc_Raise.ogg
+Misc_Rumble.ogg
+Misc_Scroll.ogg
+Misc_Switch.ogg
+Misc_Wardrums1.ogg
+Pickup_Ale.ogg
+Pickup_Food.ogg
+Pickup_Item.ogg
+Pickup_Potion.ogg
+Player_Death.ogg
+Player_Pain.ogg
+Sconce_Off.ogg
+Use_Ale.ogg
+Use_Item.ogg
+
+sounds2.mid
+sounds3.mid
+sounds4.mid
+sounds5.mid
+sounds6.mid
+sounds7.mid
+sounds8.mid
+sounds9.mid
+*/
+
+// Monsters:
+monsters/highpitch/attack "sounds/Monsters/Monster_HighPitch_Attack.ogg"
+monsters/highpitch/death "sounds/Monsters/Monster_HighPitch_Death.ogg"
+monsters/highpitch/active "sounds/Monsters/Monster_HighPitch_Idle.ogg"
+monsters/highpitch/pain "sounds/Monsters/Monster_HighPitch_Pain.ogg"
+
+monsters/mimic/attack "sounds/Monsters/Monster_Mimic_Attack.ogg"
+
+monsters/orc/sight "sounds/Monsters/Monster_Orc_Alert.ogg"
+monsters/orc/attack "sounds/Monsters/Monster_Orc_Attack.ogg"
+monsters/orc/death "sounds/Monsters/Monster_Orc_Death.ogg"
+monsters/orc/active "sounds/Monsters/Monster_Orc_Idle.ogg"
+monsters/orc/pain "sounds/Monsters/Monster_Orc_Pain.ogg"
+
+monsters/shadow/alert "sounds/Monsters/Monster_Shadow_Alert.ogg"
+monsters/shadow/attack "sounds/Monsters/Monster_Shadow_Attack.ogg"
+monsters/shadow/death "sounds/Monsters/Monster_Shadow_Death.ogg"
+monsters/shadow/active "sounds/Monsters/Monster_Shadow_Idle.ogg"
+monsters/shadow/pain "sounds/Monsters/Monster_Shadow_Pain.ogg"
+
+monsters/skeleton/sight "sounds/Monsters/Monster_Skeleton_Alert.ogg"
+monsters/skeleton/attack "sounds/Monsters/Monster_Skeleton_Attack.ogg"
+monsters/skeleton/death "sounds/Monsters/Monster_Skeleton_Death.ogg"
+monsters/skeleton/active "sounds/Monsters/Monster_Skeleton_Idle.ogg"
+monsters/skeleton/pain "sounds/Monsters/Monster_Skeleton_Pain.ogg"
+
+monsters/tree/sight "sounds/Monsters/Monster_Tree_Alert.ogg"
+monsters/tree/attack "sounds/Monsters/Monster_Tree_Attack.ogg"
+monsters/tree/death "sounds/Monsters/Monster_Tree_Death.ogg"
+monsters/tree/pain "sounds/Monsters/Monster_Tree_Pain.ogg"
+
+monsters/troll/sight "sounds/Monsters/Monster_Troll_Alert.ogg"
+$random monsters/troll/attack { monsters/troll/attack1 monsters/troll/attack2 }
+monsters/troll/attack1 "sounds/Monsters/Monster_Troll_Attack1.ogg"
+monsters/troll/attack2 "sounds/Monsters/Monster_Troll_Attack2.ogg"
+monsters/troll/death "sounds/Monsters/Monster_Troll_Death.ogg"
+monsters/troll/active "sounds/Monsters/Monster_Troll_Idle.ogg"
+monsters/troll/pain "sounds/Monsters/Monster_Troll_Pain.ogg"
+
+monsters/turned/sight "sounds/Monsters/Monster_Turned_Alert.ogg"
+monsters/turned/attack "sounds/Monsters/Monster_Turned_Attack.ogg"
+monsters/turned/death "sounds/Monsters/Monster_Turned_Death.ogg"
+monsters/turned/active "sounds/Monsters/Monster_Turned_Idle.ogg"
+monsters/turned/pain "sounds/Monsters/Monster_Turned_Pain.ogg"
+
+monsters/wererat/sight "sounds/Monsters/Monster_Wererat_Alert.ogg"
+monsters/wererat/attack "sounds/Monsters/Monster_Wererat_Attack.ogg"
+monsters/wererat/death "sounds/Monsters/Monster_Wererat_Death.ogg"
+monsters/wererat/pain "sounds/Monsters/Monster_Wererat_Pain.ogg"
+
+monsters/worg/sight "sounds/Monsters/Monster_Worg_Alert.ogg"
+monsters/worg/attack "sounds/Monsters/Monster_Worg_Attack.ogg"
+monsters/worg/death "sounds/Monsters/Monster_Worg_Death.ogg"
+monsters/worg/active "sounds/Monsters/Monster_Worg_Idle.ogg"
+monsters/worg/pain "sounds/Monsters/Monster_Worg_Pain.ogg"
+
+monsters/wraith/sight "sounds/Monsters/Monster_Wraith_Alert.ogg"
+$random monsters/wraith/attack { monsters/wraith/attack1 monsters/wraith/attack2 }
+monsters/wraith/attack1 "sounds/Monsters/Monster_Wraith_Attack1.ogg"
+monsters/wraith/attack2 "sounds/Monsters/Monster_Wraith_Attack2.ogg"
+monsters/wraith/death "sounds/Monsters/Monster_Wraith_Death.ogg"
+monsters/wraith/active "sounds/Monsters/Monster_Wraith_Idle.ogg"
+monsters/wraith/pain "sounds/Monsters/Monster_Wraith_Pain.ogg"
+
+// Bosses:
+$random monsters/wizboss/attack { monsters/wizboss/attack1 monsters/wizboss/attack2 }
+monsters/wizboss/attack1 "sounds/Monsters/Monster_Boss_Wizard_Attack1.ogg"
+monsters/wizboss/attack2 "sounds/Monsters/Monster_Boss_Wizard_Attack2.ogg"
+monsters/wizboss/death "sounds/Monsters/Monster_Boss_Wizard_Death.ogg"
+monsters/wizboss/active "sounds/Monsters/Monster_Boss_Wizard_Idle.ogg"
+monsters/wizboss/pain "sounds/Monsters/Monster_Boss_Wizard_Pain.ogg"
+
+monsters/drowboss/sight "sounds/Monsters/Monster_Boss_Drow_Laugh.ogg"
+monsters/drowboss/attack "sounds/Monsters/Monster_Drow_Attack.ogg"
+monsters/drowboss/death "sounds/Monsters/Monster_Drow_Death.ogg"
+monsters/drowboss/pain "sounds/Monsters/Monster_Drow_Pain.ogg"
