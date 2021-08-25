@@ -117,16 +117,16 @@ DoomEdNums {
 	15502 = OrcBerserker
 	15503 = ShadowOrc
 
-	15510 = Ratling
+	//15510 = Ratling
 	15511 = Rat
 	15512 = Prowler
-	15513 = Wererat
+	//15513 = Wererat
 	15514 = Topo
 	15515 = ShadowRatling
 	15516 = ShadowRat
 	15517 = ShadowProwler
 
-	15520 = Mimic
+	//15520 = Mimic
 	15521 = CopperMimic
 	15522 = CobaltMimic
 
@@ -148,7 +148,7 @@ DoomEdNums {
 	15560 = WorgPup
 	15561 = Warhound
 	15562 = Cerebrus
-	15563 = Worg
+	//15563 = Worg
 	15564 = ShadowPup
 	15565 = ShadowWarHound
 	15566 = ShadowCerebrus
@@ -160,7 +160,7 @@ DoomEdNums {
 	15574 = ShadowCrusher
 	15575 = ShadowShaker
 
-	15580 = VaettirDrone
+	//15580 = VaettirDrone
 	15581 = Conjurer
 	15582 = Necromancer
 	15583 = Vaettir
