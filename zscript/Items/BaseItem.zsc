@@ -1,6 +1,7 @@
 class OE2BaseItem: CustomInventory {
 	Default {
 		Inventory.PickupMessage "Picked up a O&E II base item.";
+		Scale 0.547;
 	}
 
 	States {

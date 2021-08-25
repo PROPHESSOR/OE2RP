@@ -1,5 +1,7 @@
 // Is it needed?
 
 class OE2BaseMonster: Actor {
-
+	Default {
+		Scale 0.547;
+	}
 } // of class OE2BaseMonster: Actor {

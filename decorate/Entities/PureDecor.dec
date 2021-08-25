@@ -1,0 +1,46 @@
+Actor OE2PedestalDecoration: BaseDecoration {
+	+SOLID
+}
+
+Actor OE2TombstomeDecoration: OE2PedestalDecoration {
+	States {
+	Spawn:
+		TOMB A -1
+		Stop
+	}
+}
+
+Actor OE2ChairDecoration: OE2PedestalDecoration {
+	States {
+	Spawn:
+		CHAI R -1
+		Stop
+	}
+}
+
+Actor OE2RubblePileDecoration: OE2PedestalDecoration {
+}
+
+Actor OE2DwarfStatueDecoration: OE2PedestalDecoration {
+	States {
+	Spawn:
+		S_DW A -1
+		Stop
+	}
+}
+
+Actor OE2WereratStatueDecoration: OE2PedestalDecoration {
+	States {
+	Spawn:
+		S_WR AB 17
+		Loop
+	}
+}
+
+Actor OE2FireTorchDecoration: OE2PedestalDecoration {
+	States {
+	Spawn:
+		TRCH ABCD 3 Bright
+		Loop
+	}
+}

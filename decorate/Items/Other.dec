@@ -1,5 +1,6 @@
 Actor OE2Picklock: OE2BaseItem {
 	Args 0 // Picklock level (0..3, last is inacessible in the game).
+	// [McM]: Is it better to inherit picklock from standart Doom key?
 }
 
 Actor OE2Tools: OE2BaseItem {

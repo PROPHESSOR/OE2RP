@@ -16,7 +16,7 @@ Items (15000-15299):
 	15125-15199 (75) : (not linked to any category yet);
 	15200-15299 (100): other items;
 
-Decorations (15300-15499):
+Entities (15300-15499):
 	15300-15399 (100): in-game decor;
 	15400-15449 (50) : (not linked to any category yet);
 	15450-15499 (50) : characters;
@@ -73,11 +73,45 @@ DoomEdNums {
 	15201 = OE2Tools
 	15202 = OE2CorruptingStone
 
-// Decorations (15300-15499):
-	// <...>
+// Entities (15300-15499):
+	15300 = OE2Fire
+	15301 = OE2MoveableBoulder
+	15302 = OE2LockedChest
+	15303 = OE2TreasureChest
+	15304 = OE2SmallTent
+	15305 = OE2Familiar
+
+	15310 = OE2PedestalDecoration
+	15311 = OE2TombstomeDecoration
+	15312 = OE2ChairDecoration
+	15313 = OE2RubblePileDecoration
+	15314 = OE2DwarfStatueDecoration
+	15315 = OE2WereratStatueDecoration
+	15316 = OE2FireTorchDecoration
+
+	15320 = OE2Tree1Decoration
+	15321 = OE2Tree2Decoration
+	15322 = OE2Tree3Decoration
+	15323 = OE2Tree4Decoration
+	15324 = OE2Tree5Decoration
+
+	15330 = OE2TunicDecoration
+	15331 = OE2SouvenirTunicDecoration
+	15332 = OE2GlassDecoration
+	15333 = OE2WineGlassDecoration
+	15334 = OE2KeyRingDecoration
+	15335 = OE2MedallionDecoration
+	15336 = OE2CopperMedallionDecoration
+	15337 = OE2GamePiecesDecoration
+	15338 = OE2ShotGlassDecoration
+	15339 = OE2ToyArcherySetDecoration
+
+	//15450 = OE2Dwarf
+	//15451 = OE2Sarbok
+	//15452 = OE2DwarvenGuard
+	//15453 = OE2Elf
 
 // Monsters (15500-15999):
-	// <...>
 	15500 = OrcRecruit
 	15501 = OrcRaider
 	15502 = OrcBerserker

@@ -1,0 +1,57 @@
+Actor OE2Fire: BaseDecoration {
+	States {
+	Spawn:
+		FIRE ABCD 3 Bright
+		Loop
+	}
+}
+
+Actor OE2MoveableBoulder: BaseDecoration {
+	+SOLID
+
+	States {
+	Spawn:
+		BLDR A -1
+		Stop
+	}
+}
+
+Actor OE2LockedChest: BaseDecoration {
+	+SOLID
+
+	States {
+	Spawn:
+		CHST A -1
+		Stop
+	}
+}
+
+Actor OE2TreasureChest: OE2LockedChest {
+	+SOLID
+
+	States {
+	Spawn:
+		CHST C -1
+		Stop
+	}
+}
+
+Actor OE2SmallTent: BaseDecoration {
+	Health 20
+	+SOLID
+	+SHOOTABLE
+
+	States {
+	Spawn:
+		TENT A -1
+		Stop
+	Death:
+		TENT B -1
+		Stop
+	}
+}
+
+// Here?
+
+Actor OE2Familiar: BaseDecoration {
+}

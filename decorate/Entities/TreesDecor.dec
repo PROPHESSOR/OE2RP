@@ -1,0 +1,39 @@
+Actor OE2Tree1Decoration: BaseDecoration {
+	States {
+	Spawn:
+		TREE A -1
+		Stop
+	}
+}
+
+Actor OE2Tree2Decoration: BaseDecoration {
+	States {
+	Spawn:
+		TREE B -1
+		Stop
+	}
+}
+
+Actor OE2Tree3Decoration: BaseDecoration {
+	States {
+	Spawn:
+		TREE C -1
+		Stop
+	}
+}
+
+Actor OE2Tree4Decoration: BaseDecoration {
+	States {
+	Spawn:
+		TREE D -1
+		Stop
+	}
+}
+
+Actor OE2Tree5Decoration: BaseDecoration {
+	States {
+	Spawn:
+		TREE E -1
+		Stop
+	}
+}

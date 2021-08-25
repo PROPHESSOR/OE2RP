@@ -7,3 +7,23 @@ Actor OE2ElfWine: OE2BaseFood {
 Actor OE2Forage: OE2BaseFood {
 }
 
+Actor OE2RoastedMeat: Health {
+	Inventory.PickupMessage "$OE2RP_E_ROASTEDMEAT"
+	Inventory.Amount 10
+
+	States {
+	Spawn:
+		MEAT BCDE 4 Bright
+		Loop
+	}
+}
+
+Actor OE2HunkOfMeat: OE2RoastedMeat {
+	Inventory.PickupMessage "$OE2RP_E_HUNKOFMEAT"
+
+	States {
+	Spawn:
+		MEAT A -1
+		Stop
+	}
+}

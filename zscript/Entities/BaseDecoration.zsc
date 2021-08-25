@@ -1,0 +1,16 @@
+class BaseDecoration: Actor abstract {
+	Default {
+		Radius 32; // One O&E2 tile.
+		Height 64;
+		-SOLID;
+		-SHOOTABLE;
+		Scale 0.547;
+	}
+
+	States {
+	Spawn:
+		CYBR F 5 Bright;
+		CYBR F 5;
+		loop;
+	}
+} // of class BaseDecoration: Actor abstract {
