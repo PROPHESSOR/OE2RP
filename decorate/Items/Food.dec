@@ -1,23 +1,20 @@
-Actor OE2GnomeAle: OE2BaseFood {
+Actor OE2GnomeAle: OE2BaseItem {
 }
 
-Actor OE2ElfWine: OE2BaseFood {
+Actor OE2ElfWine: OE2BaseItem {
 }
 
-Actor OE2Forage: OE2BaseFood {
+Actor OE2Forage: OE2BaseItem {
 }
 
-Actor OE2ElfBerries: OE2BaseFood {
-}
 
-Actor OE2RoastedMeat: Health {
+Actor OE2RoastedMeat: OE2BaseFood {
 	Inventory.PickupMessage "$OE2RP_E_ROASTEDMEAT"
 	Inventory.Amount 10
-	Scale 0.547
 
 	States {
 	Spawn:
-		MEAT BCDE 3 Bright
+		MEAT BCDE 4 Bright
 		Loop
 	}
 }

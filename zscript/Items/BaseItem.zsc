@@ -1,12 +1,15 @@
 class OE2BaseItem: CustomInventory {
 	Default {
+		Height 32;
+		Radius 32;
 		Inventory.PickupMessage "Picked up a O&E II base item.";
 		Scale 0.547;
 	}
 
 	States {
 	Spawn:
-		SPID F -1;
-		stop;
+		SPID F 5 Bright;
+		SPID F 5;
+		loop;
 	}
 } // of class OE2BaseItem: CustomInventory {

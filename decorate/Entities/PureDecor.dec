@@ -7,6 +7,23 @@ Actor OE2SkeletonBones: BaseDecoration {
 	}
 }
 
+Actor OE2EmptyBrazier: BaseDecoration {
+	States {
+	Spawn:
+		BBQQ A -1
+		Stop
+	}
+}
+
+Actor OE2BrazierWithMeat: OE2EmptyBrazier {
+	States {
+	Spawn:
+		BBQQ A 0
+		BBQQ A 0 A_SpawnItem( "OE2RoastedMeat" )
+		Goto Super::Spawn
+	}
+}
+
 
 // Solid:
 Actor OE2Pedestal: BaseDecoration {
@@ -72,14 +89,6 @@ Actor OE2FireTorch: OE2Pedestal {
 	}
 }
 
-Actor OE2Brazier: OE2Pedestal {
-	States {
-	Spawn:
-		BBQQ A -1
-		Stop
-	}
-}
-
 Actor OE2CageWithSkeleton: OE2Pedestal {
 	States {
 	Spawn:
@@ -95,4 +104,7 @@ Actor OE2CageHook: OE2Pedestal {
 		CGSK B -1
 		Stop
 	}
+}
+
+Actor OE2ElfBerries: OE2Pedestal {
 }
