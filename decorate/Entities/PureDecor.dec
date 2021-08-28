@@ -26,11 +26,15 @@ Actor OE2BrazierWithMeat: OE2EmptyBrazier {
 
 
 // Solid:
-Actor OE2Pedestal: BaseDecoration {
-	+SOLID
+Actor OE2SolidDecoration: BaseDecoration {
+    +SOLID
 }
 
-Actor OE2Tombstone: OE2Pedestal {
+
+Actor OE2Pedestal: OE2SolidDecoration {
+}
+
+Actor OE2Tombstone: OE2SolidDecoration {
 	States {
 	Spawn:
 		TOMB A -1
@@ -38,7 +42,7 @@ Actor OE2Tombstone: OE2Pedestal {
 	}
 }
 
-Actor OE2Chair: OE2Pedestal {
+Actor OE2Chair: OE2SolidDecoration {
 	States {
 	Spawn:
 		CHAI R -1
@@ -46,7 +50,7 @@ Actor OE2Chair: OE2Pedestal {
 	}
 }
 
-Actor OE2Table: OE2Pedestal {
+Actor OE2Table: OE2SolidDecoration {
 	States {
 	Spawn:
 		TABL E -1
@@ -54,7 +58,7 @@ Actor OE2Table: OE2Pedestal {
 	}
 }
 
-Actor OE2Vase: OE2Pedestal {
+Actor OE2Vase: OE2SolidDecoration {
 	States {
 	Spawn:
 		VASE A -1
@@ -62,10 +66,15 @@ Actor OE2Vase: OE2Pedestal {
 	}
 }
 
-Actor OE2RubblePile: OE2Pedestal {
+Actor OE2RubblePile: OE2SolidDecoration {
+    States {
+    Spawn:
+        BARR A -1
+        Stop
+    }
 }
 
-Actor OE2DwarfStatue: OE2Pedestal {
+Actor OE2DwarfStatue: OE2SolidDecoration {
 	States {
 	Spawn:
 		S_DW A -1
@@ -73,7 +82,7 @@ Actor OE2DwarfStatue: OE2Pedestal {
 	}
 }
 
-Actor OE2WereratStatue: OE2Pedestal {
+Actor OE2WereratStatue: OE2SolidDecoration {
 	States {
 	Spawn:
 		S_WR AB 29
@@ -81,7 +90,7 @@ Actor OE2WereratStatue: OE2Pedestal {
 	}
 }
 
-Actor OE2FireTorch: OE2Pedestal {
+Actor OE2FireTorch: OE2SolidDecoration {
 	States {
 	Spawn:
 		TRCH ABCD 3 Bright
@@ -89,7 +98,7 @@ Actor OE2FireTorch: OE2Pedestal {
 	}
 }
 
-Actor OE2CageWithSkeleton: OE2Pedestal {
+Actor OE2CageWithSkeleton: OE2SolidDecoration {
 	States {
 	Spawn:
 		CGSK A -1
@@ -97,8 +106,8 @@ Actor OE2CageWithSkeleton: OE2Pedestal {
 	}
 }
 
-Actor OE2CageHook: OE2Pedestal {
-	// Must this actor be solid?
+Actor OE2CageHook: BaseDecoration {
+	// Must this actor be solid? <PROPHESSOR> NO.
 	States {
 	Spawn:
 		CGSK B -1
@@ -106,5 +115,10 @@ Actor OE2CageHook: OE2Pedestal {
 	}
 }
 
-Actor OE2ElfBerries: OE2Pedestal {
+Actor OE2ElfBerries: OE2SolidDecoration {
+    States {
+    Spawn:
+        DTRE A -1
+        Stop
+    }
 }

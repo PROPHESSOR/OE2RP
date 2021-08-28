@@ -16,7 +16,7 @@ Actor OE2MoveableBoulder: BaseDecoration {
 	}
 }
 
-Actor OE2LockedChest: BaseDecoration {
+Actor OE2TreasureChest: BaseDecoration {
 	+SOLID
 
 	States {
@@ -26,7 +26,7 @@ Actor OE2LockedChest: BaseDecoration {
 	}
 }
 
-Actor OE2TreasureChest: OE2LockedChest {
+Actor OE2LockedChest: OE2TreasureChest {
 	+SOLID
 
 	States {
@@ -35,6 +35,7 @@ Actor OE2TreasureChest: OE2LockedChest {
 		Stop
 	}
 }
+
 
 Actor OE2SmallTent: BaseDecoration {
 	Health 20
