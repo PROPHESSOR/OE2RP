@@ -393,399 +393,597 @@ Texture "WALL54", 117, 117 {
 
 // Decals
 
-Texture "STEX851", 117, 117 {
+Texture "STEX560", 117, 117 {
     XScale 1.375
     YScale 1.375
-    Patch "_STEX851", 0, 0
-}
-
-Texture "STEX596", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX596", 17, 16
-}
-
-Texture "STEX600", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX600", 1, 5
-}
-
-Texture "STEX603", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX603", 0, 8
-}
-
-Texture "STEX629", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX629", 8, 5
-}
-
-Texture "STEX560", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX560", 3, 3
-}
-
-Texture "STEX570", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX570", 16, 0
-}
-
-Texture "STEX654", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX654", 1, 1
-}
-
-Texture "STEX870", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX870", 0, 36
-}
-
-Texture "STEX903", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX903", 0, 0
-}
-
-Texture "STEX876", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX876", 0, 9
-}
-
-Texture "STEX710", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX710", 4, 6
-}
-
-Texture "STEX683", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX683", 19, 23
-}
-
-Texture "STEX687", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX687", 19, 23
-}
-
-Texture "STEX690", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX690", 0, 52
-}
-
-Texture "STEX693", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX693", 22, 23
-}
-
-Texture "STEX698", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX698", 22, 23
-}
-
-Texture "STEX762", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX762", 24, 41
+    WorldPanning
+    Patch "_STEX560", 44, 88 {
+        UseOffsets
+    }
 }
 
 Texture "STEX566", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX566", 4, 4
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX566", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX570", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX570", 44, 88 {
+        UseOffsets
+    }
 }
 
 Texture "STEX577", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX577", 0, 0
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX577", 44, 88 {
+        UseOffsets
+    }
 }
 
 Texture "STEX581", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX581", 0, 0
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX581", 44, 88 {
+        UseOffsets
+    }
 }
 
 Texture "STEX583", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX583", 0, 0
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX583", 44, 88 {
+        UseOffsets
+    }
 }
 
 Texture "STEX587", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX587", 1, 0
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX587", 44, 88 {
+        UseOffsets
+    }
 }
 
-Texture "STEX701", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX701", 0, 0
+Texture "STEX596", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX596", 44, 88 {
+        UseOffsets
+    }
 }
 
-Texture "STEX715", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX715", 0, 0
+Texture "STEX600", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX600", 44, 88 {
+        UseOffsets
+    }
 }
 
-Texture "STEX719", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX719", 4, 4
+Texture "STEX603", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX603", 44, 88 {
+        UseOffsets
+    }
 }
 
-Texture "STEX721", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX721", 17, 0
+Texture "STEX629", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX629", 44, 88 {
+        UseOffsets
+    }
 }
 
-Texture "STEX733", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX733", 0, 0
-}
-
-Texture "STEX739", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX739", 0, 7
-}
-
-Texture "STEX747", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX747", 0, 0
-}
-
-Texture "STEX750", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX750", 4, 1
-}
-
-Texture "STEX757", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX757", 0, 0
-}
-
-Texture "STEX766", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX766", 31, 31
-}
-
-Texture "STEX769", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX769", 31, 31
-}
-
-Texture "STEX773", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX773", 10, 24
-}
-
-Texture "STEX778", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX778", 0, 9
-}
-
-Texture "STEX782", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX782", 0, 0
-}
-
-Texture "STEX786", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX786", 0, 0
-}
-
-Texture "STEX790", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX790", 0, 0
-}
-
-Texture "STEX794", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX794", 30, 29
-}
-
-Texture "STEX803", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX803", 21, 1
-}
-
-Texture "STEX808", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX808", 0, 0
-}
-
-Texture "STEX814", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX814", 1, 0
-}
-
-Texture "STEX818", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX818", 0, 0
-}
-
-Texture "STEX824", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX824", 0, 0
-}
-
-Texture "STEX856", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX856", 0, 0
-}
-
-Texture "STEX857", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX857", 0, 0
-}
-
-Texture "STEX863", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX863", 39, 17
-}
-
-Texture "STEX879", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX879", 0, 19
-}
-
-Texture "STEX884", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX884", 0, 5
-}
-
-Texture "STEX888", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX888", 0, 0
-}
-
-Texture "STEX892", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX892", 0, 0
-}
-
-Texture "STEX894", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX894", 0, 0
-}
-
-Texture "STEX912", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX912", 0, 0
-}
-
-Texture "STEX915", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX915", 16, 13
-}
-
-Texture "STEX928", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX928", 0, 0
-}
-
-Texture "STEX931", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX931", 0, 0
+Texture "STEX654", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX654", 44, 88 {
+        UseOffsets
+    }
 }
 
 Texture "STEX670", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX670", 42, 29
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX670", 44, 88 {
+        UseOffsets
+    }
 }
 
 Texture "STEX670B", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX671", 42, 29
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX671", 44, 88 {
+        UseOffsets
+    }
 }
 
 Texture "STEX670C", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX672", 42, 29
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX672", 44, 88 {
+        UseOffsets
+    }
 }
 
 Texture "STEX674", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX674", 42, 28
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX674", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX683", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX683", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX687", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX687", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX690", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX690", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX693", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX693", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX698", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX698", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX701", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX701", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX710", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX710", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX715", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX715", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX719", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX719", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX721", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX721", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX733", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX733", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX739", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX739", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX747", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX747", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX750", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX750", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX757", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX757", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX762", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX762", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX766", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX766", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX769", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX769", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX773", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX773", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX778", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX778", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX782", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX782", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX786", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX786", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX790", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX790", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX794", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX794", 44, 88 {
+        UseOffsets
+    }
 }
 
 Texture "STEX796", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX796", 40, 19
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX796", 44, 88 {
+        UseOffsets
+    }
 }
 
 Texture "STEX796B", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX797", 40, 19
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX797", 44, 88 {
+        UseOffsets
+    }
 }
 
 Texture "STEX796C", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX798", 40, 19
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX798", 44, 88 {
+        UseOffsets
+    }
 }
 
 Texture "STEX796D", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX799", 40, 19
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX799", 44, 88 {
+        UseOffsets
+    }
 }
 
 Texture "STEX800", 117, 117 {
-    XScale 1.33
-    YScale 1.33
-    Patch "_STEX800", 40, 19
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX800", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX803", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX803", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX808", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX808", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX814", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX814", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX818", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX818", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX824", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX824", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX851", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX851", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX856", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX856", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX857", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX857", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX863", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX863", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX870", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX870", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX876", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX876", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX879", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX879", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX884", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX884", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX888", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX888", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX892", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX892", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX894", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX894", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX903", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX903", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX912", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX912", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX915", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX915", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX928", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX928", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX931", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX931", 44, 88 {
+        UseOffsets
+    }
 }
 
