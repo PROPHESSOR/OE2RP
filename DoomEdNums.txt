@@ -123,7 +123,7 @@ DoomEdNums {
 
 	15350 = OE2AirStream		// Real entities (part 2).
 	15351 = OE2Fog
-	15351 = OE2VioletFog
+	15352 = OE2VioletFog
 
 	15450 = OE2Dwarf			// Characters.
 	15451 = OE2Sarbok
