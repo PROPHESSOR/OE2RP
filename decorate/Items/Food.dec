@@ -13,10 +13,11 @@ Actor OE2ElfBerries: OE2BaseFood {
 Actor OE2RoastedMeat: Health {
 	Inventory.PickupMessage "$OE2RP_E_ROASTEDMEAT"
 	Inventory.Amount 10
+	Scale 0.547
 
 	States {
 	Spawn:
-		MEAT BCDE 4 Bright
+		MEAT BCDE 3 Bright
 		Loop
 	}
 }

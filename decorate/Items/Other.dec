@@ -9,9 +9,14 @@ Actor OE2Tools: OE2BaseItem {
 Actor OE2CorruptingStone: OE2BaseItem {
 }
 
+
 Actor OE2PileOfCoins: OE2BaseItem {
 	States {
 	Spawn:
+		GOLD A 3 A_Jump( 24, 1 )
+		Wait
+		GOLD BCDA 3 // Shine.
+		Goto Spawn
 	}
 }
 
