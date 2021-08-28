@@ -48,6 +48,9 @@ DoomEdNums {
 	15050 = OE2GnomeAle
 	15051 = OE2ElfWine
 	15052 = OE2Forage
+	15053 = OE2ElfBerries
+	15054 = OE2RoastedMeat
+	15055 = OE2HunkOfMeat
 
 	15075 = OE2HealthPotion
 	15076 = OE2LargeHealthPotion
@@ -72,30 +75,38 @@ DoomEdNums {
 	15200 = OE2Picklock
 	15201 = OE2Tools
 	15202 = OE2CorruptingStone
+	15203 = OE2PileOfCoins
+	15204 = OE2PouchOfGold
+	15205 = OE2PouchOfGoldBlue // ?
+	15206 = OE2PouchOfGoldRed // ?
 
 // Entities (15300-15499):
-	15300 = OE2Fire
+	15300 = OE2Fire				// Real entities (part 1).
 	15301 = OE2MoveableBoulder
 	15302 = OE2LockedChest
 	15303 = OE2TreasureChest
 	15304 = OE2SmallTent
 	15305 = OE2Familiar
 
-	15310 = OE2Pedestal
+	15310 = OE2Pedestal			// Common decorations (part 1)
 	15311 = OE2Tombstone
 	15312 = OE2Chair
 	15313 = OE2RubblePile
 	15314 = OE2DwarfStatue
 	15315 = OE2WereratStatue
 	15316 = OE2FireTorch
+	15317 = OE2Table
+	15318 = OE2Vase
+	15319 = OE2Brazier
 
-	15320 = OE2Tree1
+	15320 = OE2Tree1			// Nature.
 	15321 = OE2Tree2
 	15322 = OE2Tree3
 	15323 = OE2Tree4
 	15324 = OE2Tree5
+	15325 = OE2TreeStump
 
-	15330 = OE2Tunic
+	15330 = OE2Tunic			// Trade point junk.
 	15331 = OE2SouvenirTunic
 	15332 = OE2Glass
 	15333 = OE2WineGlass
@@ -106,16 +117,25 @@ DoomEdNums {
 	15338 = OE2ShotGlass
 	15339 = OE2ToyArcherySet
 
-	15450 = OE2Dwarf
+	15340 = OE2CageWithSkeleton	// Common decorations (part 2)
+	15341 = OE2CageHook
+	15342 = OE2SkeletonBones
+
+	15350 = OE2AirStream		// Real entities (part 2).
+	15351 = OE2Fog
+	15351 = OE2VioletFog
+
+	15450 = OE2Dwarf			// Characters.
 	15451 = OE2Sarbok
 	15452 = OE2DwarvenGuard
 	15453 = OE2Elf
+	15454 = OE2DwarfGhost
 
 // Monsters (15500-15999):
 	15500 = OrcRecruit
 	15501 = OrcRaider
 	15502 = OrcBerserker
-	15503 = ShadowOrc
+	15503 = ShadowOrc // As far as I know, shadow versions cannot be spawned directly in the map. So I may comment them out here.
 
 	15510 = Ratling
 	15511 = Rat
@@ -148,7 +168,7 @@ DoomEdNums {
 	15560 = WorgPup
 	15561 = Warhound
 	15562 = Cerebrus
-	//15563 = Worg
+	//15563 = Worg // ?
 	15564 = ShadowPup
 	15565 = ShadowWarHound
 	15566 = ShadowCerebrus

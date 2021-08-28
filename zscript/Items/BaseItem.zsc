@@ -6,7 +6,7 @@ class OE2BaseItem: CustomInventory {
 
 	States {
 	Spawn:
-		TNT1 A -1;
+		SPID F -1;
 		stop;
 	}
 } // of class OE2BaseItem: CustomInventory {

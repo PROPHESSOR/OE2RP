@@ -1,4 +1,4 @@
-class OE2BasePotion: OE2BaseItem {
+class OE2BasePotion: OE2BaseItem abstract {
 	Default {
 		Inventory.PickupMessage "Picked up a O&E II base potion.";
 	}

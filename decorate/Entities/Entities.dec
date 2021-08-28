@@ -51,8 +51,30 @@ Actor OE2SmallTent: BaseDecoration {
 	}
 }
 
+Actor OE2AirStream: BaseDecoration {
+}
 
-// Here?
+
+// Are next actors must be defined in this file?
 
 Actor OE2Familiar: BaseDecoration {
+}
+
+Actor OE2Fog: BaseDecoration {
+	Alpha 0.5
+	+NOGRAVITY
+
+	States {
+	Spawn:
+		AFOG A -1
+		Stop
+	}
+}
+
+Actor OE2VioletFog: OE2Fog {
+	States {
+	Spawn:
+		AFOG B -1
+		Stop
+	}
 }

@@ -1,3 +1,14 @@
+// Non-solid:
+Actor OE2SkeletonBones: BaseDecoration {
+	States {
+	Spawn:
+		CGSK C -1
+		Stop
+	}
+}
+
+
+// Solid:
 Actor OE2Pedestal: BaseDecoration {
 	+SOLID
 }
@@ -18,6 +29,22 @@ Actor OE2Chair: OE2Pedestal {
 	}
 }
 
+Actor OE2Table: OE2Pedestal {
+	States {
+	Spawn:
+		TABL E -1
+		Stop
+	}
+}
+
+Actor OE2Vase: OE2Pedestal {
+	States {
+	Spawn:
+		VASE A -1
+		Stop
+	}
+}
+
 Actor OE2RubblePile: OE2Pedestal {
 }
 
@@ -32,7 +59,7 @@ Actor OE2DwarfStatue: OE2Pedestal {
 Actor OE2WereratStatue: OE2Pedestal {
 	States {
 	Spawn:
-		S_WR AB 17
+		S_WR AB 29
 		Loop
 	}
 }
@@ -42,5 +69,30 @@ Actor OE2FireTorch: OE2Pedestal {
 	Spawn:
 		TRCH ABCD 3 Bright
 		Loop
+	}
+}
+
+Actor OE2Brazier: OE2Pedestal {
+	States {
+	Spawn:
+		BBQQ A -1
+		Stop
+	}
+}
+
+Actor OE2CageWithSkeleton: OE2Pedestal {
+	States {
+	Spawn:
+		CGSK A -1
+		Stop
+	}
+}
+
+Actor OE2CageHook: OE2Pedestal {
+	// Must this actor be solid?
+	States {
+	Spawn:
+		CGSK B -1
+		Stop
 	}
 }

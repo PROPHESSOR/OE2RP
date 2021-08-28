@@ -7,6 +7,9 @@ Actor OE2ElfWine: OE2BaseFood {
 Actor OE2Forage: OE2BaseFood {
 }
 
+Actor OE2ElfBerries: OE2BaseFood {
+}
+
 Actor OE2RoastedMeat: Health {
 	Inventory.PickupMessage "$OE2RP_E_ROASTEDMEAT"
 	Inventory.Amount 10

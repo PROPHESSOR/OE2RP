@@ -10,3 +10,5 @@ Actor OE2DwarvenGuard: BaseCharacter {
 Actor OE2Elf: BaseCharacter {
 }
 
+Actor OE2DwarfGhost: BaseCharacter {
+}

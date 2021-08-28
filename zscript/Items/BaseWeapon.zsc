@@ -1,4 +1,4 @@
-class OE2BaseWeapon: DoomWeapon {
+class OE2BaseWeapon: DoomWeapon abstract {
 	Default {
 		Inventory.PickupMessage "Picked up a O&E II base weapon.";
 	}

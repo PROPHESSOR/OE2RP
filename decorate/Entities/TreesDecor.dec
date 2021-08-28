@@ -1,4 +1,6 @@
 Actor OE2Tree1: BaseDecoration {
+	+SOLID
+
 	States {
 	Spawn:
 		TREE A -1
@@ -6,7 +8,7 @@ Actor OE2Tree1: BaseDecoration {
 	}
 }
 
-Actor OE2Tree2: BaseDecoration {
+Actor OE2Tree2: OE2Tree1 {
 	States {
 	Spawn:
 		TREE B -1
@@ -14,7 +16,7 @@ Actor OE2Tree2: BaseDecoration {
 	}
 }
 
-Actor OE2Tree3: BaseDecoration {
+Actor OE2Tree3: OE2Tree1 {
 	States {
 	Spawn:
 		TREE C -1
@@ -22,7 +24,7 @@ Actor OE2Tree3: BaseDecoration {
 	}
 }
 
-Actor OE2Tree4: BaseDecoration {
+Actor OE2Tree4: OE2Tree1 {
 	States {
 	Spawn:
 		TREE D -1
@@ -30,10 +32,13 @@ Actor OE2Tree4: BaseDecoration {
 	}
 }
 
-Actor OE2Tree5: BaseDecoration {
+Actor OE2Tree5: OE2Tree1 {
 	States {
 	Spawn:
 		TREE E -1
 		Stop
 	}
+}
+
+Actor OE2TreeStump: OE2Tree1 {
 }

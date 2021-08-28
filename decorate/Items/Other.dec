@@ -8,3 +8,33 @@ Actor OE2Tools: OE2BaseItem {
 
 Actor OE2CorruptingStone: OE2BaseItem {
 }
+
+Actor OE2PileOfCoins: OE2BaseItem {
+	States {
+	Spawn:
+	}
+}
+
+Actor OE2PouchOfGold: OE2BaseItem {
+	States {
+	Spawn:
+		POUC A -1
+		Stop
+	}
+}
+
+Actor OE2PouchOfGoldBlue: OE2PouchOfGold {
+	States {
+	Spawn:
+		POUC B -1
+		Stop
+	}
+}
+
+Actor OE2PouchOfGoldRed: OE2PouchOfGold {
+	States {
+	Spawn:
+		POUC C -1
+		Stop
+	}
+}
