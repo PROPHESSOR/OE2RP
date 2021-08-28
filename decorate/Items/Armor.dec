@@ -4,5 +4,11 @@ Actor OE2Armor: OE2BaseArmor {
 Actor OE2LeatherArmor: OE2BaseArmor {
 }
 
+Actor OE2ElvenArmor: OE2BaseArmor {
+}
+
+Actor OE2DiamondArmor: OE2BaseArmor {
+}
+
 //Actor OE2...Armor: OE2BaseArmor {
 //}

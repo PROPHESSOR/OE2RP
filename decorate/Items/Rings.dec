@@ -1,4 +1,5 @@
 // Don't sure in rings logical structure.
+// <PROPHESSOR> Structure is correct but not the names
 
 Actor OE2StrengthRing: OE2BaseRing {
 }

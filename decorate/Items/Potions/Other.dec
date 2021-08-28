@@ -1,7 +1,18 @@
+// FIXME: RemedyPotion
 Actor OE2AntidotePotion: OE2BasePotion {
+    States {
+        Spawn:
+            POT7 A -1
+            Stop
+    }
 }
 
 Actor OE2TrollBloodPotion: OE2HealthPotion {
+    States {
+        Spawn:
+            POT8 A -1
+            Stop
+    }
 }
 
 Actor OE2HeroPotion: OE2BasePotion {

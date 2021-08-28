@@ -1,45 +1,48 @@
 Actor OE2Picklock: OE2BaseItem {
-	Args 0 // Picklock level (0..3, last is inacessible in the game).
-	// [McM]: Is it better to inherit picklock from standart Doom key?
+    Args 0 // Picklock level (0..3, last is inacessible in the game).
+        // [McM]: Is it better to inherit picklock from standart Doom key?
+        // <PROPHESSOR> For your choice.
 }
 
+// FIXME: OE2ArmorKit
 Actor OE2Tools: OE2BaseItem {
 }
 
+// FIXME: OE2WarpGem
 Actor OE2CorruptingStone: OE2BaseItem {
 }
 
 
 Actor OE2PileOfCoins: OE2BaseItem {
-	States {
-	Spawn:
-		GOLD A 3 A_Jump( 24, 1 )
-		Wait
-		GOLD BCDA 3 // Shine.
-		Goto Spawn
-	}
+    States {
+        Spawn:
+            GOLD A 3 A_Jump( 24, 1 )
+            Wait
+            GOLD BCDA 3 // Shine.
+            Goto Spawn
+    }
 }
 
 Actor OE2PouchOfGold: OE2BaseItem {
-	States {
-	Spawn:
-		POUC A -1
-		Stop
-	}
+    States {
+    Spawn:
+        POUC A -1
+        Stop
+    }
 }
 
 Actor OE2PouchOfGoldBlue: OE2PouchOfGold {
-	States {
-	Spawn:
-		POUC B -1
-		Stop
-	}
+    States {
+        Spawn:
+            POUC B -1
+            Stop
+    }
 }
 
 Actor OE2PouchOfGoldRed: OE2PouchOfGold {
-	States {
-	Spawn:
-		POUC C -1
-		Stop
-	}
+    States {
+        Spawn:
+            POUC C -1
+            Stop
+    }
 }

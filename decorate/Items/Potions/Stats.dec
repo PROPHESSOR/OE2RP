@@ -1,14 +1,35 @@
 Actor OE2StrengthPotion: OE2BasePotion {
+    States {
+        Spawn:
+            POT3 A -1
+            Stop
+    }
 }
 
 Actor OE2AccuracyPotion: OE2BasePotion {
 }
 
 Actor OE2DefencePotion: OE2BasePotion {
+    States {
+        Spawn:
+            POT4 A -1
+            Stop
+    }
 }
 
+// FIXME: Haste
 Actor OE2SpeedPotion: OE2BasePotion {
+    States {
+        Spawn:
+            POT6 A -1
+            Stop
+    }
 }
 
 Actor OE2AvoidancePotion: OE2BasePotion {
+    States {
+        Spawn:
+            POT9 A -1
+            Stop
+    }
 }
