@@ -1,29 +1,29 @@
-Actor OE2TunicDecoration: BaseDecoration {
+Actor OE2Tunic: BaseDecoration {
 }
 
-Actor OE2SouvenirTunicDecoration: BaseDecoration {
+Actor OE2SouvenirTunic: BaseDecoration {
 }
 
-Actor OE2GlassDecoration: BaseDecoration {
+Actor OE2Glass: BaseDecoration {
 }
 
-Actor OE2WineGlassDecoration: BaseDecoration {
+Actor OE2WineGlass: BaseDecoration {
 }
 
-Actor OE2KeyRingDecoration: BaseDecoration {
+Actor OE2KeyRing: BaseDecoration {
 }
 
-Actor OE2MedallionDecoration: BaseDecoration {
+Actor OE2Medallion: BaseDecoration {
 }
 
-Actor OE2CopperMedallionDecoration: BaseDecoration {
+Actor OE2CopperMedallion: BaseDecoration {
 }
 
-Actor OE2GamePiecesDecoration: BaseDecoration {
+Actor OE2GamePieces: BaseDecoration {
 }
 
-Actor OE2ShotGlassDecoration: BaseDecoration {
+Actor OE2ShotGlass: BaseDecoration {
 }
 
-Actor OE2ToyArcherySetDecoration: BaseDecoration {
+Actor OE2ToyArcherySet: BaseDecoration {
 }

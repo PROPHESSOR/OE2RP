@@ -51,6 +51,7 @@ Actor OE2SmallTent: BaseDecoration {
 	}
 }
 
+
 // Here?
 
 Actor OE2Familiar: BaseDecoration {

@@ -81,30 +81,30 @@ DoomEdNums {
 	15304 = OE2SmallTent
 	15305 = OE2Familiar
 
-	15310 = OE2PedestalDecoration
-	15311 = OE2TombstomeDecoration
-	15312 = OE2ChairDecoration
-	15313 = OE2RubblePileDecoration
-	15314 = OE2DwarfStatueDecoration
-	15315 = OE2WereratStatueDecoration
-	15316 = OE2FireTorchDecoration
+	15310 = OE2Pedestal
+	15311 = OE2Tombstome
+	15312 = OE2Chair
+	15313 = OE2RubblePile
+	15314 = OE2DwarfStatue
+	15315 = OE2WereratStatue
+	15316 = OE2FireTorch
 
-	15320 = OE2Tree1Decoration
-	15321 = OE2Tree2Decoration
-	15322 = OE2Tree3Decoration
-	15323 = OE2Tree4Decoration
-	15324 = OE2Tree5Decoration
+	15320 = OE2Tree1
+	15321 = OE2Tree2
+	15322 = OE2Tree3
+	15323 = OE2Tree4
+	15324 = OE2Tree5
 
-	15330 = OE2TunicDecoration
-	15331 = OE2SouvenirTunicDecoration
-	15332 = OE2GlassDecoration
-	15333 = OE2WineGlassDecoration
-	15334 = OE2KeyRingDecoration
-	15335 = OE2MedallionDecoration
-	15336 = OE2CopperMedallionDecoration
-	15337 = OE2GamePiecesDecoration
-	15338 = OE2ShotGlassDecoration
-	15339 = OE2ToyArcherySetDecoration
+	15330 = OE2Tunic
+	15331 = OE2SouvenirTunic
+	15332 = OE2Glass
+	15333 = OE2WineGlass
+	15334 = OE2KeyRing
+	15335 = OE2Medallion
+	15336 = OE2CopperMedallion
+	15337 = OE2GamePieces
+	15338 = OE2ShotGlass
+	15339 = OE2ToyArcherySet
 
 	15450 = OE2Dwarf
 	15451 = OE2Sarbok
