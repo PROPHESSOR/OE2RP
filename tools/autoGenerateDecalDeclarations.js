@@ -24,7 +24,16 @@ for (const file of files) {
 
     const size = cp.execSync(`identify -format '%wx%h' "${path.join(DECALS_FOLDER, file)}"`).toString().split('x').map(Number);
 
-    fs.writeFileSync(textureDeclarations, generator(id, size[0], size[1]) + '\n');
+    // Read png offsets
+    let offsetX = 0, offsetY = 0;
+    const png = fs.readFileSync(path.join(DECALS_FOLDER, file));
+    const grAbChunk = png.indexOf('grAb');
+    if (grAbChunk !== -1) {
+        offsetX = png.readInt32BE(grAbChunk + 4);
+        offsetY = png.readInt32BE(grAbChunk + 8);
+    }
+
+    fs.writeFileSync(textureDeclarations, generator(id, size[0], size[1], offsetX, offsetY) + '\n');
 
     fs.renameSync(path.join(DECALS_FOLDER, file), path.join(DECALS_FOLDER, '_' + file));
 }

@@ -8,18 +8,21 @@
  */
 
 const TEX_SIZE = 117; // Wall texture size
-const BTS2 = TEX_SIZE / 2; // divide by 2
 const SPRITE_SIZE = 88; // Sprite full size
 const SCALE = Number((TEX_SIZE / SPRITE_SIZE).toFixed(2)); // Scale sprite to texture size
 
 const { round } = Math;
 
-const gen = (id, width, height) => `Texture "STEX${id}", ${TEX_SIZE}, ${TEX_SIZE} {
+const gen = (id, width, height, offsetx = 0, offsety = 0) => {
+    offsetx = round(88 / 2 - offsetx);
+    offsety = round(107 - height) - (offsety - height);
+
+    return `Texture "STEX${id}", ${117}, ${117} {
     XScale ${SCALE}
     YScale ${SCALE}
-    Patch "_STEX${id}", ${round(BTS2 - width * SCALE / 2)}, ${round(BTS2 - height * SCALE / 2)}
+    Patch "_STEX${id}", ${round(offsetx)}, ${round(offsety)}
 }
-`;
+`};
 
 
 module.exports = gen;
