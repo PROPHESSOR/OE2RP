@@ -1,7 +1,7 @@
 Actor OE2GnomeAle: OE2BaseItem {
     States {
         Spawn:
-            BARR A -1
+            WBAR A -1
             Stop
     }
 }
@@ -9,7 +9,7 @@ Actor OE2GnomeAle: OE2BaseItem {
 Actor OE2ElfWine: OE2GnomeAle {
     States {
         Spawn:
-            BARR A -1
+            WBAR A -1
             Stop
     }
 }
