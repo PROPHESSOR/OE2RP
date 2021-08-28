@@ -1,14 +1,27 @@
 Actor OE2Dwarf: BaseCharacter {
+    States {
+        Spawn:
+            DWA1 A -1
+            Stop
+    }
 }
 
-Actor OE2Sarbok: BaseCharacter {
+Actor OE2Sarbok: OE2Dwarf {
+    // TODO: Half-transparent
+    States {
+        Spawn:
+            DWA2 A -1
+            Stop
+    }
 }
 
-Actor OE2DwarvenGuard: BaseCharacter {
+Actor OE2DwarvenGuard: OE2Dwarf {
 }
 
 Actor OE2Elf: BaseCharacter {
-}
-
-Actor OE2DwarfGhost: BaseCharacter {
+    States {
+        Spawn:
+            ELF1 A -1
+            Stop
+    }
 }

@@ -130,7 +130,6 @@ DoomEdNums {
 	15451 = OE2Sarbok
 	15452 = OE2DwarvenGuard
 	15453 = OE2Elf
-	15454 = OE2DwarfGhost
 
 // Monsters (15500-15999):
 	15500 = OrcRecruit
