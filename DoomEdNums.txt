@@ -82,7 +82,7 @@ DoomEdNums {
 	15305 = OE2Familiar
 
 	15310 = OE2Pedestal
-	15311 = OE2Tombstome
+	15311 = OE2Tombstone
 	15312 = OE2Chair
 	15313 = OE2RubblePile
 	15314 = OE2DwarfStatue

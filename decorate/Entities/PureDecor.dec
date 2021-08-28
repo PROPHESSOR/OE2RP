@@ -2,7 +2,7 @@ Actor OE2Pedestal: BaseDecoration {
 	+SOLID
 }
 
-Actor OE2Tombstome: OE2Pedestal {
+Actor OE2Tombstone: OE2Pedestal {
 	States {
 	Spawn:
 		TOMB A -1
