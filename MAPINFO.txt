@@ -50,7 +50,7 @@ Map Dwarkar "$OE2RP_DWARKAR_0" {
 
 Map Tunnels "$OE2RP_TUNNELS_0" {
     Music    = ""
-    SkyBox   = ""
+    SkyBox   = "FLAT023"
     LevelNum = 3
     Cluster  = 1
     Next     = "ElLandra"
