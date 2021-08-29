@@ -1,0 +1,59 @@
+Actor OE2Valin: PlayerPawn {
+    Health 100
+    Radius 16
+    Height 64
+    Mass 100
+    PainChance 255
+
+    Player.ForwardMove 0.5, 0.25
+    Player.SideMove 0.55, 0.3
+    Player.ViewBob 0.75
+
+    Player.DisplayName "$OE2_E_VALIN"
+    Player.WeaponSlot 0, OE2Bob
+    Player.WeaponSlot 1, OE2Staff
+    Player.WeaponSlot 2, OE2Wand
+    Player.WeaponSlot 3, OE2Dagger, OE2PoisonDagger
+    Player.WeaponSlot 4, OE2Sword
+    Player.WeaponSlot 5, OE2Crossbow, OE2KineticCrossbow
+    Player.WeaponSlot 6, OE2FreezeOrb, OE2ShrinkOrb, OE2MoldOrb
+
+    Player.StartItem "OE2Staff"
+    Player.StartItem "OE2Wand"
+    Player.StartItem "OE2Dagger"
+    Player.StartItem "OE2LeatherArmor"
+
+    States {
+        Spawn:
+            VALI A -1
+            Loop
+        See:
+            VALI AAAA 4 
+            Loop
+        Missile:
+            VALI A 12
+            Goto Spawn
+        Melee:
+            VALI A 6 BRIGHT
+            Goto Missile
+        Pain:
+            VALI A 4 
+            VALI A 4 A_Pain
+            Goto Spawn
+        Death:
+            VALI A 10
+            VALI A 10 A_PlayerScream
+            VALI A 10 A_NoBlocking
+            VALI AAA 10
+            VALI A -1
+            Stop
+        XDeath:
+            VALI A 5
+            VALI A 5 A_XScream
+            VALI A 5 A_NoBlocking
+            VALI AAAAA 5
+            VALI A -1
+            Stop
+    }
+}
+

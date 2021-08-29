@@ -7,7 +7,7 @@
 
 // DoomEdNums:
 include "DoomEdNums.txt"
-
+include "MapGameInfos.txt"
 
 ClearEpisodes
 
