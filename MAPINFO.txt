@@ -57,8 +57,8 @@ Map Tunnels "$OE2RP_TUNNELS_0" {
 }
 
 Map ElLandra "$OE2RP_ELLANDRA_0" {
-    Music    = ""
-    SkyBox   = ""
+    Music    = "D_LANDRA"
+    SkyBox   = "FLAT023"
     LevelNum = 4
     Cluster  = 1
     Next     = "DarkForest"
