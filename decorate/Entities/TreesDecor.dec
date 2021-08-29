@@ -1,6 +1,8 @@
 Actor OE2Tree1: BaseDecoration {
 	+SOLID
 
+    Radius 16
+
 	States {
 	Spawn:
 		TREE A -1
