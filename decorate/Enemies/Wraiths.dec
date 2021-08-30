@@ -1,4 +1,4 @@
-Actor Wraith: OE2BaseMonster {
+Actor WraithMonster: OE2BaseMonster {
 }
 
 Actor VoidWraith: Wraith {
