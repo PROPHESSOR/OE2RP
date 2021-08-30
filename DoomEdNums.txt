@@ -124,7 +124,7 @@ DoomEdNums {
 	15351 = OE2Fog
 	15352 = OE2VioletFog
 	15353 = OE2EmptyBrazier
-	15353 = OE2BrazierWithMeat // Creates the "OE2RoastedMeat".
+	15354 = OE2BrazierWithMeat // Creates the "OE2RoastedMeat".
 
 	15450 = OE2Dwarf			// Characters.
 	15451 = OE2Sarbok
