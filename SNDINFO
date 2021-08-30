@@ -1,3 +1,4 @@
+
 // Weapons:
 weapons/crossbow/attack "sounds/Weapons/Weapon_Crossbow_Flyby.ogg"
 weapons/dagger/hit "sounds/Weapons/Weapon_Dagger_Flesh.ogg"
@@ -18,49 +19,45 @@ weapons/sword/swing "sounds/Weapons/Weapon_Sword_Swing.ogg"
 weapons/sword/woodhit "sounds/Weapons/Weapon_Sword_Wood.ogg"
 weapons/wand/attack "sounds/Weapons/Weapon_Wand_Attack.ogg"
 
-/* // Unsorted yet:
-Dialog_Help.ogg
-Dialog_Popup.ogg
-Dialog_Wandpopup.ogg
-Door_Close.ogg
-Door_Locked.ogg
-Door_Open.ogg
-Door_Unlocked.ogg
-Gib_Bone.ogg
-Gib.ogg
-Gib_Stone.ogg
-Gib_Wood.ogg
-Misc_Buff_Expiring.ogg
-Misc_Chest.ogg
-Misc_Coins.ogg
-Misc_Force.ogg
-Misc_Lockpick_Neg.ogg
-Misc_Lockpick_Pos.ogg
-Misc_Negative.ogg
-Misc_Raise.ogg
-Misc_Rumble.ogg
-Misc_Scroll.ogg
-Misc_Switch.ogg
-Misc_Wardrums1.ogg
-Pickup_Ale.ogg
-Pickup_Food.ogg
-Pickup_Item.ogg
-Pickup_Potion.ogg
-Player_Death.ogg
-Player_Pain.ogg
-Sconce_Off.ogg
-Use_Ale.ogg
-Use_Item.ogg
+Valin/death "sounds/Player_Death.ogg"
+Valin/pain "sounds/Player_Pain.ogg"
 
-sounds2.mid
-sounds3.mid
-sounds4.mid
-sounds5.mid
-sounds6.mid
-sounds7.mid
-sounds8.mid
-sounds9.mid
-*/
+
+// Interaction (HUD, items, environment):
+hud/dialog/help "sounds/Dialog_Help.ogg"
+hud/dialog/popup "sounds/Dialog_Popup.ogg"
+hud/dialog/wandpopup "sounds/Dialog_Wandpopup.ogg"
+
+items/coins "sounds/Misc_Coins.ogg"
+items/use/ale "sounds/Use_Ale.ogg"
+items/use/item "sounds/Use_Item.ogg"
+items/pickup/ale "sounds/Pickup_Ale.ogg"
+items/pickup/food "sounds/Pickup_Food.ogg"
+items/pickup "sounds/Pickup_Item.ogg"
+items/pickup/potions "sounds/Pickup_Potion.ogg"
+items/scroll "sounds/Misc_Scroll.ogg" // ???
+
+environment/door/close "sounds/Door_Close.ogg"
+environment/door/locked "sounds/Door_Locked.ogg"
+environment/door/open "sounds/Door_Open.ogg"
+environment/door/unlocked "sounds/Door_Unlocked.ogg"
+environment/buff "sounds/Misc_Buff_Expiring.ogg"
+environment/chest "sounds/Misc_Chest.ogg"
+environment/force "sounds/Misc_Force.ogg"
+environment/lockpick/negative "sounds/Misc_Lockpick_Neg.ogg"
+environment/lockpick/positive "sounds/Misc_Lockpick_Pos.ogg"
+environment/negative "sounds/Misc_Negative.ogg" // ???
+environment/raise "sounds/Misc_Raise.ogg"
+environment/rumble "sounds/Misc_Rumble.ogg"
+environment/switch "sounds/Misc_Switch.ogg"
+environment/wardrums "sounds/Misc_Wardrums1.ogg"
+environment/sconce "sounds/Sconce_Off.ogg"
+
+gibs/bone "sounds/Gib_Bone.ogg" // ???
+gibs/gibs "sounds/Gib.ogg"
+gibs/stone "sounds/Gib_Stone.ogg"
+gibs/wood "sounds/Gib_Wood.ogg"
+
 
 // Monsters:
 monsters/highpitch/attack "sounds/Monsters/Monster_HighPitch_Attack.ogg"
@@ -138,3 +135,16 @@ monsters/drowboss/sight "sounds/Monsters/Monster_Boss_Drow_Laugh.ogg"
 monsters/drowboss/attack "sounds/Monsters/Monster_Drow_Attack.ogg"
 monsters/drowboss/death "sounds/Monsters/Monster_Drow_Death.ogg"
 monsters/drowboss/pain "sounds/Monsters/Monster_Drow_Pain.ogg"
+
+
+// Other:
+/* // ???
+sounds2.mid
+sounds3.mid
+sounds4.mid
+sounds5.mid
+sounds6.mid
+sounds7.mid
+sounds8.mid
+sounds9.mid
+*/
