@@ -47,6 +47,8 @@ Actor OE2SmallTent: BaseDecoration {
 		TENT A -1
 		Stop
 	Death:
+		TENT A 2
+		TENT A 1 A_NoBlocking
 		TENT B -1
 		Stop
 	}

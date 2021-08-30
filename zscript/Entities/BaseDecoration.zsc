@@ -2,6 +2,11 @@ class BaseDecoration: Actor abstract {
 	Default {
 		-SOLID;
 		-SHOOTABLE;
+		+NOBLOOD;
+		+NOBLOODDECALS;
+		+DONTGIB;
+		+FIXMAPTHINGPOS;
+		+RANDOMIZE;
 
 		Radius 32; // One O&E2 tile.
 		Height 64;
