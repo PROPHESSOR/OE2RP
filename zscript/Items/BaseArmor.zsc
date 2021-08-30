@@ -1,5 +1,6 @@
 class OE2BaseArmor: ArmorBonus abstract {
 	Default {
 		Inventory.PickupMessage "Picked up a O&E II base armor.";
+		Scale OE2ScaleFactor;
 	}
 } // of class OE2BasePotion: OE2BaseItem {

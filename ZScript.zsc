@@ -1,6 +1,9 @@
 version "2.4.0"
 
 #include "zscript/Player.zsc"
+#include "zscript/Constants.zsc"
+
+#include "zscript/BaseMonster.zsc"
 
 #include "zscript/Items/BaseWeapon.zsc"
 #include "zscript/Items/BaseFood.zsc"
@@ -12,5 +15,3 @@ version "2.4.0"
 
 #include "zscript/Entities/BaseCharacter.zsc"
 #include "zscript/Entities/BaseDecoration.zsc"
-
-#include "zscript/BaseMonster.zsc"

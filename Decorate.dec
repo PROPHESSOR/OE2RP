@@ -1,5 +1,3 @@
-#include "decorate/Player.dec"
-
 #include "decorate/Enemies/Behemoths.dec"
 #include "decorate/Enemies/Dogs.dec"
 #include "decorate/Enemies/Drones.dec"

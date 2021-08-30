@@ -5,7 +5,7 @@ class BaseDecoration: Actor abstract {
 
 		Radius 32; // One O&E2 tile.
 		Height 64;
-		Scale 0.7;
+		Scale 0.7; // OE2ScaleFactor;
 	}
 
 	States {

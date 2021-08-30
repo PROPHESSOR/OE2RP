@@ -1,0 +1,3 @@
+
+// Original sprites and textures has different resolution:
+const OE2ScaleFactor = 0.547;
