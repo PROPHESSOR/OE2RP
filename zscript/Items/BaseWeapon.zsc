@@ -1,7 +1,62 @@
 class OE2BaseWeapon: DoomWeapon abstract {
+	Sound meleeHitSound, meleeWoodHitSound, meleeMetalHitSound;
+	Sound meleeMissSound;
+
+	Property HitSound: meleeHitSound;
+	Property WoodHitSound: meleeWoodHitSound;
+	Property MetalHitSound: meleeMetalHitSound;
+	Property MissSound: meleeMissSound;
+
 	Default {
 		Inventory.PickupMessage "Picked up a O&E II base weapon.";
 		Scale OE2ScaleFactor;
+
+		OE2BaseWeapon.HitSound "";
+		OE2BaseWeapon.MissSound "";
+	}
+
+	action void A_OE2RP_WeaponMelee( int basedamage, name damagetype = 'None', int flags = 0 ) {
+		OE2BaseWeapon thisweap = OE2BaseWeapon( invoker );
+
+		// Here must be a calculating based on the player characteristics:
+		int realDamage = basedamage;
+
+		// Don't sure where "WoodHitSound" and "MetalHitSound" must be calculated:
+		//according to the FTranslatedLineTarget or to the LineTrace check.
+		// First is slightly faster, but can be used only with actors.
+		// Second is much more universal and may also handle lines, sectors etc.
+
+		A_CustomPunch( realDamage, true, flags, "None", radius + 48, meleesound: thisweap.meleeHitSound, misssound: thisweap.meleeMissSound );
+	}
+
+	action void A_OE2RP_WeaponMissile( class<Actor> projectile ) {
+		//OE2BaseWeapon thisweap = OE2BaseWeapon( invoker );
+
+		// Here must be a calculating based on the player characteristics:
+		double realAngle = angle;
+		double realPitch = pitch;
+
+		A_FireProjectile( projectile, realAngle, true, flags: FPF_NOAUTOAIM, pitch: realPitch );
+	}
+
+
+	// Cannot extend class in the Decorate file.
+	action void A_OE2RP_SendBob( void ) {
+	}
+
+	action void A_OE2RP_Massacre( bool absolute = false ) {
+		ThinkerIterator it = ThinkerIterator.Create( "Actor" );
+
+		for ( Actor cur = Actor( it.Next() ); cur != NULL; cur = Actor( it.Next() ) ) {
+			if ( cur.bISMONSTER )
+				cur.DamageMobj( NULL, NULL, LARGE_MASS, 'None' );
+		}
+
+		if ( absolute ) {
+			for ( int i = 0; i < MAXPLAYERS; i++ )
+				if ( playeringame[ i ] && players[ i ].mo )
+					players[ i ].mo.DamageMobj( NULL, NULL, LARGE_MASS, 'None' );
+		}
 	}
 
 	States {

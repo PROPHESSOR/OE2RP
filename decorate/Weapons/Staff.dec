@@ -1,40 +1,51 @@
 Actor OE2Staff: OE2BaseWeapon {
 	// Called "Guilding staff" in doomwiki.org.
-    Weapon.SelectionOrder 1300
+	Weapon.SelectionOrder 1300
 
-    Tag "$OE2RP_W_STAFF"
-    Obituary "TODO:"
-    Inventory.PickupMessage "$OE2RP_W_STAFF"
+	OE2BaseWeapon.HitSound "weapons/staff/hit"
+	OE2BaseWeapon.WoodHitSound "weapons/staff/woodhit"
 
-    var int user_state;
+	Tag "$OE2RP_W_STAFF"
+	Obituary "TODO:"
+	Inventory.PickupMessage "$OE2RP_W_STAFF"
 
-    States {
-        Ready:
-            // STAF A 0 A_Jump(127, "ReadyLeft")
-        ReadyRight:
-            STAF A 1 A_WeaponReady
-            Loop
-        ReadyLeft:
-            STAF C 1 A_WeaponReady
-            Loop
-        Deselect:
-            STAF A 1 A_Lower
-            Loop
-        Select:
-            STAF A 1 A_Raise
-            Loop
-        Fire:
-            // STAF A 0 A_Jump(128, "FireLeft")
-        FireRight:
-            STAF A 3
-            STAF B 4
-            Goto Ready
-        FireLeft:
-            STAF C 3
-            STAF D 4
-            Goto ReadyRight
-        Spawn:
-            TNT1 A -1
-            Stop
-    }
+	var int user_state; // [McM]: PROPHESSOR?.. What's this?
+
+	States {
+		Ready:
+			// STAF A 0 A_Jump(127, "ReadyLeft")
+		ReadyRight:
+			STAF A 1 A_WeaponReady
+			Loop
+		ReadyLeft:
+			STAF C 1 A_WeaponReady
+			Loop
+		Deselect:
+			STAF A 1 A_Lower
+			Loop
+		Select:
+			STAF A 1 A_Raise
+			Loop
+		Fire:
+			// STAF A 0 A_Jump(128, "FireLeft")
+		FireRight:
+			STAF A 3
+			STAF B 4 A_OE2RP_WeaponMelee( 5 )
+			Goto Ready
+		FireLeft:
+			STAF C 3
+			STAF D 4
+			Goto ReadyRight
+		/*AltFire:
+			STAF C 10
+			STAF D 10 A_OE2RP_Massacre
+			STAF C 0 A_Refire( "AltFireCont" )
+			Goto Ready
+		AltFireCont:
+			STAF D 10 A_OE2RP_Massacre( true )
+			Goto Ready*/
+		Spawn:
+			TNT1 A -1
+			Stop
+	}
 }
