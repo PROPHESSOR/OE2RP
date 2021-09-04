@@ -987,3 +987,39 @@ Texture "STEX931", 117, 117 {
     }
 }
 
+Texture "STEX618", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX618", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX619", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX619", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX620", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX620", 44, 88 {
+        UseOffsets
+    }
+}
+
+Texture "STEX621", 117, 117 {
+    XScale 1.375
+    YScale 1.375
+    WorldPanning
+    Patch "_STEX621", 44, 88 {
+        UseOffsets
+    }
+}
+
