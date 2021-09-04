@@ -1,46 +1,42 @@
 Actor OE2Tree1: BaseDecoration {
 	+SOLID
+    +NOGRAVITY
 
     Radius 16
 
 	States {
-	Spawn:
-		TREE A -1
-		Stop
+        Spawn:
+            TREE A -1
+            Stop
 	}
 }
 
 Actor OE2Tree2: OE2Tree1 {
 	States {
-	Spawn:
-		TREE B -1
-		Stop
+        Spawn:
+            TREE B -1
+            Stop
 	}
 }
 
 Actor OE2Tree3: OE2Tree1 {
 	States {
-	Spawn:
-		TREE C -1
-		Stop
+        Spawn:
+            TREE C -1
+            Stop
 	}
 }
 
 Actor OE2Tree4: OE2Tree1 {
-	States {
-	Spawn:
-		TREE D -1
-		Stop
-	}
 }
 
 Actor OE2Tree5: OE2Tree1 {
-	States {
-	Spawn:
-		TREE E -1
-		Stop
-	}
 }
 
 Actor OE2TreeStump: OE2Tree1 {
+	States {
+        Spawn:
+            TREE D -1
+            Stop
+	}
 }
