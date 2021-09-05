@@ -64,14 +64,15 @@ Actor OE2Familiar: BaseDecoration {
 }
 
 Actor OE2Fog: BaseDecoration {
-	Alpha 0.75
-	VSpeed 0.3
-	RenderStyle "Translucent"
 	+NOGRAVITY
+    +FORCEXYBILLBOARD
+
+    Alpha 0.75
+	RenderStyle "Add"
 
 	States {
 	Spawn:
-		AFOG A 3 A_SetTranslucent( clamp( alpha + FRandom( -0.05, 0.05 ), 0.55, 0.8 ) )
+		AFOG A 3 A_SetTranslucent( clamp( alpha + FRandom( -0.05, 0.05 ), 0.55, 0.99 ), 1 )
 		Loop
 	}
 }
@@ -79,7 +80,7 @@ Actor OE2Fog: BaseDecoration {
 Actor OE2VioletFog: OE2Fog {
 	States {
 	Spawn:
-		AFOG B 3 A_SetTranslucent( clamp( alpha + FRandom( -0.05, 0.05 ), 0.55, 0.8 ) )
+		AFOG B 3 A_SetTranslucent( clamp( alpha + FRandom( -0.05, 0.05 ), 0.55, 0.99 ), 1 )
 		Loop
 	}
 }
