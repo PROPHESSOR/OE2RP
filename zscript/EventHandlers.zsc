@@ -1,0 +1,36 @@
+// Don't sure now how to subscribe this class.
+
+class OE2RPEventHandler: EventHandler {
+	override void WorldThingSpawned( WorldEvent e ) {
+		if ( e.Thing.bISMONSTER ) {
+			console.printf( "Exp to " .. e.Thing.GetClassName() );
+			e.Thing.GiveInventory( "OE2RP_Exp", 5 );
+		}
+	} // of override void WorldThingSpawned( WorldEvent e ) {
+
+	override void WorldThingDamaged( WorldEvent e ) {
+		// If attacker is a player:
+		OE2Valin player = OE2Valin( e.DamageSource );
+
+		if ( !player )
+			player = OE2Valin( e.Inflictor );
+
+		if ( player ) {
+			//if ( e.Thing.FindInventory( "OE2RP_Exp" ) ) {
+				player.GiveInventory( "OE2PlayerSuccessfulHit", 1 );
+
+				if ( e.Thing.health < 0 )
+					player.GiveInventory( "OE2PlayerSuccessfulKill", 1 );
+			//}
+		}
+	} // of override void WorldThingDamaged( WorldEvent e ) {
+
+} // of class OE2RPEventHandler: EventHandler {
+
+
+class OE2RP_Exp: Inventory { // Is it needed?
+	Default {
+		Inventory.Amount 1;
+		Inventory.MaxAmount 0xFFFFFFFF;
+	}
+}

@@ -60,3 +60,15 @@ class OE2Valin: PlayerPawn {
 	}
 }
 
+// Abstract items given to the player with the successful hits/kills:
+
+class OE2PlayerSuccessfulHit: Inventory {
+	Default {
+		Inventory.Amount 1;
+		Inventory.MaxAmount 0xFFFF;
+	}
+}
+
+class OE2PlayerSuccessfulKill: OE2PlayerSuccessfulHit {
+}
+

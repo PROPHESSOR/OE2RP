@@ -7,4 +7,5 @@
 
 GameInfo {
     PlayerClasses = "OE2Valin"
+    EventHandlers = "OE2RPEventHandler"
 }
