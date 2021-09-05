@@ -1,6 +1,7 @@
 Actor OE2Tree1: BaseDecoration {
 	+SOLID
     +NOGRAVITY
+    +FORCEYBILLBOARD
 
     Radius 16
 
