@@ -1,5 +1,6 @@
 class OE2BaseItem: CustomInventory {
 	Default {
+        +NOGRAVITY;
 		Height 32;
 		Radius 32;
 		Inventory.PickupMessage "Picked up a O&E II base item.";

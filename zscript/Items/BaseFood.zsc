@@ -1,5 +1,6 @@
 class OE2BaseFood: Health abstract {
 	Default {
+        +NOGRAVITY;
 		Inventory.PickupMessage "Picked up a O&E II base food.";
 		Scale OE2ScaleFactor;
 		Height 32;
