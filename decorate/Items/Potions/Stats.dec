@@ -7,12 +7,17 @@ Actor OE2StrengthPotion: OE2BasePotion {
 }
 
 Actor OE2AccuracyPotion: OE2BasePotion {
+    States {
+        Spawn:
+            POT4 A -1
+            Stop
+    }
 }
 
 Actor OE2DefencePotion: OE2BasePotion {
     States {
         Spawn:
-            POT4 A -1
+            POT5 A -1
             Stop
     }
 }
