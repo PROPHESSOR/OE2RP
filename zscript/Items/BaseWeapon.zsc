@@ -39,6 +39,31 @@ class OE2BaseWeapon: DoomWeapon abstract {
 		A_FireProjectile( projectile, realAngle, true, flags: FPF_NOAUTOAIM, pitch: realPitch );
 	}
 
+	// Clear all successful player hit/kill counters:
+	action void A_OE2RP_ClearSuccessfulHits( void ) {
+		TakeInventory( "OE2PlayerSuccessfulHit", 0xFFFF );
+		TakeInventory( "OE2PlayerSuccessfulKill", 0xFFFF );
+	}
+
+	action State A_OE2RP_JumpIfSuccessfulHit( StateLabel onHit, StateLabel onKill = NULL ) {
+		StateLabel outState = NULL;
+
+		if ( FindInventory( "OE2PlayerSuccessfulKill" ) && onKill != NULL )
+			outState = onKill;
+		else if ( FindInventory( "OE2PlayerSuccessfulHit" ) )
+			outState = onHit;
+
+		if ( outState )
+			A_OE2RP_ClearSuccessfulHits();
+
+		return ResolveState( outState );
+	}
+	
+	action void A_OE2RP_CallACSIfSuccessfulHit( String scriptname, int arg1 = 0, int arg2 = 0, int arg3 = 0, bool onKillOnly = false ) {
+		if ( FindInventory( "OE2PlayerSuccessfulHit" ) && !onKillOnly || FindInventory( "OE2PlayerSuccessfulKill" ) )
+			CallACS( scriptname, arg1, arg2, arg3 );
+	}
+
 
 	// Cannot extend class in the Decorate file.
 	action void A_OE2RP_SendBob( void ) {

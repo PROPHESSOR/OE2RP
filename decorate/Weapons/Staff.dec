@@ -9,36 +9,45 @@ Actor OE2Staff: OE2BaseWeapon {
 	Obituary "TODO:"
 	Inventory.PickupMessage "$OE2RP_W_STAFF"
 
-	var int user_state; // [McM]: PROPHESSOR?.. What's this?
-
 	States {
 		Ready:
-			// STAF A 0 A_Jump(127, "ReadyLeft")
-		ReadyRight:
+			STAF A 0
+			STAF A 0 A_OE2RP_ClearSuccessfulHits()
+			STAF A 0 A_JumpIfInventory( "OE2Staff_LeftItem", 1, 2 )
 			STAF A 1 A_WeaponReady
-			Loop
-		ReadyLeft:
+			Wait
 			STAF C 1 A_WeaponReady
-			Loop
+			Wait
 		Deselect:
 			STAF A 1 A_Lower
-			Loop
+			Wait
 		Select:
 			STAF A 1 A_Raise
-			Loop
+			Wait
 		Fire:
-			// STAF A 0 A_Jump(128, "FireLeft")
+			STAF A 0
+			STAF A 0 A_JumpIfInventory( "OE2Staff_LeftItem", 1, "FireLeft" )
 		FireRight:
 			STAF A 3
-			STAF B 4 A_OE2RP_WeaponMelee( 5 )
+			STAF B 7 A_OE2RP_WeaponMelee( 5 )
+			STAF B 0 A_OE2RP_JumpIfSuccessfulHit( "SetStaffLeft" )
 			Goto Ready
 		FireLeft:
 			STAF C 3
-			STAF D 4
-			Goto ReadyRight
+			STAF D 7 A_OE2RP_WeaponMelee( 5 )
+			STAF D 0 A_OE2RP_JumpIfSuccessfulHit( "SetStaffRight" )
+			Goto Ready
+		SetStaffLeft:
+			STAF C 4
+			STAF A 0 A_GiveInventory( "OE2Staff_LeftItem", 1 )
+			Goto Ready
+		SetStaffRight:
+			STAF A 4
+			STAF A 0 A_TakeInventory( "OE2Staff_LeftItem", 0 )
+			Goto Ready
 		/*AltFire:
-			STAF C 10
-			STAF D 10 A_OE2RP_Massacre
+			STAF BCDABCD 4
+			STAF A 17 A_OE2RP_Massacre
 			STAF C 0 A_Refire( "AltFireCont" )
 			Goto Ready
 		AltFireCont:
@@ -48,4 +57,9 @@ Actor OE2Staff: OE2BaseWeapon {
 			TNT1 A -1
 			Stop
 	}
+}
+
+Actor OE2Staff_LeftItem: Inventory {
+	Inventory.Amount 1
+	Inventory.MaxAmount 1
 }
