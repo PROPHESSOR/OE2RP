@@ -47,7 +47,7 @@ DoomEdNums {
 
 	15050 = OE2GnomeAle
 	15051 = OE2ElfWine
-	15052 = OE2Forage
+	15052 = OE2FamiliarChow
 	//15053 = OE2RoastedMeat // Created automatically with the "OE2BrazierWithMeat".
 	15054 = OE2HunkOfMeat
 

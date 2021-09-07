@@ -9,6 +9,8 @@ class OE2BaseWeapon: DoomWeapon abstract {
 
 	Default {
 		Inventory.PickupMessage "Picked up a O&E II base weapon.";
+		+Inventory.UNDROPPABLE;
+		+Inventory.UNTOSSABLE;
 		Scale OE2ScaleFactor;
 
 		OE2BaseWeapon.HitSound "";

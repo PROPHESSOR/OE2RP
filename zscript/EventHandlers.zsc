@@ -3,7 +3,7 @@
 class OE2RPEventHandler: EventHandler {
 	override void WorldThingSpawned( WorldEvent e ) {
 		if ( e.Thing.bISMONSTER ) {
-			console.printf( "Exp to " .. e.Thing.GetClassName() );
+			console.printf( "Gave exp. to " .. e.Thing.GetClassName() .. "." );
 			e.Thing.GiveInventory( "OE2RP_Exp", 5 );
 		}
 	} // of override void WorldThingSpawned( WorldEvent e ) {

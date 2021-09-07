@@ -6,4 +6,7 @@ class OE2BaseMonster: Actor {
 		Height 64;
 		Radius 24;
 	}
+
+	action void A_OE2RP_SpawnGibs( void ) {
+	}
 } // of class OE2BaseMonster: Actor {

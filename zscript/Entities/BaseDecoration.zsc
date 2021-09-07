@@ -1,3 +1,5 @@
+#include "zscript/Entities/DecorExtend.zsc"
+
 class BaseDecoration: Actor abstract {
 	Default {
 		-SOLID;
@@ -13,6 +15,17 @@ class BaseDecoration: Actor abstract {
 		Height 64;
 		Scale OE2ScaleFactor;
 	}
+
+	action void A_OE2RP_SpawnDebris( void ) {
+		int debrisAmount = Random( 15, 30 );
+
+		for ( int i = 0; i < debrisAmount; i++ ) {
+			A_SpawnItemEx( "OE2RPDecorationDebris",
+				FRandom( -radius, radius ) * 0.5, FRandom( -radius, radius ) * 0.5, FRandom( 0.0, height ),
+				FRandom( -5.0, 5.0 ), FRandom( -5.0, 5.0 ), FRandom( -1.0, 2.0 ),
+				FRandom( 0.0, -360.0 ) );
+		}
+	} // of action void A_OE2RP_SpawnDecorScrap( void ) {
 
 	States {
 	Spawn:

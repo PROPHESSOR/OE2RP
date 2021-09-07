@@ -14,8 +14,7 @@ Actor OE2ElfWine: OE2GnomeAle {
     }
 }
 
-// FIXME: FamiliarChow
-Actor OE2Forage: OE2BaseItem {
+Actor OE2FamiliarChow: OE2BaseItem {
 }
 
 

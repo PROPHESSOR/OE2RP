@@ -16,6 +16,7 @@ Actor OE2EmptyBrazier: BaseDecoration {
 }
 
 Actor OE2BrazierWithMeat: OE2EmptyBrazier {
+	// Meat must be spawned last to use Z-fighting in correct way.
 	States {
 	Spawn:
 		BBQQ A 0
@@ -64,14 +65,6 @@ Actor OE2Vase: OE2SolidDecoration {
 		VASE A -1
 		Stop
 	}
-}
-
-Actor OE2RubblePile: OE2SolidDecoration {
-    States {
-    Spawn:
-        BARR A -1
-        Stop
-    }
 }
 
 Actor OE2DwarfStatue: OE2SolidDecoration {
