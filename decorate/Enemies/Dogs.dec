@@ -1,16 +1,31 @@
 Actor WorgPup: OE2BaseMonster {
+    States {
+        Spawn:
+            PUP1 A -1
+            Stop
+    }
 }
 
 Actor Warhound: WorgPup {
+    States {
+        Spawn:
+            PUP2 A -1
+            Stop
+    }
 }
 
 Actor Cerebrus: WorgPup { // "Cerebus" in the class hierarchy.
-}
-
-Actor Worg: WorgPup {
+    States {
+        Spawn:
+            PUP3 A -1
+            Stop
+    }
 }
 
 Actor ShadowPup: WorgPup {
+    +SHADOW
+    RenderStyle "Shaded"
+    StencilColor "white"
 }
 
 Actor ShadowWarHound: ShadowPup {
