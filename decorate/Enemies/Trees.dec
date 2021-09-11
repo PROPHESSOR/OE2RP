@@ -1,17 +1,40 @@
 Actor LiveOak: OE2BaseMonster {
+    States {
+        Spawn:
+            OAK1 A -1
+            Stop
+    }
 }
 
 Actor BloodOak: LiveOak {
+    States {
+        Spawn:
+            OAK2 A -1
+            Stop
+    }
 }
 
 Actor SawtoothOak: LiveOak {
+    States {
+        Spawn:
+            OAK3 A -1
+            Stop
+    }
 }
 
 Actor Oak: LiveOak {
 }
 
 Actor TreeOfDoom: LiveOak {
+    States {
+        Spawn:
+            OAK4 A -1
+            Stop
+    }
 }
 
 Actor ShadowOak: LiveOak {
+    +SHADOW
+    RenderStyle "Shaded"
+    StencilColor "white"
 }
