@@ -32,6 +32,8 @@ Actor OE2PouchOfGold: OE2BaseItem {
 }
 
 Actor OE2PouchOfGoldBlue: OE2PouchOfGold {
+    Scale 0.38
+
     States {
         Spawn:
             POUC B -1
