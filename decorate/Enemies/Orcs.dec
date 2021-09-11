@@ -1,14 +1,30 @@
 Actor OrcRecruit: OE2BaseMonster {
+    States {
+        Spawn:
+            ORC1 A -1
+            Stop
+    }
 }
 
 Actor OrcRaider: OrcRecruit {
+    States {
+        Spawn:
+            ORC2 A -1
+            Stop
+    }
 }
 
 Actor OrcBerserker: OrcRecruit {
+    States {
+        Spawn:
+            ORC3 A -1
+            Stop
+    }
 }
 
 Actor ShadowOrc: OrcRecruit {
+    +SHADOW
+    RenderStyle "Shaded"
+    StencilColor "white"
 }
-
-
 
