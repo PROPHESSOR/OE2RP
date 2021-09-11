@@ -1,13 +1,31 @@
 Actor Troll: OE2BaseMonster {
+    States {
+        Spawn:
+            TRL1 A -1
+            Stop
+    }
 }
 
 Actor Crusher: Troll {
+    States {
+        Spawn:
+            TRL2 A -1
+            Stop
+    }
 }
 
 Actor Shaker: Troll {
+    States {
+        Spawn:
+            TRL3 A -1
+            Stop
+    }
 }
 
 Actor ShadowTroll: Troll {
+    +SHADOW
+    RenderStyle "Shaded"
+    StencilColor "white"
 }
 
 Actor ShadowCrusher: ShadowTroll {
