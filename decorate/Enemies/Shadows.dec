@@ -1,4 +1,13 @@
 Actor Shadow: OE2BaseMonster {
+    +SHADOW
+    RenderStyle "Stencil"
+    Alpha 0.75
+
+    States {
+        Spawn:
+            WRA1 A -1
+            Stop
+    }
 }
 
 Actor Phantom: Shadow {
