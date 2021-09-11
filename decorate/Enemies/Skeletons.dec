@@ -1,11 +1,29 @@
 Actor BrittleSkeleton: OE2BaseMonster {
+    States {
+        Spawn:
+            SKL1 A -1
+            Stop
+    }
 }
 
 Actor Skeleton: BrittleSkeleton {
+    States {
+        Spawn:
+            SKL2 A -1
+            Stop
+    }
 }
 
 Actor RagingSkeleton: BrittleSkeleton {
+    States {
+        Spawn:
+            SKL3 A -1
+            Stop
+    }
 }
 
 Actor ShadowSkeleton: BrittleSkeleton {
+    +SHADOW
+    RenderStyle "Shaded"
+    StencilColor "white"
 }
