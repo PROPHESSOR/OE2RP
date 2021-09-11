@@ -1,19 +1,42 @@
 Actor Ratling: OE2BaseMonster {
+    States {
+        Spawn:
+            RAT1 A -1
+            Stop
+    }
 }
 
 Actor Rat: Ratling {
+    States {
+        Spawn:
+            RAT2 A -1
+            Stop
+    }
 }
 
 Actor Prowler: Ratling {
+    States {
+        Spawn:
+            RAT3 A -1
+            Stop
+    }
 }
 
 Actor Wererat: Ratling {
 }
 
 Actor Topo: Ratling {
+    States {
+        Spawn:
+            RAT4 A -1
+            Stop
+    }
 }
 
 Actor ShadowRatling: Ratling {
+    +SHADOW
+    RenderStyle "Shaded"
+    StencilColor "white"
 }
 
 Actor ShadowRat: ShadowRatling {
