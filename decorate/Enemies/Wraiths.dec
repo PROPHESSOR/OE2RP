@@ -1,8 +1,23 @@
 Actor WraithMonster: OE2BaseMonster {
+    States {
+        Spawn:
+            WRA1 A -1
+            Stop
+    }
 }
 
 Actor VoidWraith: Wraith {
+    States {
+        Spawn:
+            WRA2 A -1
+            Stop
+    }
 }
 
 Actor DreadWraith: Wraith {
+    States {
+        Spawn:
+            WRA3 A -1
+            Stop
+    }
 }
