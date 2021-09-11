@@ -1,9 +1,24 @@
 Actor Mimic: OE2BaseMonster {
+    States {
+        Spawn:
+            MIM1 A -1
+            Stop
+    }
 }
 
 Actor CopperMimic: Mimic {
+    States {
+        Spawn:
+            MIM1 A -1
+            Stop
+    }
 }
 
 Actor CobaltMimic: Mimic {
+    States {
+        Spawn:
+            MIM2 A -1
+            Stop
+    }
 }
 
