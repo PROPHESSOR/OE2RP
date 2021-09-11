@@ -1,9 +1,22 @@
 Actor Behemoth: OE2BaseMonster {
+    States {
+        Spawn:
+            BEH1 A -1
+            Stop
+    }
 }
 
 Actor RedBehemoth: Behemoth {
+    States {
+        Spawn:
+            BEH2 A -1
+            Stop
+    }
 }
 
 Actor ShadowBehemoth: Behemoth {
+    +SHADOW
+    RenderStyle "Shaded"
+    StencilColor "white"
 }
 
