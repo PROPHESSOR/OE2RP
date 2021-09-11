@@ -1,19 +1,42 @@
 Actor VaettirDrone: OE2BaseMonster {
+    States {
+        Spawn:
+            VAE1 A -1
+            Stop
+    }
 }
 
 Actor Conjurer: VaettirDrone {
+    States {
+        Spawn:
+            VAE2 A -1
+            Stop
+    }
 }
 
 Actor Necromancer: VaettirDrone {
+    States {
+        Spawn:
+            VAE3 A -1
+            Stop
+    }
 }
 
 Actor Vaettir: VaettirDrone {
 }
 
 Actor Kazad: VaettirDrone {
+    States {
+        Spawn:
+            VAE4 A -1
+            Stop
+    }
 }
 
 Actor ShadowDrone: VaettirDrone {
+    +SHADOW
+    RenderStyle "Shaded"
+    StencilColor "white"
 }
 
 Actor ShadowConjurer: ShadowDrone {
