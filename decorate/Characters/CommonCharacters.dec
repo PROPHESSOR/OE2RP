@@ -7,7 +7,8 @@ Actor OE2Dwarf: BaseCharacter {
 }
 
 Actor OE2Sarbok: OE2Dwarf {
-    // TODO: Half-transparent
+    RenderStyle "Add"
+
     States {
         Spawn:
             DWA2 A -1
