@@ -12,5 +12,8 @@ class OE2BaseItem: CustomInventory {
 		SPID F 5 Bright;
 		SPID F 5;
 		loop;
+	Pickup:
+		TNT1 F 0 A_Print("Pickup state isn't defined!");
+		stop;
 	}
 } // of class OE2BaseItem: CustomInventory {
