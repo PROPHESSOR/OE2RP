@@ -78,6 +78,16 @@ Actor OE2RubblePile: OE2Tent {
     }
 }
 
+Actor OE2Chair: OE2RubblePile {
+	Tag "$OE2RP_E_CHAIR"
+
+	States {
+	Spawn:
+		CHAI R -1
+		Stop
+	}
+}
+
 Actor OE2AirStream: BaseDecoration {
 }
 

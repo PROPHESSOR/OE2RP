@@ -27,16 +27,6 @@ Actor OE2Tombstone: OE2SolidDecoration {
 	}
 }
 
-Actor OE2Chair: OE2SolidDecoration {
-	Tag "$OE2RP_E_CHAIR"
-
-	States {
-	Spawn:
-		CHAI R -1
-		Stop
-	}
-}
-
 Actor OE2Table: OE2SolidDecoration {
 	Tag "$OE2RP_E_TABLE"
 
