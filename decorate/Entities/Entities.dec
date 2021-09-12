@@ -7,7 +7,7 @@ Actor OE2Fire: BaseDecoration {
 }
 
 /*
-Actor OE2MoveableBoulder: BaseDecoration {
+Actor OE2Boulder: BaseDecoration {
 	States {
 	Spawn:
 		BLDR A -1
@@ -15,7 +15,7 @@ Actor OE2MoveableBoulder: BaseDecoration {
 	}
 }/* Written in ZScript. */
 
-Actor OE2TreasureChest: BaseDecoration {
+Actor OE2Chest: BaseDecoration {
 	+SOLID
 
 	States {
@@ -25,7 +25,7 @@ Actor OE2TreasureChest: BaseDecoration {
 	}
 }
 
-Actor OE2LockedChest: OE2TreasureChest {
+Actor OE2LockedChest: OE2Chest {
 	+SOLID
 
 	States {
@@ -36,7 +36,7 @@ Actor OE2LockedChest: OE2TreasureChest {
 }
 
 
-Actor OE2SmallTent: BaseDecoration {
+Actor OE2Tent: BaseDecoration {
 	Health 20
 	+SOLID
 	+SHOOTABLE
@@ -53,7 +53,7 @@ Actor OE2SmallTent: BaseDecoration {
 	}
 }
 
-Actor OE2RubblePile: OE2SmallTent {
+Actor OE2RubblePile: OE2Tent {
 	+SHOOTABLE
 	Health 1
 

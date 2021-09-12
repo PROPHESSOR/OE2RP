@@ -13,7 +13,7 @@ class OE2RPDecorationDebris: Actor {
 	}
 }
 
-class OE2MoveableBoulder: BaseDecoration {
+class OE2Boulder: BaseDecoration {
 	const boulderMoveStrength = 6.5; // About 64 mappixels.
 
 	bool movesNow;
@@ -64,7 +64,7 @@ class OE2MoveableBoulder: BaseDecoration {
 	action void A_OE2RP_MoveBoulder( void ) {
 		if ( target ) {
 			// If boulder isn't moving and if user/attacker is a player:
-			if ( !OE2MoveableBoulder( self ).movesNow && OE2Valin( target ) ) {
+			if ( !OE2Boulder( self ).movesNow && OE2Valin( target ) ) {
 				OE2Valin pl = OE2Valin( target );
 
 				// Moving boulder only in exact X/Y axes:

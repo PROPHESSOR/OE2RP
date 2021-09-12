@@ -1,4 +1,4 @@
-Actor OE2GnomeAle: OE2BaseItem {
+Actor OE2DwarvenAle: OE2BaseItem {
     States {
         Spawn:
             WBAR A -1
@@ -6,7 +6,7 @@ Actor OE2GnomeAle: OE2BaseItem {
     }
 }
 
-Actor OE2ElfWine: OE2GnomeAle {
+Actor OE2ElvenWine: OE2DwarvenAle {
     States {
         Spawn:
             WBAR A -1

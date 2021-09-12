@@ -14,7 +14,7 @@ Actor OE2AccuracyPotion: OE2BasePotion {
     }
 }
 
-Actor OE2DefencePotion: OE2BasePotion {
+Actor OE2DefensePotion: OE2BasePotion {
     States {
         Spawn:
             POT5 A -1
@@ -23,7 +23,7 @@ Actor OE2DefencePotion: OE2BasePotion {
 }
 
 // FIXME: Haste
-Actor OE2SpeedPotion: OE2BasePotion {
+Actor OE2HastePotion: OE2BasePotion {
     States {
         Spawn:
             POT6 A -1

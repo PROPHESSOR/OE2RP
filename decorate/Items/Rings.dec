@@ -7,20 +7,20 @@ Actor OE2StrengthRing: OE2BaseRing {
 Actor OE2AccuracyRing: OE2BaseRing {
 }
 
-Actor OE2DefenceRing: OE2BaseRing {
+Actor OE2DefenseRing: OE2BaseRing {
 }
 
-Actor OE2RegenerationRing: OE2BaseRing {
+Actor OE2RegenRing: OE2BaseRing {
 }
 
-Actor OE2PowerRing: OE2BaseRing {
+Actor OE2ForceRing: OE2BaseRing {
 }
 
-Actor OE2PerseveranceRing: OE2BaseRing {
+Actor OE2FortitudeRing: OE2BaseRing {
 }
 
-Actor OE2TerrorRing: OE2BaseRing {
+Actor OE2IntimidateRing: OE2BaseRing {
 }
 
-Actor OE2SarbokRing: OE2BaseRing {
+Actor OE2SarboksRing: OE2BaseRing {
 }

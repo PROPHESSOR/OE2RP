@@ -44,9 +44,11 @@ DoomEdNums {
 
 	15025 = OE2Armor // ?
 	15026 = OE2LeatherArmor
+	15027 = OE2ElvenMail
+	15028 = OE2DiamondArmor
 
-	15050 = OE2GnomeAle
-	15051 = OE2ElfWine
+	15050 = OE2DwarvenAle
+	15051 = OE2ElvenWine
 	15052 = OE2FamiliarChow
 	//15053 = OE2RoastedMeat // Created automatically with the "OE2BrazierWithMeat".
 	15054 = OE2HunkOfMeat
@@ -55,39 +57,41 @@ DoomEdNums {
 	15076 = OE2LargeHealthPotion
 	15077 = OE2StrengthPotion
 	15078 = OE2AccuracyPotion
-	15079 = OE2DefencePotion
-	15080 = OE2SpeedPotion
+	15079 = OE2DefensePotion
+	15080 = OE2HastePotion
 	15081 = OE2AvoidancePotion
-	15082 = OE2AntidotePotion
-	15083 = OE2TrollBloodPotion
-	15084 = OE2HeroPotion
+	15082 = OE2RemedyPotion
+	15083 = OE2TrollsBloodPotion
+	15084 = OE2ChampionBrew
 
 	15100 = OE2StrengthRing
 	15101 = OE2AccuracyRing
-	15102 = OE2DefenceRing
-	15103 = OE2RegenerationRing
-	15104 = OE2PowerRing
-	15105 = OE2PerseveranceRing
-	15106 = OE2TerrorRing
-	15107 = OE2SarbokRing
+	15102 = OE2DefenseRing
+	15103 = OE2RegenRing
+	15104 = OE2ForceRing
+	15105 = OE2FortitudeRing
+	15106 = OE2IntimidateRing
+	15107 = OE2SarboksRing
 
-	15200 = OE2Picklock
-	15201 = OE2Tools
-	15202 = OE2CorruptingStone
+	15200 = OE2Lockpicks
+	15201 = OE2ArmorKit
+	15202 = OE2WarpGem
 	15203 = OE2PileOfCoins
-	15204 = OE2PouchOfGold
-	15205 = OE2PouchOfGoldBlue // ?
-	15206 = OE2PouchOfGoldRed // ?
+	15204 = OE2BagOfGold
+	15205 = OE2BagOfGoldBlue
+	15206 = OE2BagOfGoldRed
 
 // Entities (15300-15499):
-	15300 = OE2Fire				// Interactive entities (part 1).
-	15301 = OE2MoveableBoulder
+	// Interactive entities (part 1).
+	15300 = OE2Fire
+	15301 = OE2Boulder
 	15302 = OE2LockedChest
-	15303 = OE2TreasureChest
-	15304 = OE2SmallTent
+	15303 = OE2Chest
+	15304 = OE2Tent
 	15305 = OE2Familiar
 
-	15310 = OE2Pedestal			// Common decorations (part 1)
+	// Common decorations (part 1)
+	15310 = OE2Pedestal
 	15311 = OE2Tombstone
 	15312 = OE2Chair
 	15313 = OE2RubblePile
@@ -98,35 +102,28 @@ DoomEdNums {
 	15318 = OE2Vase
 	15319 = OE2ElfBerries
 
-	15320 = OE2Tree1			// Nature.
+	// Nature.
+	15320 = OE2Tree1			
 	15321 = OE2Tree2
 	15322 = OE2Tree3
 	15323 = OE2Tree4
 	15324 = OE2Tree5
 	15325 = OE2TreeStump
 
-	15330 = OE2Tunic			// Trade point junk.
-	15331 = OE2SouvenirTunic
-	15332 = OE2Glass
-	15333 = OE2WineGlass
-	15334 = OE2KeyRing
-	15335 = OE2Medallion
-	15336 = OE2CopperMedallion
-	15337 = OE2GamePieces
-	15338 = OE2ShotGlass
-	15339 = OE2ToyArcherySet
-
-	15340 = OE2CageWithSkeleton	// Common decorations (part 2)
+	// Common decorations (part 2)
+	15340 = OE2CageWithSkeleton	
 	15341 = OE2CageHook
 	15342 = OE2SkeletonBones
 
-	15350 = OE2AirStream		// Interactive entities (part 2).
+	// Interactive entities (part 2).
+	15350 = OE2AirStream		
 	15351 = OE2Fog
 	15352 = OE2VioletFog
 	15353 = OE2EmptyBrazier
 	15354 = OE2BrazierWithMeat // Creates the "OE2RoastedMeat".
 
-	15450 = OE2Dwarf			// Characters.
+	// Characters.
+	15450 = OE2Dwarf			
 	15451 = OE2Sarbok
 	15452 = OE2DwarvenGuard
 	15453 = OE2Elf
@@ -135,7 +132,9 @@ DoomEdNums {
 	15500 = OrcRecruit
 	15501 = OrcRaider
 	15502 = OrcBerserker
-	15503 = ShadowOrc // As far as I know, shadow versions cannot be spawned directly in the map. So I may comment them out here.
+	15503 = ShadowOrc
+	// <McMare> As far as I know, shadow versions cannot be spawned directly in the map. So I may comment them out here.
+	// <PROPHESSOR> We may want to spawn them in testmaps
 
 	15510 = Ratling
 	15511 = Rat
@@ -168,7 +167,6 @@ DoomEdNums {
 	15560 = WorgPup
 	15561 = Warhound
 	15562 = Cerebrus
-	//15563 = Worg // ?
 	15564 = ShadowPup
 	15565 = ShadowWarHound
 	15566 = ShadowCerebrus
@@ -181,9 +179,8 @@ DoomEdNums {
 	15575 = ShadowShaker
 
 	15580 = VaettirDrone
-	//15581 = Conjurer
-	//15582 = Necromancer
-	//15583 = Vaettir
+	15581 = Conjurer
+	15582 = Necromancer
 	15584 = Kazad
 	15585 = ShadowDrone
 	15586 = ShadowConjurer
