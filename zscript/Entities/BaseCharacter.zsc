@@ -1,6 +1,7 @@
 class BaseCharacter: BaseDecoration abstract {
 	Default {
 		+SOLID;
+		+FRIENDLY;
 	}
 
 	action void A_OE2RP_DoDialogue( int characterNum, int replicaNum ) {
