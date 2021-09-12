@@ -1,6 +1,3 @@
-Actor OE2Armor: OE2BaseArmor {
-}
-
 Actor OE2LeatherArmor: OE2BaseArmor {
 }
 

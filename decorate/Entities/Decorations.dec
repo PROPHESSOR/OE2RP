@@ -7,24 +7,6 @@ Actor OE2SkeletonBones: BaseDecoration {
 	}
 }
 
-Actor OE2EmptyBrazier: BaseDecoration {
-	States {
-	Spawn:
-		BBQQ A -1
-		Stop
-	}
-}
-
-Actor OE2BrazierWithMeat: OE2EmptyBrazier {
-	// Meat must be spawned last to use Z-fighting in correct way.
-	States {
-	Spawn:
-		BBQQ A 0
-		BBQQ A 0 A_SpawnItem( "OE2RoastedMeat" )
-		Goto Super::Spawn
-	}
-}
-
 
 // Solid:
 Actor OE2SolidDecoration: BaseDecoration {
@@ -114,4 +96,48 @@ Actor OE2ElfBerries: OE2SolidDecoration {
         DTRE A -1
         Stop
     }
+}
+
+Actor OE2Tree1: BaseDecoration {
+	+SOLID
+	+NOGRAVITY
+	+FORCEYBILLBOARD
+
+	Radius 16
+
+	States {
+		Spawn:
+			TREE A -1
+			Stop
+	}
+}
+
+Actor OE2Tree2: OE2Tree1 {
+	States {
+		Spawn:
+			TREE B -1
+			Stop
+	}
+}
+
+Actor OE2Tree3: OE2Tree1 {
+	States {
+		Spawn:
+			TREE C -1
+			Stop
+	}
+}
+
+Actor OE2Tree4: OE2Tree1 {
+}
+
+Actor OE2Tree5: OE2Tree1 {
+}
+
+Actor OE2TreeStump: OE2Tree1 {
+	States {
+		Spawn:
+			TREE D -1
+			Stop
+	}
 }

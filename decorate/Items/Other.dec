@@ -4,11 +4,9 @@ Actor OE2Lockpicks: OE2BaseItem {
         // <PROPHESSOR> For your choice.
 }
 
-// FIXME: OE2ArmorKit
 Actor OE2ArmorKit: OE2BaseItem {
 }
 
-// FIXME: OE2WarpGem
 Actor OE2WarpGem: OE2BaseItem {
 }
 

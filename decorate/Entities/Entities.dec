@@ -98,3 +98,21 @@ Actor OE2VioletFog: OE2Fog {
 		Loop
 	}
 }
+
+Actor OE2EmptyBrazier: BaseDecoration {
+	States {
+	Spawn:
+		BBQQ A -1
+		Stop
+	}
+}
+
+Actor OE2BrazierWithMeat: OE2EmptyBrazier {
+	// Meat must be spawned last to use Z-fighting in correct way.
+	States {
+	Spawn:
+		BBQQ A 0
+		BBQQ A 0 A_SpawnItem( "OE2RoastedMeat" )
+		Goto Super::Spawn
+	}
+}

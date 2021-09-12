@@ -42,7 +42,6 @@ DoomEdNums {
 	15009 = OE2Crossbow
 	15010 = OE2KineticCrossbow
 
-	15025 = OE2Armor // ?
 	15026 = OE2LeatherArmor
 	15027 = OE2ElvenMail
 	15028 = OE2DiamondArmor

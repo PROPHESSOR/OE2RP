@@ -1,3 +1,21 @@
+// Health
+
+Actor OE2HealthPotion: OE2BasePotion {
+    States {
+        Spawn:
+            POT1 A -1
+            Stop
+    }
+}
+
+Actor OE2LargeHealthPotion: OE2HealthPotion {
+    States {
+        Spawn:
+            POT2 A -1
+            Stop
+    }
+}
+
 Actor OE2StrengthPotion: OE2BasePotion {
     States {
         Spawn:
@@ -22,7 +40,8 @@ Actor OE2DefensePotion: OE2BasePotion {
     }
 }
 
-// FIXME: Haste
+// Stats
+
 Actor OE2HastePotion: OE2BasePotion {
     States {
         Spawn:
@@ -37,4 +56,25 @@ Actor OE2AvoidancePotion: OE2BasePotion {
             POT9 A -1
             Stop
     }
+}
+
+// Complex
+
+Actor OE2RemedyPotion: OE2BasePotion {
+    States {
+        Spawn:
+            POT7 A -1
+            Stop
+    }
+}
+
+Actor OE2TrollsBloodPotion: OE2HealthPotion {
+    States {
+        Spawn:
+            POT8 A -1
+            Stop
+    }
+}
+
+Actor OE2ChampionBrew: OE2BasePotion {
 }
