@@ -30,5 +30,4 @@
 #include "decorate/Characters/CommonCharacters.dec"
 #include "decorate/Entities/PureDecor.dec"
 #include "decorate/Entities/Entities.dec"
-#include "decorate/Entities/JunkTradePointDecor.dec"
 #include "decorate/Entities/TreesDecor.dec"
