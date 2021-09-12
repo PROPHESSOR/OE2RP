@@ -1,5 +1,15 @@
 Actor Vareth: OE2BaseMonster {
+    States {
+        Spawn:
+            WIZ1 A -1
+            Stop
+    }
 }
 
 Actor Dareth: Vareth {
+    States {
+        Spawn:
+            WIZ2 A -1
+            Stop
+    }
 }
