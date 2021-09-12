@@ -2,6 +2,8 @@
 
 class OE2BaseMonster: Actor {
 	Default {
+		MONSTER;
+
 		Scale OE2ScaleFactor;
 		Height 64;
 		Radius 24;
