@@ -7,6 +7,13 @@ class OE2BaseMonster: Actor {
 		Scale OE2ScaleFactor;
 		Height 64;
 		Radius 24;
+		Health 1;
+	}
+
+	States {
+		Death:
+			TNT1 A 0;
+			Stop;
 	}
 
 	action void A_OE2RP_SpawnGibs( void ) {
