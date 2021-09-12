@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "command": "gzdoom .",
+            "name": "Launch in GZDoom",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "command": "gzdoom . +map TESTITEMS +notarget +god +turbo 200",
+            "name": "Debug in GZDoom",
+            "request": "launch",
+            "type": "node-terminal"
+        }
+    ]
+}
