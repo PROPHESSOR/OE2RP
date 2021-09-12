@@ -30,7 +30,7 @@ class OE2Boulder: BaseDecoration {
 		PainChance 256;
 		Mass LARGE_MASS;
 		Health 0x7FFFFFFF;
-		Tag "$OE2RP_E_MBOULDER"
+		Tag "$OE2RP_E_MBOULDER";
 	}
 
 	override void Tick() {
