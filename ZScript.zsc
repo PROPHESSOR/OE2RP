@@ -3,6 +3,8 @@ version "2.4.0"
 #include "zscript/Player.zsc"
 #include "zscript/Constants.zsc"
 #include "zscript/EventHandlers.zsc"
+#include "zscript/Infobar.zsc"
+#include "zscript/Compass.zsc"
 
 #include "zscript/BaseMonster.zsc"
 

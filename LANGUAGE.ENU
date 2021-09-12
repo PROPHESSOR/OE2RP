@@ -7,6 +7,7 @@
 
 [enu default]
 
+    OE2RP_HUD_COMPASSVISUAL = "N-----W-----S-----E-----";
     OE2RP_W_WAND = "Wand";
     OE2RP_W_WAND_INFO = "The wand, named Ellon, consumes energy as you use it and regains energy faster while stowed.";
     OE2RP_W_STAFF = "Staff";
@@ -203,13 +204,13 @@
     OE2RP_E_DGUARD = "Dwarven Guard";
     OE2RP_E_VALIN = "Valin";
     OE2RP_E_ELF = "Elf";
-    OE2RP_E_ROASTEDMEAT = "Roasted Meat";
-    OE2RP_E_HUNKOFMEAT = "Hunk of Meat";
     OE2RP_E_NONOBSPRITEWALL = "NONOBSPRITEWALL";
     OE2RP_E_SPRITEWALL = "SPRITEWALL";
     OE2RP_E_FAMILIAR_SPRITEWALL = "FAMILIAR_SPRITEWALL";
     OE2RP_E_FAMILIAR = "Familiar";
     OE2RP_E_WORLD = "World";
+    OE2RP_I_ROASTEDMEAT = "Roasted Meat";
+    OE2RP_I_HUNKOFMEAT = "Hunk of Meat";
     OE2RP_I_PILEOFCOINS = "Pile of Coins";
     OE2RP_I_BAGOFCOINS = "Bag of Coins";
     OE2RP_I_BAGOFLOOT = "Bag of Loot";
