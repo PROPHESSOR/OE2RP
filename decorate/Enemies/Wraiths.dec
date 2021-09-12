@@ -1,4 +1,4 @@
-Actor WraithMonster: OE2BaseMonster {
+Actor OE2Wraith: OE2BaseMonster replaces Wraith {
     States {
         Spawn:
             WRA1 A -1

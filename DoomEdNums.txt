@@ -190,7 +190,7 @@ DoomEdNums {
 	15592 = RagingSkeleton
 	15593 = ShadowSkeleton
 
-	15600 = Wraith
+	15600 = OE2Wraith
 	15601 = VoidWraith
 	15602 = DreadWraith
 
