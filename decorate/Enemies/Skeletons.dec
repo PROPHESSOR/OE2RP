@@ -1,4 +1,6 @@
 Actor BrittleSkeleton: OE2BaseMonster {
+    Tag "$OE2RP_M_BRITTLESKELETON"
+
     States {
         Spawn:
             SKL1 A -1
@@ -7,6 +9,8 @@ Actor BrittleSkeleton: OE2BaseMonster {
 }
 
 Actor Skeleton: BrittleSkeleton {
+    Tag "$OE2RP_M_SKELETON"
+
     States {
         Spawn:
             SKL2 A -1
@@ -15,6 +19,8 @@ Actor Skeleton: BrittleSkeleton {
 }
 
 Actor RagingSkeleton: BrittleSkeleton {
+    Tag "$OE2RP_M_RAGINGSKELETON"
+
     States {
         Spawn:
             SKL3 A -1
@@ -24,6 +30,8 @@ Actor RagingSkeleton: BrittleSkeleton {
 
 Actor ShadowSkeleton: BrittleSkeleton {
     +SHADOW
+
+    Tag "$OE2RP_M_SHADOW_SKELETON"
     RenderStyle "Shaded"
     StencilColor "white"
 }

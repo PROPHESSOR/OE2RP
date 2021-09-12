@@ -1,4 +1,6 @@
 Actor OE2Wraith: OE2BaseMonster replaces Wraith {
+    Tag "$OE2RP_M_WRAITH"
+
     States {
         Spawn:
             WRA1 A -1
@@ -7,6 +9,8 @@ Actor OE2Wraith: OE2BaseMonster replaces Wraith {
 }
 
 Actor VoidWraith: Wraith {
+    Tag "$OE2RP_M_VOIDWRAITH"
+
     States {
         Spawn:
             WRA2 A -1
@@ -15,6 +19,8 @@ Actor VoidWraith: Wraith {
 }
 
 Actor DreadWraith: Wraith {
+    Tag "$OE2RP_M_DREADWRAITH"
+
     States {
         Spawn:
             WRA3 A -1

@@ -1,4 +1,6 @@
 Actor Mimic: OE2BaseMonster {
+    Tag "$OE2RP_M_MIMIC"
+
     States {
         Spawn:
             MIM1 A -1
@@ -7,6 +9,8 @@ Actor Mimic: OE2BaseMonster {
 }
 
 Actor CopperMimic: Mimic {
+    Tag "$OE2RP_M_COPPERMIMIC"
+
     States {
         Spawn:
             MIM1 A -1
@@ -15,6 +19,8 @@ Actor CopperMimic: Mimic {
 }
 
 Actor CobaltMimic: Mimic {
+    Tag "$OE2RP_M_COBALTMIMIC"
+
     States {
         Spawn:
             MIM2 A -1

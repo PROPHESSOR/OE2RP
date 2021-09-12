@@ -25,7 +25,7 @@
     - ShadowOak (OE2RP_M_SHADOW_OAK)_
   - Shadow (OE2RP_M_SHADOW)
     - Phantom (OE2RP_M_PHANTOM)
-    - Plenumbra (OE2RP_M_PENUMBRA)
+    - Penumbra (OE2RP_M_PENUMBRA)
   - WorgPup (OE2RP_M_WORGPUP)
     - Warhound (OE2RP_M_WARHOUND)
     - Cerebus (OE2RP_M_CEREBUS)

@@ -1,4 +1,6 @@
 Actor Behemoth: OE2BaseMonster {
+    Tag "$OE2RP_M_BEHEMOTH"
+
     States {
         Spawn:
             BEH1 A -1
@@ -7,6 +9,8 @@ Actor Behemoth: OE2BaseMonster {
 }
 
 Actor RedBehemoth: Behemoth {
+    Tag "$OE2RP_M_BEHEMOTH"
+
     States {
         Spawn:
             BEH2 A -1
@@ -16,6 +20,8 @@ Actor RedBehemoth: Behemoth {
 
 Actor ShadowBehemoth: Behemoth {
     +SHADOW
+
+    Tag "$OE2RP_M_SHADOW_BEHEMOTH"
     RenderStyle "Shaded"
     StencilColor "white"
 }

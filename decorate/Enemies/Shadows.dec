@@ -1,5 +1,7 @@
 Actor Shadow: OE2BaseMonster {
     +SHADOW
+
+    Tag "$OE2RP_M_SHADOW"
     RenderStyle "Stencil"
     Alpha 0.75
 
@@ -11,8 +13,10 @@ Actor Shadow: OE2BaseMonster {
 }
 
 Actor Phantom: Shadow {
+    Tag "$OE2RP_M_PHANTOM"
 }
 
-Actor Plenumbra: Shadow {
+Actor Penumbra: Shadow {
+    Tag "$OE2RP_M_PENUMBRA"
 }
 

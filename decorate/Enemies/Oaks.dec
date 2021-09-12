@@ -1,4 +1,6 @@
 Actor LiveOak: OE2BaseMonster {
+    Tag "$OE2RP_M_LIVEOAK"
+
     States {
         Spawn:
             OAK1 A -1
@@ -7,6 +9,8 @@ Actor LiveOak: OE2BaseMonster {
 }
 
 Actor BloodOak: LiveOak {
+    Tag "$OE2RP_M_BLOODOAK"
+
     States {
         Spawn:
             OAK2 A -1
@@ -15,6 +19,8 @@ Actor BloodOak: LiveOak {
 }
 
 Actor SawtoothOak: LiveOak {
+    Tag "$OE2RP_M_SAWTOOTHOAK"
+
     States {
         Spawn:
             OAK3 A -1
@@ -22,10 +28,9 @@ Actor SawtoothOak: LiveOak {
     }
 }
 
-Actor Oak: LiveOak {
-}
-
 Actor TreeOfDoom: LiveOak {
+    Tag "$OE2RP_M_TREEOFDOOM"
+
     States {
         Spawn:
             OAK4 A -1
@@ -35,6 +40,8 @@ Actor TreeOfDoom: LiveOak {
 
 Actor ShadowOak: LiveOak {
     +SHADOW
+    
+    Tag "$OE2RP_M_SHADOW_OAK"
     RenderStyle "Shaded"
     StencilColor "white"
 }

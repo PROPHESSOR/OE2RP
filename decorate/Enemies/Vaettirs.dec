@@ -1,4 +1,6 @@
 Actor VaettirDrone: OE2BaseMonster {
+    Tag "$OE2RP_M_VAETTIRDRONE"
+
     States {
         Spawn:
             VAE1 A -1
@@ -7,6 +9,8 @@ Actor VaettirDrone: OE2BaseMonster {
 }
 
 Actor Conjurer: VaettirDrone {
+    Tag "$OE2RP_M_CONJURER"
+
     States {
         Spawn:
             VAE2 A -1
@@ -15,6 +19,8 @@ Actor Conjurer: VaettirDrone {
 }
 
 Actor Necromancer: VaettirDrone {
+    Tag "$OE2RP_M_NECROMANCER"
+
     States {
         Spawn:
             VAE3 A -1
@@ -22,10 +28,9 @@ Actor Necromancer: VaettirDrone {
     }
 }
 
-Actor Vaettir: VaettirDrone {
-}
-
 Actor Kazad: VaettirDrone {
+    Tag "$OE2RP_M_KAZAD"
+
     States {
         Spawn:
             VAE4 A -1
@@ -35,12 +40,16 @@ Actor Kazad: VaettirDrone {
 
 Actor ShadowDrone: VaettirDrone {
     +SHADOW
+
+    Tag "$OE2RP_M_SHADOW_DRONE"
     RenderStyle "Shaded"
     StencilColor "white"
 }
 
 Actor ShadowConjurer: ShadowDrone {
+    Tag "$OE2RP_M_SHADOW_CONJURER"
 }
 
 Actor ShadowNecromancer: ShadowDrone {
+    Tag "$OE2RP_M_SHADOW_NECROMANCER"
 }

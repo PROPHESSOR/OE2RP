@@ -1,4 +1,6 @@
 Actor WorgPup: OE2BaseMonster {
+    Tag "$OE2RP_M_WORGPUP"
+
     States {
         Spawn:
             PUP1 A -1
@@ -7,6 +9,8 @@ Actor WorgPup: OE2BaseMonster {
 }
 
 Actor Warhound: WorgPup {
+    Tag "$OE2RP_M_WARHOUND"
+
     States {
         Spawn:
             PUP2 A -1
@@ -14,7 +18,9 @@ Actor Warhound: WorgPup {
     }
 }
 
-Actor Cerebrus: WorgPup { // "Cerebus" in the class hierarchy.
+Actor Cerebus: WorgPup { // "Cerebus" in the class hierarchy.
+    Tag "$OE2RP_M_CEREBUS"
+
     States {
         Spawn:
             PUP3 A -1
@@ -24,12 +30,16 @@ Actor Cerebrus: WorgPup { // "Cerebus" in the class hierarchy.
 
 Actor ShadowPup: WorgPup {
     +SHADOW
+
+    Tag "$OE2RP_M_SHADOW_PUP"
     RenderStyle "Shaded"
     StencilColor "white"
 }
 
 Actor ShadowWarHound: ShadowPup {
+    Tag "$OE2RP_M_SHADOW_WARHOUND"
 }
 
-Actor ShadowCerebrus: ShadowPup { // "ShadowCerebus" in the class hierarchy.
+Actor ShadowCerebus: ShadowPup { // "ShadowCerebus" in the class hierarchy.
+    Tag "$OE2RP_M_SHADOW_CEREBUS"
 }

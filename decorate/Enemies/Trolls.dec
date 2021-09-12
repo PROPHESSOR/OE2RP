@@ -1,4 +1,6 @@
 Actor Troll: OE2BaseMonster {
+    Tag "$OE2RP_M_TROLL"
+
     States {
         Spawn:
             TRL1 A -1
@@ -7,6 +9,8 @@ Actor Troll: OE2BaseMonster {
 }
 
 Actor Crusher: Troll {
+    Tag "$OE2RP_M_CRUSHER"
+
     States {
         Spawn:
             TRL2 A -1
@@ -15,6 +19,8 @@ Actor Crusher: Troll {
 }
 
 Actor Shaker: Troll {
+    Tag "$OE2RP_M_SHAKER"
+
     States {
         Spawn:
             TRL3 A -1
@@ -24,12 +30,16 @@ Actor Shaker: Troll {
 
 Actor ShadowTroll: Troll {
     +SHADOW
+
+    Tag "$OE2RP_M_SHADOW_TROLL"
     RenderStyle "Shaded"
     StencilColor "white"
 }
 
 Actor ShadowCrusher: ShadowTroll {
+    Tag "$OE2RP_M_SHADOW_CRUSHER"
 }
 
 Actor ShadowShaker: ShadowTroll {
+    Tag "$OE2RP_M_SHADOW_SHAKER"
 }

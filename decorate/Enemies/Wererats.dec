@@ -1,4 +1,6 @@
 Actor Ratling: OE2BaseMonster {
+    Tag "$OE2RP_M_RATLING"
+
     States {
         Spawn:
             RAT1 A -1
@@ -7,6 +9,8 @@ Actor Ratling: OE2BaseMonster {
 }
 
 Actor Rat: Ratling {
+    Tag "$OE2RP_M_RAT"
+
     States {
         Spawn:
             RAT2 A -1
@@ -15,6 +19,8 @@ Actor Rat: Ratling {
 }
 
 Actor Prowler: Ratling {
+    Tag "$OE2RP_M_PROWLER"
+
     States {
         Spawn:
             RAT3 A -1
@@ -22,10 +28,9 @@ Actor Prowler: Ratling {
     }
 }
 
-Actor Wererat: Ratling {
-}
-
 Actor Topo: Ratling {
+    Tag "$OE2RP_M_TOPO"
+
     States {
         Spawn:
             RAT4 A -1
@@ -35,13 +40,17 @@ Actor Topo: Ratling {
 
 Actor ShadowRatling: Ratling {
     +SHADOW
+
+    Tag "$OE2RP_M_SHADOW_RATLING"
     RenderStyle "Shaded"
     StencilColor "white"
 }
 
 Actor ShadowRat: ShadowRatling {
+    Tag "$OE2RP_M_SHADOW_RAT"
 }
 
 Actor ShadowProwler: ShadowRatling {
+    Tag "$OE2RP_M_SHADOW_PROWLER"
 }
 

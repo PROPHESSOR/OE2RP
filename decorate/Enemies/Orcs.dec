@@ -1,4 +1,6 @@
 Actor OrcRecruit: OE2BaseMonster {
+    Tag "$OE2RP_M_ORCRECRUIT"
+
     States {
         Spawn:
             ORC1 A -1
@@ -7,6 +9,8 @@ Actor OrcRecruit: OE2BaseMonster {
 }
 
 Actor OrcRaider: OrcRecruit {
+    Tag "$OE2RP_M_ORCRAIDER"
+
     States {
         Spawn:
             ORC2 A -1
@@ -15,6 +19,8 @@ Actor OrcRaider: OrcRecruit {
 }
 
 Actor OrcBerserker: OrcRecruit {
+    Tag "$OE2RP_M_ORCBERSERKER"
+
     States {
         Spawn:
             ORC3 A -1
@@ -24,6 +30,8 @@ Actor OrcBerserker: OrcRecruit {
 
 Actor ShadowOrc: OrcRecruit {
     +SHADOW
+
+    Tag "$OE2RP_M_SHADOW_ORC"
     RenderStyle "Shaded"
     StencilColor "white"
 }

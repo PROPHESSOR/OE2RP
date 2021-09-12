@@ -1,4 +1,6 @@
 Actor Vareth: OE2BaseMonster {
+    Tag "$OE2RP_M_VARETH"
+
     States {
         Spawn:
             WIZ1 A -1
@@ -7,6 +9,8 @@ Actor Vareth: OE2BaseMonster {
 }
 
 Actor Dareth: Vareth {
+    Tag "$OE2RP_M_DARETH"
+
     States {
         Spawn:
             WIZ2 A -1
