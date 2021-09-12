@@ -25,10 +25,12 @@ class OE2Boulder: BaseDecoration {
 		+USESPECIAL;
 		+QUICKTORETALIATE;
 		-NOGRAVITY;
+
 		Activation THINGSPEC_Switch | THINGSPEC_ThingTargets;
 		PainChance 256;
 		Mass LARGE_MASS;
 		Health 0x7FFFFFFF;
+		Tag "$OE2RP_E_MBOULDER"
 	}
 
 	override void Tick() {

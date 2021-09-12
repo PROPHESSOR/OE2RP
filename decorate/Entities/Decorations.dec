@@ -18,6 +18,8 @@ Actor OE2Pedestal: OE2SolidDecoration {
 }
 
 Actor OE2Tombstone: OE2SolidDecoration {
+	Tag "$OE2RP_E_TOMBSTONE"
+
 	States {
 	Spawn:
 		TOMB A -1
@@ -26,6 +28,8 @@ Actor OE2Tombstone: OE2SolidDecoration {
 }
 
 Actor OE2Chair: OE2SolidDecoration {
+	Tag "$OE2RP_E_CHAIR"
+
 	States {
 	Spawn:
 		CHAI R -1
@@ -34,6 +38,8 @@ Actor OE2Chair: OE2SolidDecoration {
 }
 
 Actor OE2Table: OE2SolidDecoration {
+	Tag "$OE2RP_E_TABLE"
+
 	States {
 	Spawn:
 		TABL E -1
@@ -50,6 +56,8 @@ Actor OE2Vase: OE2SolidDecoration {
 }
 
 Actor OE2DwarfStatue: OE2SolidDecoration {
+	Tag "$OE2RP_E_DSTATUE"
+
 	States {
 	Spawn:
 		S_DW A -1
@@ -58,6 +66,8 @@ Actor OE2DwarfStatue: OE2SolidDecoration {
 }
 
 Actor OE2WereratStatue: OE2SolidDecoration {
+	Tag "$OE2RP_E_WSTATUE"
+
 	States {
 	Spawn:
 		S_WR AB 29
@@ -66,6 +76,8 @@ Actor OE2WereratStatue: OE2SolidDecoration {
 }
 
 Actor OE2FireTorch: OE2SolidDecoration {
+	Tag "$OE2RP_E_FIRE"
+
 	States {
 	Spawn:
 		TRCH ABCD 3 Bright

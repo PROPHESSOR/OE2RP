@@ -12,6 +12,8 @@ Actor OE2WarpGem: OE2BaseItem {
 
 
 Actor OE2PileOfCoins: OE2BaseItem {
+    Tag "$OE2RP_PILEOFCOINS"
+
     States {
         Spawn:
             GOLD A 3 A_Jump( 24, 1 )
@@ -21,7 +23,9 @@ Actor OE2PileOfCoins: OE2BaseItem {
     }
 }
 
-Actor OE2BagOfGold: OE2BaseItem {
+Actor OE2BagOfCoins: OE2BaseItem {
+    Tag "$OE2RP_BAGOFCOINS"
+
     States {
     Spawn:
         POUC A -1
@@ -29,7 +33,7 @@ Actor OE2BagOfGold: OE2BaseItem {
     }
 }
 
-Actor OE2BagOfGoldBlue: OE2BagOfGold {
+Actor OE2BagOfCoinsBlue: OE2BagOfCoins {
     Scale 0.38
 
     States {
@@ -39,7 +43,7 @@ Actor OE2BagOfGoldBlue: OE2BagOfGold {
     }
 }
 
-Actor OE2BagOfGoldRed: OE2BagOfGold {
+Actor OE2BagOfCoinsRed: OE2BagOfCoins {
     States {
         Spawn:
             POUC C -1

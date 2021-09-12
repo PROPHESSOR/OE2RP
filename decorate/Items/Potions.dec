@@ -1,6 +1,8 @@
 // Health
 
 Actor OE2HealthPotion: OE2BasePotion {
+    Tag "$OE2RP_I_HEALTH_POTION"
+
     States {
         Spawn:
             POT1 A -1
@@ -9,6 +11,8 @@ Actor OE2HealthPotion: OE2BasePotion {
 }
 
 Actor OE2LargeHealthPotion: OE2HealthPotion {
+    Tag "$OE2RP_I_LGHEALTH_POTION"
+
     States {
         Spawn:
             POT2 A -1
@@ -17,6 +21,8 @@ Actor OE2LargeHealthPotion: OE2HealthPotion {
 }
 
 Actor OE2StrengthPotion: OE2BasePotion {
+    Tag "$OE2RP_I_STRENGTH_POTION"
+
     States {
         Spawn:
             POT3 A -1
@@ -25,6 +31,8 @@ Actor OE2StrengthPotion: OE2BasePotion {
 }
 
 Actor OE2AccuracyPotion: OE2BasePotion {
+    Tag "$OE2RP_I_ACCURACY_POTION"
+
     States {
         Spawn:
             POT4 A -1
@@ -33,6 +41,8 @@ Actor OE2AccuracyPotion: OE2BasePotion {
 }
 
 Actor OE2DefensePotion: OE2BasePotion {
+    Tag "$OE2RP_I_DEFENSE_POTION"
+
     States {
         Spawn:
             POT5 A -1
@@ -43,6 +53,8 @@ Actor OE2DefensePotion: OE2BasePotion {
 // Stats
 
 Actor OE2HastePotion: OE2BasePotion {
+    Tag "$OE2RP_I_HASTE_POTION"
+
     States {
         Spawn:
             POT6 A -1
@@ -51,6 +63,8 @@ Actor OE2HastePotion: OE2BasePotion {
 }
 
 Actor OE2AvoidancePotion: OE2BasePotion {
+    Tag "$OE2RP_I_AVOIDANCE_POTION"
+
     States {
         Spawn:
             POT9 A -1
@@ -61,6 +75,8 @@ Actor OE2AvoidancePotion: OE2BasePotion {
 // Complex
 
 Actor OE2RemedyPotion: OE2BasePotion {
+    Tag "$OE2RP_I_REMEDY_POTION"
+
     States {
         Spawn:
             POT7 A -1
@@ -69,6 +85,8 @@ Actor OE2RemedyPotion: OE2BasePotion {
 }
 
 Actor OE2TrollsBloodPotion: OE2HealthPotion {
+    Tag "$OE2RP_I_TROLLSBLOOD"
+
     States {
         Spawn:
             POT8 A -1
@@ -77,4 +95,6 @@ Actor OE2TrollsBloodPotion: OE2HealthPotion {
 }
 
 Actor OE2ChampionBrew: OE2BasePotion {
+    Tag "$OE2RP_I_CHAMPIONBREW"
+
 }

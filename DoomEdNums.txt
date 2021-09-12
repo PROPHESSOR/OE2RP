@@ -76,9 +76,9 @@ DoomEdNums {
 	15201 = OE2ArmorKit
 	15202 = OE2WarpGem
 	15203 = OE2PileOfCoins
-	15204 = OE2BagOfGold
-	15205 = OE2BagOfGoldBlue
-	15206 = OE2BagOfGoldRed
+	15204 = OE2BagOfCoins
+	15205 = OE2BagOfCoinsBlue
+	15206 = OE2BagOfCoinsRed
 
 // Entities (15300-15499):
 	// Interactive entities (part 1).

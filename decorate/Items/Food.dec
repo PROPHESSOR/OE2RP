@@ -1,4 +1,6 @@
 Actor OE2DwarvenAle: OE2BaseItem {
+	Tag "$OE2RP_E_ALE"
+
     States {
         Spawn:
             WBAR A -1
@@ -7,6 +9,8 @@ Actor OE2DwarvenAle: OE2BaseItem {
 }
 
 Actor OE2ElvenWine: OE2DwarvenAle {
+	Tag "$OE2RP_E_WINE"
+
     States {
         Spawn:
             WBAR A -1
@@ -19,6 +23,7 @@ Actor OE2FamiliarChow: OE2BaseItem {
 
 
 Actor OE2RoastedMeat: OE2BaseFood {
+	Tag "$OE2RP_E_ROASTEDMEAT"
 	Inventory.PickupMessage "$OE2RP_E_ROASTEDMEAT"
 	Inventory.Amount 10
 
@@ -30,6 +35,7 @@ Actor OE2RoastedMeat: OE2BaseFood {
 }
 
 Actor OE2HunkOfMeat: OE2RoastedMeat {
+	Tag "$OE2RP_E_HUNKOFMEAT"
 	Inventory.PickupMessage "$OE2RP_E_HUNKOFMEAT"
 
 	States {
