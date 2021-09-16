@@ -1,3 +1,10 @@
+/**
+ * Copyright (c) OE2RP Team, 2021
+ *
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
 class OE2RPDecorationDebris: Actor {
 	Default {
 		-SOLID;
@@ -50,40 +57,45 @@ class OE2Boulder: BaseDecoration {
 		if ( OE2Valin( source ) )
 			target = source;
 
-		A_OE2RP_MoveBoulder();
+		OE2Valin pl = OE2Valin( target );
+
+		if ( pl && pl.player.ReadyWeapon && pl.player.ReadyWeapon is 'OE2Staff' )
+			A_OE2RP_MoveBoulder();
 
 		return 1;
 	}
 
 	override void Activate( Actor activator ) {
-		A_OE2RP_MoveBoulder();
+		if ( OE2Valin( activator ) ) {
+			A_OE2RP_MoveBoulder();
+
+			// Hurt player if he pushes boulder:
+			OE2Valin( activator ).DamageMobj( NULL, NULL, 2, "Crush" );
+		}
 	}
 
 	override void Deactivate( Actor deactivator ) {
-		A_OE2RP_MoveBoulder();
+		Activate( deactivator );
 	}
 
 	action void A_OE2RP_MoveBoulder( void ) {
 		if ( target ) {
+
 			// If boulder isn't moving and if user/attacker is a player:
 			if ( !OE2Boulder( self ).movesNow && OE2Valin( target ) ) {
-				OE2Valin pl = OE2Valin( target );
+				PlayerInfo pl = OE2Valin( target ).player;
+					// Moving boulder only in exact X/Y axes:
+					double moveAngle = AngleTo( pl.mo );
+					int moveX = -round( cos( moveAngle ) );
+					int moveY = -round( sin( moveAngle ) );
 
-				// Moving boulder only in exact X/Y axes:
-				double moveAngle = AngleTo( pl );
-				int moveX = -round( cos( moveAngle ) );
-				int moveY = -round( sin( moveAngle ) );
-
-				if ( moveX != moveY ) {
-					vel.x = boulderMoveStrength * moveX;
-					vel.y = boulderMoveStrength * moveY;
-				}
-
-				// Hurt player if he not wields staff:
-				if ( pl.player.ReadyWeapon && !( pl.player.ReadyWeapon is 'OE2Staff' ) )
-					pl.DamageMobj( NULL, NULL, 2, "Crush" );
-
+					if ( moveX != moveY ) {
+						vel.x = boulderMoveStrength * moveX;
+						vel.y = boulderMoveStrength * moveY;
+					}
 			}
+
+			target = NULL;
 		} else {
 			A_Log( "Boulder <" .. self .. "> (coords " .. pos .. ") moved without target field." );
 		}

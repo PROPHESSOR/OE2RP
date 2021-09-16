@@ -1,3 +1,10 @@
+/**
+ * Copyright (c) OE2RP Team, 2021
+ *
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
 class OE2BaseWeapon: DoomWeapon abstract {
 	Sound meleeHitSound, meleeWoodHitSound, meleeMetalHitSound;
 	Sound meleeMissSound;
@@ -60,10 +67,12 @@ class OE2BaseWeapon: DoomWeapon abstract {
 
 		return ResolveState( outState );
 	}
-	
+
 	action void A_OE2RP_CallACSIfSuccessfulHit( String scriptname, int arg1 = 0, int arg2 = 0, int arg3 = 0, bool onKillOnly = false ) {
 		if ( FindInventory( "OE2PlayerSuccessfulHit" ) && !onKillOnly || FindInventory( "OE2PlayerSuccessfulKill" ) )
 			CallACS( scriptname, arg1, arg2, arg3 );
+
+		A_OE2RP_ClearSuccessfulHits();
 	}
 
 
