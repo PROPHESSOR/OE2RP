@@ -18,9 +18,9 @@ class OE2BaseMonster: Actor {
 	}
 
 	States {
-		Death:
-			TNT1 A 0;
-			Stop;
+	Death:
+		TNT1 A 0;
+		Stop;
 	}
 
 	action void A_OE2RP_SpawnGibs( void ) {

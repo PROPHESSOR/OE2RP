@@ -67,7 +67,7 @@ class OE2Valin: PlayerPawn {
 	}
 }
 
-// Abstract items given to the player with the successful hits/kills:
+// Abstract items given to the player after his successful hits/kills:
 
 class OE2PlayerSuccessfulHit: Inventory {
 	Default {
