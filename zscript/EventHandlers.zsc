@@ -1,12 +1,22 @@
-// Don't sure now how to subscribe this class.
+/**
+ * Copyright (c) OE2RP-Team, 2021
+ *
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+
+// Don't sure now how to name this class:
 
 class OE2RPEventHandler: EventHandler {
+
 	override void WorldThingSpawned( WorldEvent e ) {
 		if ( e.Thing.bISMONSTER ) {
-			console.printf( "Gave exp. to " .. e.Thing.GetClassName() .. "." );
+			//console.printf( "Gave exp. to " .. e.Thing.GetClassName() .. "." );
 			e.Thing.GiveInventory( "OE2RP_Exp", 5 );
 		}
 	} // of override void WorldThingSpawned( WorldEvent e ) {
+
 
 	override void WorldThingDamaged( WorldEvent e ) {
 		// If attacker is a player:
@@ -33,4 +43,49 @@ class OE2RP_Exp: Inventory { // Is it needed?
 		Inventory.Amount 1;
 		Inventory.MaxAmount 0xFFFFFFFF;
 	}
+}
+
+
+
+// HUD handlers:
+class CompassHandler: EventHandler {
+	const strVisibleLen = 13; // Length (in chars) of the visible part of the compass string.
+
+	Font compassFont;
+
+	override void WorldLoaded( WorldEvent e ) {
+		compassFont = Font.FindFont( "smallfont" );
+		Super.WorldLoaded( e );
+	}
+
+	override void RenderOverlay( RenderEvent e ) {
+		String VisualStr;
+		int compassStrPos;
+
+		if ( OE2Valin( e.Camera ) ) {
+
+			// CVar getting has relatively slow execution.
+			CVar compassEnabledCVar = CVar.GetCVar( "oe2rp_enable_compass", OE2Valin( e.Camera ).player );
+
+			if ( compassEnabledCVar && compassEnabledCVar.GetBool() ) {
+				visualStr = StringTable.Localize( "$OE2RP_HUD_COMPASSVISUAL" );
+
+				// About "Players[ i ].mo.Angle - 85". Alas, so strange angle is a
+				//visual crutch for the compass positioneering, with it the string
+				//displayed exactly to the cardinal points.
+				compassStrPos = floor( ( e.Camera.Angle - 85.0 ) % 360 / 360.0 * visualStr.Length() ) + visualStr.Length();
+				visualStr = visualStr .. visualStr .. visualStr;
+
+				// (North in OE2RP) = (Top on the automap) = (90 degree in ZDoom).
+				visualStr = "<" .. visualStr.Mid( compassStrPos - strVisibleLen / 2, strVisibleLen ) .. ">";
+
+				screen.DrawText( compassFont, Font.CR_DARKGRAY,
+								 320 - ( strVisibleLen * 4 ), 0, visualStr,
+								 DTA_VirtualWidth, 640, DTA_VirtualHeight, 480 );
+			} // of if ( compassEnabledCVar && compassEnabledCVar.GetBool() ) {
+
+		} // of if ( OE2Valin( e.Camera ) ) {
+
+		Super.RenderOverlay( e );
+	} // of override void RenderOverlay( RenderEvent e ) {
 }
