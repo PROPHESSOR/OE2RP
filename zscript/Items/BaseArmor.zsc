@@ -5,9 +5,10 @@
  * https://opensource.org/licenses/MIT
  */
 
-class OE2BaseArmor: ArmorBonus abstract {
+class OE2BaseArmor: BasicArmorBonus abstract {
 	Default {
 		Inventory.PickupMessage "Picked up a O&E II base armor.";
-		Scale OE2ScaleFactor;
+		Armor.SavePercent 30.0;
 	}
+
 } // of class OE2BasePotion: OE2BaseItem {

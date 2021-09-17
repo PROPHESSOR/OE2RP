@@ -12,7 +12,7 @@ Actor OE2WarpGem: OE2BaseItem {
 
 
 Actor OE2PileOfCoins: OE2BaseItem {
-    Tag "$OE2RP_PILEOFCOINS"
+    Tag "$OE2RP_I_PILEOFCOINS"
 
     States {
         Spawn:
@@ -24,7 +24,7 @@ Actor OE2PileOfCoins: OE2BaseItem {
 }
 
 Actor OE2BagOfCoins: OE2BaseItem {
-    Tag "$OE2RP_BAGOFCOINS"
+    Tag "$OE2RP_I_BAGOFCOINS"
 
     States {
     Spawn:
