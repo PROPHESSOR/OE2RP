@@ -41,7 +41,7 @@ Map Caverns "$OE2RP_CAVERNS_0" {
 }
 
 Map Dwarkar "$OE2RP_DWARKAR_0" {
-    Music    = ""
+    Music    = "D_MAP02"
     SkyBox   = "FLAT023"
     LevelNum = 2
     Cluster  = 1
@@ -49,7 +49,7 @@ Map Dwarkar "$OE2RP_DWARKAR_0" {
 }
 
 Map Tunnels "$OE2RP_TUNNELS_0" {
-    Music    = ""
+    Music    = "D_MAP05"
     SkyBox   = "FLAT023"
     LevelNum = 3
     Cluster  = 1
@@ -57,7 +57,7 @@ Map Tunnels "$OE2RP_TUNNELS_0" {
 }
 
 Map ElLandra "$OE2RP_ELLANDRA_0" {
-    Music    = "D_LANDRA"
+    Music    = "D_MAP04"
     SkyBox   = "FLAT023"
     LevelNum = 4
     Cluster  = 1
@@ -65,7 +65,7 @@ Map ElLandra "$OE2RP_ELLANDRA_0" {
 }
 
 Map DarkForest "$OE2RP_DARKFOREST_0" {
-    Music    = ""
+    Music    = "D_MAP05"
     SkyBox   = "FLAT023"
     LevelNum = 5
     Cluster  = 1
@@ -73,7 +73,7 @@ Map DarkForest "$OE2RP_DARKFOREST_0" {
 }
 
 Map Sol "$OE2RP_SOL_0" {
-    Music    = ""
+    Music    = "D_MAP06"
     SkyBox   = "FLAT023"
     LevelNum = 6
     Cluster  = 1
@@ -81,7 +81,7 @@ Map Sol "$OE2RP_SOL_0" {
 }
 
 Map Darkfel "$OE2RP_DARKFEL_0" {
-    Music    = ""
+    Music    = "D_MAP07"
     SkyBox   = "FLAT023"
     LevelNum = 7
     Cluster  = 1
