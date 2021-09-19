@@ -16,8 +16,7 @@ Actor OE2RPTrigger 10999 {
     +DONTTHRUST
     +NORADIUSDMG
     //+NOSECTOR
-
-    -USESPECIAL
+    +USESPECIAL
 
     Tag "Trigger"
     Radius 33
