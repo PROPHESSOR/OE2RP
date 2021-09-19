@@ -17,6 +17,7 @@ class BaseDecoration: Actor abstract {
 		+FIXMAPTHINGPOS;
 		+RANDOMIZE;
         +NOGRAVITY;
+		+USESPECIAL;
 
 		Radius 32; // One O&E2 tile.
 		Height 64;
