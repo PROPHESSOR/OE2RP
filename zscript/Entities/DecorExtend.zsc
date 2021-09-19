@@ -87,6 +87,7 @@ class OE2Boulder: BaseDecoration {
 			// If boulder isn't moving and if user/attacker is a player:
 			if ( !OE2Boulder( self ).movesNow && OE2Valin( target ) ) {
                 A_PlaySound("environment/rumble", 200);
+				ACS_Execute(3008, 0, 244, 1);
 
 				PlayerInfo pl = OE2Valin( target ).player;
 
