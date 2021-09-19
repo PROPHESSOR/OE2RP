@@ -28,3 +28,5 @@
 #include "decorate/Characters/CommonCharacters.dec"
 #include "decorate/Entities/Decorations.dec"
 #include "decorate/Entities/Entities.dec"
+
+#include "decorate/Dev.dec"
