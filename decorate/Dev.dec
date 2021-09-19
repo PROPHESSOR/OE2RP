@@ -16,8 +16,7 @@ Actor OE2RPTrigger 10999 {
     +DONTTHRUST
     +NORADIUSDMG
     //+NOSECTOR
-
-    -USESPECIAL
+    +USESPECIAL
 
     Tag "Trigger"
     Radius 33
@@ -27,13 +26,6 @@ Actor OE2RPTrigger 10999 {
 
     States {
         Spawn:
-            TNT1 A 1 A_Print("Spawn")
-            TNT1 A 1 A_JumpIf(GetCVar("oe2rp_debug_mode"), "MakeAvailable")
-            TNT1 A -1
-            Stop
-        MakeAvailable:
-            TNT1 A 1 A_Print("MakeAvailable")
-            TRIG A 1 A_ChangeFlag("USESPECIAL", TRUE)
             TRIG A -1
             Stop
     }
