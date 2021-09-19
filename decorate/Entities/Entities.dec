@@ -26,6 +26,11 @@ Actor OE2Chest: BaseDecoration {
 	Spawn:
 		CHST A -1
 		Stop
+	Use:
+		CHST A 1 A_PlaySound("items/pickup", 200)
+		CHST A 1 A_ChangeFlag("USESPECIAL", false)
+		CHST B -1
+		Stop
 	}
 }
 
