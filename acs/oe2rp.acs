@@ -84,6 +84,7 @@ Script "window"(str _Text) { // s: -> str
 
 Script "lockwindow"(str Text, str Password, int ScriptNumber) {
     Print(s:"Lock window");
+    AmbientSound("environment/lockpick/positive", 200);
     //ScriptCall("DoorCodeInputActor", "DoorCode", Text, Password, ScriptNumber);
     Delay(2);
 }
