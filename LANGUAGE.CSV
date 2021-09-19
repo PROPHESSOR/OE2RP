@@ -1,5 +1,6 @@
 default,Identifier,Remarks,Filter,ru
 ,OE2RP_D_VERSION,,,OE2RP v0.0.0
+"Warning!\nThis level is under construction!\nPart of the functionality may not work correctly, or not work at all!",OE2RP_D_WIPLEVEL,,,"Внимание!\nДанный уровень находится на стадии разработки!\nЧасть его функционала может работать некорректно, или не работать вообще!"
 N-----W-----S-----E-----,OE2RP_HUD_COMPASSVISUAL,,,С----сз----З----юз----Ю----юв----В----св----
 Wand,OE2RP_W_WAND,,,Жeзл
 "The wand, named Ellon, consumes energy as you use it and regains energy faster while stowed.",OE2RP_W_WAND_INFO,,,Жeзл Эллoн иcпoльзуeт вoлшeбную cилу\n Чтoбы быcтpeй вoccтaнoвить ee — убepитe жeзл\n

@@ -7,6 +7,7 @@
 
 [enu default]
 
+    OE2RP_D_WIPLEVEL = "Warning!\nThis level is under construction!\nPart of the functionality may not work correctly, or not work at all!";
     OE2RP_HUD_COMPASSVISUAL = "N-----W-----S-----E-----";
     OE2RP_W_WAND = "Wand";
     OE2RP_W_WAND_INFO = "The wand, named Ellon, consumes energy as you use it and regains energy faster while stowed.";
