@@ -5,6 +5,8 @@ version "2.4.0"
 #include "zscript/EventHandlers.zsc"
 #include "zscript/Infobar.zsc"
 
+#include "zscript/API/Conversation.zsc"
+
 #include "zscript/BaseMonster.zsc"
 
 #include "zscript/Items/BaseWeapon.zsc"
