@@ -23,6 +23,7 @@ Actor OE2RPTrigger 10999 {
     Height 56
     Health 5
     Scale 0.1
+    Activation THINGSPEC_ThingActs
 
     States {
         Spawn:
