@@ -83,7 +83,8 @@ Script "window"(str _Text) { // s: -> str
 }
 
 Script "lockwindow"(str Text, str Password, int ScriptNumber) {
-    ScriptCall("DoorCodeInputActor", "DoorCode", Text, Password, ScriptNumber);
+    Print(s:"Lock window");
+    //ScriptCall("DoorCodeInputActor", "DoorCode", Text, Password, ScriptNumber);
     Delay(2);
 }
 
