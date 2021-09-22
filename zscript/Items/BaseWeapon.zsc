@@ -18,7 +18,6 @@ class OE2BaseWeapon: DoomWeapon abstract {
 		Inventory.PickupMessage "Picked up a O&E II base weapon.";
 		+Inventory.UNDROPPABLE;
 		+Inventory.UNTOSSABLE;
-		+Weapon.AMMO_OPTIONAL;
 		Scale OE2ScaleFactor;
 
 		OE2BaseWeapon.HitSound "";
@@ -48,7 +47,7 @@ class OE2BaseWeapon: DoomWeapon abstract {
 		//OE2BaseWeapon thisweap = OE2BaseWeapon( invoker );
 
 		// Here must be a calculating based on the player characteristics:
-		double realAngle = angle;
+		double realAngle = 0;
 		double realPitch = pitch;
 
 		A_FireProjectile( projectile, realAngle, true, flags: FPF_NOAUTOAIM, pitch: realPitch );

@@ -8,6 +8,7 @@ version "2.4.0"
 #include "zscript/API/Conversation.zsc"
 
 #include "zscript/BaseMonster.zsc"
+#include "zscript/MonsterEffects.zsc"
 
 #include "zscript/Items/BaseWeapon.zsc"
 #include "zscript/Items/BaseFood.zsc"
@@ -18,4 +19,5 @@ version "2.4.0"
 #include "zscript/Items/BasePotion.zsc"
 
 #include "zscript/Entities/BaseCharacter.zsc"
-#include "zscript/Entities/BaseDecoration.zsc"
+#include "zscript/Entities/BaseDecoration.zsc" // Includes "./DecorExtend.zsc".
+#include "zscript/Entities/EntityExtend.zsc"

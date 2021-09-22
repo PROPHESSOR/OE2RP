@@ -70,7 +70,7 @@ class CompassHandler: EventHandler {
 			if ( compassEnabledCVar && compassEnabledCVar.GetBool() ) {
 				visualStr = StringTable.Localize( "$OE2RP_HUD_COMPASSVISUAL" );
 
-				// About "Players[ i ].mo.Angle - 85". Alas, so strange angle is a
+				// About "e.Camera.Angle - 85". Alas, so strange angle is a
 				//visual crutch for the compass positioneering, with it the string
 				//displayed exactly to the cardinal points.
 				compassStrPos = floor( ( e.Camera.Angle - 85.0 ) % 360 / 360.0 * visualStr.Length() ) + visualStr.Length();

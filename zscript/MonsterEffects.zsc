@@ -1,0 +1,102 @@
+// Shrink, poison and freeze "powerups" will be here.
+
+class OE2ShrinkPowerup: Powerup {
+	double normalSpeed;
+	vector2 normalScale;
+
+	override void PostBeginPlay() {
+		EffectTics = 35 * 10;
+		Super.PostBeginPlay();
+	}
+
+	override void InitEffect() {
+		normalSpeed = owner.speed;
+		normalScale = owner.scale;
+		
+		Super.InitEffect();
+	}
+
+	override void DoEffect() {
+		if ( EffectTics > 35 * 9 ) {
+			// Shrinking:
+
+			owner.scale *= OE2ShrinkFactor;
+			owner.speed *= OE2ShrinkSpeedFactor;
+
+			//if ( PlayerPawn( owner ) )
+			//	PlayerPawn( owner ).player.viewheight *= OE2ShrinkFactor;
+		} else if ( EffectTics < 35 ) {
+			// Returning to normal size:
+
+			owner.scale /= OE2ShrinkFactor;
+			owner.speed /= OE2ShrinkSpeedFactor;
+
+			//if ( PlayerPawn( owner ) )
+			//	PlayerPawn( owner ).player.viewheight *= OE2ShrinkFactor;
+		}
+
+		Super.DoEffect();
+	}
+
+	override void EndEffect() {
+		if ( owner ) {
+			owner.scale = normalScale;
+			owner.speed = normalSpeed;
+		}
+
+		Super.EndEffect();
+	}
+} // of class OE2ShrinkPowerup: Powerup {
+
+class OE2PoisonPowerup: Powerup {
+	override void PostBeginPlay() {
+		EffectTics = 35 * 5;
+		Super.PostBeginPlay();
+	}
+
+	override void DoEffect() {
+		Super.DoEffect();
+		
+		if ( !( EffectTics % 15 ) )
+			owner.DamageMobj( owner, owner, 3, 'None' );
+	}
+} // of class OE2PoisonPowerup: Powerup {
+
+class OE2FreezePowerup: Powerup {
+	int normalPainChance;
+	bool playerFrozenBefore;
+
+	override void PostBeginPlay() {
+		EffectTics = 35 * 4;
+		Super.PostBeginPlay();
+	}
+
+	override void InitEffect() {
+		if ( owner ) {
+			normalPainChance = owner.PainChance;
+
+			owner.A_SetTranslation( 'Ice' );
+			A_PlaySound( "misc/freeze" );
+			owner.PainChance = 0;
+			owner.A_SetTics( 0x7FFFFFFF );
+			
+			if ( PlayerPawn( owner ) ) {
+				playerFrozenBefore = PlayerPawn( owner ).player.IsTotallyFrozen();
+				PlayerPawn( owner ).player.cheats |= CF_TOTALLYFROZEN;
+			}
+		}
+
+		Super.InitEffect();
+	}
+	
+	override void EndEffect() {
+		if ( owner ) {
+			owner.A_SetTranslation( 'None' );
+			owner.PainChance = normalPainChance;
+			owner.A_SetTics( 0 );
+
+			if ( PlayerPawn( owner ) && !playerFrozenBefore )
+				PlayerPawn( owner ).player.cheats &= ~CF_TOTALLYFROZEN;
+		}
+	}
+} // of class OE2FreezePowerup: Powerup {

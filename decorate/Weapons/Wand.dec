@@ -1,8 +1,8 @@
 Actor OE2Wand: OE2BaseWeapon {
 	// Let it be here... https://zdoom.org/wiki/Classes:Shotgun
-
 	Weapon.AmmoType "OE2WandCharges"
 	Weapon.AmmoUse 1
+	+Weapon.AMMO_OPTIONAL
 	
 	States {
 	Deselect:

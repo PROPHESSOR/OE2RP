@@ -7,3 +7,8 @@
 
 // Original sprites and textures has different resolution:
 const OE2ScaleFactor = 0.7; // 0.547;
+
+// For the shrink powerup:
+const OE2ShrinkFactor = 0.99;
+const OE2ShrinkSpeedFactor = 0.97;
+

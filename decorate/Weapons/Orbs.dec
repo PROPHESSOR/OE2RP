@@ -1,11 +1,36 @@
-Actor OE2Orb: OE2BaseWeapon {
+Actor OE2ShrinkOrbWeapon: OE2BaseWeapon {
+	//Weapon.AmmoUse 1
+
+	States {
+	Deselect:
+		ORBH A 1 A_Lower
+		Wait
+	Select:
+		ORBH A 1 A_Raise
+		Wait
+	Ready:
+		ORBH A 0 A_GunFlash( "OrbWeaponFlash" )
+		ORBH A 1 A_WeaponReady
+		Wait
+	Fire:
+		ORBH A 2
+		ORBH B 1 A_GunFlash
+		Goto OrbWeaponFire
+	OrbWeaponFire:
+		ORBH B 14 A_OE2RP_WeaponMissile( "OE2ShrinkOrb" )
+		ORBH A 5
+		Goto Ready
+	OrbWeaponFlash:
+		ORBS ABC 4 Bright
+		Loop
+	Flash:
+		ORBH A 0
+		Stop
+	}
 }
 
-Actor OE2ShrinkOrb: OE2Orb {
+Actor OE2MoldOrbWeapon: OE2ShrinkOrbWeapon {
 }
 
-Actor OE2MoldOrb: OE2Orb {
-}
-
-Actor OE2FreezeOrb: OE2Orb {
+Actor OE2FreezeOrbWeapon: OE2ShrinkOrbWeapon {
 }

@@ -36,9 +36,9 @@ DoomEdNums {
 	15003 = OE2PoisonDagger
 	15004 = OE2Wand
 	15005 = OE2Sword
-	15006 = OE2ShrinkOrb
-	15007 = OE2MoldOrb
-	15008 = OE2FreezeOrb
+	15006 = OE2ShrinkOrbWeapon
+	15007 = OE2MoldOrbWeapon
+	15008 = OE2FreezeOrbWeapon
 	15009 = OE2Crossbow
 	15010 = OE2KineticCrossbow
 
