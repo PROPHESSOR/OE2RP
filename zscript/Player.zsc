@@ -22,15 +22,16 @@ class OE2Valin: PlayerPawn {
 		Player.WeaponSlot 0, "OE2Bob";
 		Player.WeaponSlot 1, "OE2Staff";
 		Player.WeaponSlot 2, "OE2Wand";
-		Player.WeaponSlot 3, "OE2Dagger", "OE2PoisonDagger";
-		Player.WeaponSlot 4, "OE2Sword";
-		Player.WeaponSlot 5, "OE2Crossbow", "OE2KineticCrossbow";
+		Player.WeaponSlot 3, "OE2Crossbow", "OE2KineticCrossbow";
+		Player.WeaponSlot 4, "OE2Dagger", "OE2PoisonDagger";
+		Player.WeaponSlot 5, "OE2Sword";
 		Player.WeaponSlot 6, "OE2FreezeOrb", "OE2ShrinkOrb", "OE2MoldOrb";
 
 		Player.StartItem "OE2Staff";
 		Player.StartItem "OE2Wand";
 		Player.StartItem "OE2Dagger";
 		Player.StartItem "OE2LeatherArmor";
+		Player.StartItem "OE2WandCharges", 20;
 	}
 
 	States {

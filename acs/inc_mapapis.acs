@@ -50,6 +50,7 @@ Script 3005 (void) { // WIP Level
 
 Script 3006 (bool noline) { // Crash by staff or sword
     if(GetCVar("oe2rp_debug_mode")) Print(s:"[DEBUG]: Using correct Script 3006");
+
     if((ClassifyActor(0) & ACTOR_PLAYER) && (GetWeapon() == "OE2Staff" || GetWeapon() == "OE2Sword") && LineSide() == LINE_FRONT) {
 		ClearLineSpecial();
         Radius_Quake2(0, 1, 17, 0, 128, "");

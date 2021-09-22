@@ -1,3 +1,40 @@
 Actor OE2Wand: OE2BaseWeapon {
 	// Let it be here... https://zdoom.org/wiki/Classes:Shotgun
+
+	Weapon.AmmoType "OE2WandCharges"
+	Weapon.AmmoUse 1
+	
+	States {
+	Deselect:
+		WAND A 1 A_Lower
+		Wait
+	Select:
+		WAND A 1 A_Raise
+		Wait
+	Ready:
+		WAND A 1 A_WeaponReady
+		Loop
+	Fire:
+		WAND A 3
+		WAND B 1
+		WAND B 6 A_OE2RP_WeaponHitscan( "OE2WandHitscanActor" )
+		WAND A 2
+		Goto Ready
+	}
+}
+
+Actor OE2WandHitscanActor: OE2HitscanActor {
+	OE2HitscanActor.BaseDamage 5
+	RenderStyle "Add"
+	Alpha 0.9
+	
+	States {
+	Spawn:
+		PRJW A 2 A_FadeOut( 0.07 )
+		Wait
+	}
+}
+
+Actor OE2WandCharges: Ammo {
+	Inventory.MaxAmount 36
 }

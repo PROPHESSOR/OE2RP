@@ -18,12 +18,17 @@ class OE2BaseWeapon: DoomWeapon abstract {
 		Inventory.PickupMessage "Picked up a O&E II base weapon.";
 		+Inventory.UNDROPPABLE;
 		+Inventory.UNTOSSABLE;
+		+Weapon.AMMO_OPTIONAL;
 		Scale OE2ScaleFactor;
 
 		OE2BaseWeapon.HitSound "";
 		OE2BaseWeapon.MissSound "";
 	}
 
+
+	// === Attack codepointers:
+
+	// O&E2RP close-range weapon damage.
 	action void A_OE2RP_WeaponMelee( int basedamage, name damagetype = 'None', int flags = 0 ) {
 		OE2BaseWeapon thisweap = OE2BaseWeapon( invoker );
 
@@ -38,6 +43,7 @@ class OE2BaseWeapon: DoomWeapon abstract {
 		A_CustomPunch( realDamage, true, flags, "None", radius + 48, meleesound: thisweap.meleeHitSound, misssound: thisweap.meleeMissSound );
 	}
 
+	// O&E2RP projectile launch.
 	action void A_OE2RP_WeaponMissile( class<Actor> projectile ) {
 		//OE2BaseWeapon thisweap = OE2BaseWeapon( invoker );
 
@@ -47,13 +53,30 @@ class OE2BaseWeapon: DoomWeapon abstract {
 
 		A_FireProjectile( projectile, realAngle, true, flags: FPF_NOAUTOAIM, pitch: realPitch );
 	}
+	
+	// O&E2RP long-range weapon damage.
+	action void A_OE2RP_WeaponHitscan( class<OE2HitscanActor> hitscanClass ) {
+		// Here must be a calculating based on the player characteristics:
+		double spreadStrength = 3.0;
+		int rangeBlocks = 3;
 
-	// Clear all successful player hit/kill counters:
+		readonly<OE2HitscanActor> cls = GetDefaultByType( hitscanClass );
+
+		//A_FireBullets(double spread_xy, double spread_z, int numbullets, int damageperbullet, class<Actor> pufftype = "BulletPuff", int flags = 1, double range = 0, class<Actor> missile = null, double Spawnheight = 32, double Spawnofs_xy = 0);
+		A_FireBullets( spreadStrength, spreadStrength, -1, cls.hitscanDamage, hitscanClass, 0, 64 * rangeBlocks );
+	}
+
+
+
+	// === On hit/on kill codepointers:
+
+	// Clear all successful player hit/kill counters.
 	action void A_OE2RP_ClearSuccessfulHits( void ) {
 		TakeInventory( "OE2PlayerSuccessfulHit", 0xFFFF );
 		TakeInventory( "OE2PlayerSuccessfulKill", 0xFFFF );
 	}
 
+	// Go to state if the last hit is successful.
 	action State A_OE2RP_JumpIfSuccessfulHit( StateLabel onHit, StateLabel onKill = NULL ) {
 		StateLabel outState = NULL;
 
@@ -68,6 +91,7 @@ class OE2BaseWeapon: DoomWeapon abstract {
 		return ResolveState( outState );
 	}
 
+	// Call ACS if the last hit is successful.
 	action void A_OE2RP_CallACSIfSuccessfulHit( String scriptname, int arg1 = 0, int arg2 = 0, int arg3 = 0, bool onKillOnly = false ) {
 		if ( FindInventory( "OE2PlayerSuccessfulHit" ) && !onKillOnly || FindInventory( "OE2PlayerSuccessfulKill" ) )
 			CallACS( scriptname, arg1, arg2, arg3 );
@@ -76,7 +100,8 @@ class OE2BaseWeapon: DoomWeapon abstract {
 	}
 
 
-	// Cannot extend class in the Decorate file.
+	// === Cannot extend class in the Decorate file, so extra codepointers:
+
 	action void A_OE2RP_SendBob( void ) {
 	}
 
@@ -101,3 +126,24 @@ class OE2BaseWeapon: DoomWeapon abstract {
 		stop;
 	}
 } // of class OE2BaseWeapon: DoomWeapon {
+
+class OE2HitscanActor: Actor {
+	uint hitscanDamage;
+
+	Property BaseDamage: hitscanDamage;
+
+	Default {
+		+NOGRAVITY;
+		-SOLID;
+		+NOINTERACTION;
+		+FIXMAPTHINGPOS;
+		OE2HitscanActor.BaseDamage 5;
+		Scale OE2ScaleFactor * 0.33;
+	}
+
+	States {
+	Spawn:
+		TNT1 A 1;
+		stop;
+	}
+} // of class OE2HitscanActor: Actor {

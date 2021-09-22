@@ -1,8 +1,38 @@
 Actor OE2Dagger: OE2BaseWeapon {
 	// Called "Magic dagger" in doomwiki.org.
 	// Has a replacer weapon "OE2PoisonDagger".
+
+	States {
+	Deselect:
+		DAGG A 1 A_Lower
+		Wait
+	Select:
+		DAGG A 1 A_Raise
+		Wait
+	Ready:
+		DAGG A 1 A_WeaponReady
+		Loop
+	Fire:
+		DAGG A 2 A_JumpIfCloser( 64, "Melee" )
+		DAGG C 2
+		DAGG C 10 A_OE2RP_WeaponHitscan( "OE2DaggerHitscanActor" )
+		DAGG B 5 // Not cutest, but less rendurant.
+		DAGG A 4
+		Goto Ready
+	Melee:
+	AltFire:
+		DAGG A 3
+		DAGG B 2
+		DAGG B 7 A_OE2RP_WeaponMelee( 4 )
+		DAGG A 4
+		Goto Ready
+	}
 }
 
 Actor OE2PoisonDagger: OE2Dagger {
 	// Seems like sister weapon to the OE2Dagger.
+}
+
+Actor OE2DaggerHitscanActor: OE2HitscanActor {
+	OE2HitscanActor.BaseDamage 4
 }
