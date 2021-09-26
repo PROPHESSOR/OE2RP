@@ -30,10 +30,10 @@ class OE2ShrinkOrb: Actor {
 
 	States {
 	Spawn:
-		ORBS ABC 4 Bright;
+		ORBS DEF 4 Bright;
 		loop;
 	Death:
-		ORBS D 4 Bright;
+		ORBS G 4 Bright;
 		ORBS D 1 A_FadeOut( 0.05 );
 		wait;
 	}

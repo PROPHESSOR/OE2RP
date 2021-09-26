@@ -64,11 +64,11 @@ Actor OE2MoldOrb: OE2ShrinkOrb {
 
 	States {
 	Spawn:
-		ORBM ABC 4 Bright
+		ORBM DEF 4 Bright
 		Loop
 	Death:
-		ORBM D 4 Bright
-		ORBM D 1 A_FadeOut( 0.05 )
+		ORBM G 4 Bright
+		ORBM G 1 A_FadeOut( 0.05 )
 		Wait
 	}
 }
@@ -78,11 +78,11 @@ Actor OE2FreezeOrb: OE2ShrinkOrb {
 
 	States {
 	Spawn:
-		ORBF ABC 4 Bright
+		ORBF DEF 4 Bright
 		Loop
 	Death:
-		ORBF D 4 Bright
-		ORBF D 1 A_FadeOut( 0.05 )
+		ORBF G 4 Bright
+		ORBF G 1 A_FadeOut( 0.05 )
 		Wait
 	}
 }
