@@ -31,6 +31,8 @@ Actor SawtoothOak: LiveOak {
 Actor TreeOfDoom: LiveOak {
     Tag "$OE2RP_M_TREEOFDOOM"
 
+    Scale 1.25
+
     States {
         Spawn:
             OAK4 A -1
