@@ -13,14 +13,14 @@ class OE2ShrinkOrb: Actor {
 		RenderStyle "Add";
 		OE2ShrinkOrb.GiveToVictim "OE2ShrinkPowerup";
 	}
-	
+
 	override int DoSpecialDamage ( Actor target, int damage, Name damagetype ) {
 		if ( target && target.bISMONSTER )
 			target.GiveInventory( itemGivenOnDamage, 1 );
-		
+
 		return 0;
 	}
-	
+
 	States {
 	Spawn:
 		ORBS ABC 4 Bright;
@@ -31,3 +31,4 @@ class OE2ShrinkOrb: Actor {
 		wait;
 	}
 }
+

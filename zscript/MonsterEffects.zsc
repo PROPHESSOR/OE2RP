@@ -12,7 +12,7 @@ class OE2ShrinkPowerup: Powerup {
 	override void InitEffect() {
 		normalSpeed = owner.speed;
 		normalScale = owner.scale;
-		
+
 		Super.InitEffect();
 	}
 
@@ -56,7 +56,7 @@ class OE2PoisonPowerup: Powerup {
 
 	override void DoEffect() {
 		Super.DoEffect();
-		
+
 		if ( !( EffectTics % 15 ) )
 			owner.DamageMobj( owner, owner, 3, 'None' );
 	}
@@ -64,6 +64,7 @@ class OE2PoisonPowerup: Powerup {
 
 class OE2FreezePowerup: Powerup {
 	int normalPainChance;
+	int normalTics;
 	bool playerFrozenBefore;
 
 	override void PostBeginPlay() {
@@ -74,12 +75,13 @@ class OE2FreezePowerup: Powerup {
 	override void InitEffect() {
 		if ( owner ) {
 			normalPainChance = owner.PainChance;
+			normalTics = owner.tics;
 
 			owner.A_SetTranslation( 'Ice' );
 			A_PlaySound( "misc/freeze" );
 			owner.PainChance = 0;
 			owner.A_SetTics( 0x7FFFFFFF );
-			
+
 			if ( PlayerPawn( owner ) ) {
 				playerFrozenBefore = PlayerPawn( owner ).player.IsTotallyFrozen();
 				PlayerPawn( owner ).player.cheats |= CF_TOTALLYFROZEN;
@@ -88,12 +90,12 @@ class OE2FreezePowerup: Powerup {
 
 		Super.InitEffect();
 	}
-	
+
 	override void EndEffect() {
 		if ( owner ) {
 			owner.A_SetTranslation( 'None' );
 			owner.PainChance = normalPainChance;
-			owner.A_SetTics( 0 );
+			owner.tics = normalTics;
 
 			if ( PlayerPawn( owner ) && !playerFrozenBefore )
 				PlayerPawn( owner ).player.cheats &= ~CF_TOTALLYFROZEN;

@@ -34,6 +34,8 @@ class OE2Valin: PlayerPawn {
 		Player.StartItem "OE2WandCharges", 20;
 
 		Player.StartItem "OE2ShrinkOrbWeapon";
+		Player.StartItem "OE2FreezeOrbWeapon";
+		Player.StartItem "OE2MoldOrbWeapon";
 	}
 
 	States {
