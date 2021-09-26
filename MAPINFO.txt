@@ -7,7 +7,9 @@
 
 // DoomEdNums:
 include "DoomEdNums.txt"
-include "MapGameInfos.txt"
+include "GameInf2.txt"
+// It's strange, but some engine versions has different keywords for the pure 
+//GAMEINFO and the MAPINFO/Gameinfo.
 
 ClearEpisodes
 
@@ -15,9 +17,12 @@ Cluster 1 {
     Hub
 }
 
+DefaultMap {
+    SkyBox   = "FLAT023"
+}
+
 Map TITLEMAP "Introduction" {
     Music    = ""
-    SkyBox   = "FLAT023"
 }
 
 Episode Caverns {
@@ -27,14 +32,12 @@ Episode Caverns {
 
 Map Intermission "Intermission" {
     Music    = ""
-    SkyBox   = "FLAT023"
     LevelNum = 99
     Cluster  = 1
 }
 
 Map Caverns "$OE2RP_CAVERNS_0" {
     Music    = ""
-    SkyBox   = "FLAT023"
     LevelNum = 1
     Cluster  = 1
     Next     = "Dwarkar"
@@ -42,7 +45,6 @@ Map Caverns "$OE2RP_CAVERNS_0" {
 
 Map Dwarkar "$OE2RP_DWARKAR_0" {
     Music    = "D_MAP02"
-    SkyBox   = "FLAT023"
     LevelNum = 2
     Cluster  = 1
     Next     = "Tunnels"
@@ -50,7 +52,6 @@ Map Dwarkar "$OE2RP_DWARKAR_0" {
 
 Map Tunnels "$OE2RP_TUNNELS_0" {
     Music    = "D_MAP05"
-    SkyBox   = "FLAT023"
     LevelNum = 3
     Cluster  = 1
     Next     = "ElLandra"
@@ -58,7 +59,6 @@ Map Tunnels "$OE2RP_TUNNELS_0" {
 
 Map ElLandra "$OE2RP_ELLANDRA_0" {
     Music    = "D_MAP04"
-    SkyBox   = "FLAT023"
     LevelNum = 4
     Cluster  = 1
     Next     = "DarkForest"
@@ -66,7 +66,6 @@ Map ElLandra "$OE2RP_ELLANDRA_0" {
 
 Map DarkForest "$OE2RP_DARKFOREST_0" {
     Music    = "D_MAP05"
-    SkyBox   = "FLAT023"
     LevelNum = 5
     Cluster  = 1
     Next     = "Sol"
@@ -74,7 +73,6 @@ Map DarkForest "$OE2RP_DARKFOREST_0" {
 
 Map Sol "$OE2RP_SOL_0" {
     Music    = "D_MAP06"
-    SkyBox   = "FLAT023"
     LevelNum = 6
     Cluster  = 1
     Next     = "Darkfel"
@@ -82,12 +80,10 @@ Map Sol "$OE2RP_SOL_0" {
 
 Map Darkfel "$OE2RP_DARKFEL_0" {
     Music    = "D_MAP07"
-    SkyBox   = "FLAT023"
     LevelNum = 7
     Cluster  = 1
 }
 
 Map TestMonsters "Test Monsters" {
     Music    = ""
-    SkyBox   = "FLAT023"
 }

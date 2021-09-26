@@ -1,3 +1,10 @@
+/**
+ * Copyright (c) 2021 OE2RP-Team
+ *
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
 // Shrink, poison and freeze "powerups" will be here.
 
 class OE2ShrinkPowerup: Powerup {

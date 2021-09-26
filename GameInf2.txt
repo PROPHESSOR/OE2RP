@@ -6,6 +6,6 @@
  */
 
 GameInfo {
-    PlayerClasses = "OE2Valin"
-    EventHandlers = "OE2RPEventHandler", "InfobarHandler", "CompassHandler"
+	PlayerClasses = "OE2Valin"
+	EventHandlers = "OE2RPEventHandler", "InfobarHandler", "CompassHandler"
 }
