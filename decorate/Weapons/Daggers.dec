@@ -13,11 +13,13 @@ Actor OE2Dagger: OE2BaseWeapon {
 		DAGG A 1 A_WeaponReady
 		Loop
 	Fire:
-		DAGG A 2 A_JumpIfCloser( 64, "Melee" )
+		DAGG A 2 A_OE2RP_JumpIfLinetraceBlock( 64, "Melee" )
 		DAGG C 2
-		DAGG C 10 A_OE2RP_WeaponHitscan( "OE2DaggerHitscanActor" )
-		DAGG B 5 // Not cutest, but less rendurant.
-		DAGG A 4
+		DAGG C 5 A_OE2RP_WeaponMissile( "OE2DaggerMissile" )
+		DAGG C 1 A_JumpIfInventory( "OE2DaggerBackItem", 1, 1 )
+		Wait
+		DAGG B 5 // Not the cutest, but less boring.
+		DAGG A 4 A_TakeInventory( "OE2DaggerBackItem", 0 )
 		Goto Ready
 	Melee:
 	AltFire:
@@ -33,6 +35,24 @@ Actor OE2PoisonDagger: OE2Dagger {
 	// Seems like sister weapon to the OE2Dagger.
 }
 
-Actor OE2DaggerHitscanActor: OE2HitscanActor {
-	OE2HitscanActor.BaseDamage 4
+
+Actor OE2DaggerMissile: Actor {
+	Projectile
+	Height 8
+	Radius 4
+	Speed 18
+
+	States {
+	Spawn:
+		DGRF A 28
+		Goto Death
+	Death:
+		DGRF A 4
+		DGRF A 0 A_GiveInventory( "OE2DaggerBackItem", 1, AAPTR_Target )
+		Stop
+	}
+}
+
+Actor OE2DaggerBackItem: Inventory {
+	Inventory.MaxAmount 1
 }

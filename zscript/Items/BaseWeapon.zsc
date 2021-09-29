@@ -48,11 +48,11 @@ class OE2BaseWeapon: DoomWeapon abstract {
 
 		// Here must be a calculating based on the player characteristics:
 		double realAngle = 0;
-		double realPitch = pitch;
+		double realPitch = 0;
 
 		A_FireProjectile( projectile, realAngle, true, flags: FPF_NOAUTOAIM, pitch: realPitch );
 	}
-	
+
 	// O&E2RP long-range weapon damage.
 	action void A_OE2RP_WeaponHitscan( class<OE2HitscanActor> hitscanClass ) {
 		// Here must be a calculating based on the player characteristics:
@@ -99,7 +99,21 @@ class OE2BaseWeapon: DoomWeapon abstract {
 	}
 
 
-	// === Cannot extend class in the Decorate file, so extra codepointers:
+
+
+	// === Checks:
+
+	// Jumps to a state when something (actor, line, floor, ceiling) is blocking a ray within range:
+	action State A_OE2RP_JumpIfLinetraceBlock( double range, StateLabel onBlock ) {
+		FLineTraceData lt;
+		LineTrace( angle, range, pitch, TRF_NOSKY, player.viewheight, data: lt );
+
+		bool blocked = lt.HitType != TRACE_HitNone && lt.HitType != TRACE_CrossingPortal;
+
+		return blocked? ResolveState( onBlock ) : NULL;
+	}
+
+	// === Cannot extend class in the Decorate file, so there are extra codepointers:
 
 	action void A_OE2RP_SendBob( void ) {
 	}
