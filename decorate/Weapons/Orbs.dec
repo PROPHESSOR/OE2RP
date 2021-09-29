@@ -24,7 +24,10 @@ Actor OE2ShrinkOrbWeapon: OE2BaseWeapon {
 		ORBH A 5
 		Goto Ready
 	OrbWeaponFlash:
-		ORBS ABC 4 Bright
+		ORBS A 5 Bright
+		ORBS B 4 Bright
+		ORBS C 5 Bright
+		ORBS B 4 Bright
 		Loop
 	Flash:
 		ORBH A 0 // Clears an orb picture.
@@ -39,7 +42,10 @@ Actor OE2MoldOrbWeapon: OE2ShrinkOrbWeapon {
 		ORBH A 5
 		Goto Ready
 	OrbWeaponFlash:
-		ORBM ABC 4 Bright
+		ORBM A 16 Bright
+		ORBM A 1 Bright A_Jump( 47, 1 )
+		Wait
+		ORBM BCB 4 Bright
 		Loop
 	}
 }
@@ -52,6 +58,7 @@ Actor OE2FreezeOrbWeapon: OE2ShrinkOrbWeapon {
 		Goto Ready
 	OrbWeaponFlash:
 		ORBF ABC 4 Bright
+		ORBF B 4 Bright A_Jump( 127, "OrbWeaponFlash" )
 		Loop
 	}
 }
@@ -61,13 +68,16 @@ Actor OE2FreezeOrbWeapon: OE2ShrinkOrbWeapon {
 
 Actor OE2MoldOrb: OE2ShrinkOrb {
 	OE2ShrinkOrb.GiveToVictim "OE2PoisonPowerup"
+	RenderStyle "Translucent"
+	Alpha 1.0
 
 	States {
 	Spawn:
-		ORBM DEF 4 Bright
+		ORBM D 16 Bright
+		ORBM EFE 4 Bright
 		Loop
 	Death:
-		ORBM G 4 Bright
+		ORBM G 4 Bright A_SetRenderStyle( 1.0, STYLE_Add )
 		ORBM G 1 A_FadeOut( 0.05 )
 		Wait
 	}

@@ -34,7 +34,7 @@ class OE2ShrinkOrb: Actor {
 		loop;
 	Death:
 		ORBS G 4 Bright;
-		ORBS D 1 A_FadeOut( 0.05 );
+		ORBS G 1 A_FadeOut( 0.05 );
 		wait;
 	}
 }
