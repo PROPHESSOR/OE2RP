@@ -10,7 +10,7 @@ ENU = 'LANGUAGE.ENU'
 RUS = 'LANGUAGE.RUS'
 
 COPYRIGHT = '''/**
- * Copyright (c) 2021 OE2RP-Team
+ * Copyright (c) 2021-2022 OE2RP-Team
  *
  * This software is released under the MIT License.
  * https://opensource.org/licenses/MIT

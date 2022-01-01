@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2021 PROPHESSOR
+ * Copyright (c) 2021-2022 PROPHESSOR
  * 
  * This software is released under the MIT License.
  * https://opensource.org/licenses/MIT
